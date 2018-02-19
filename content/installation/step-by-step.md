@@ -3,6 +3,8 @@ title: Step-by-step Installation
 toc: true
 = yaml =
 
+TODO(razvanm): remove the `jiri` dependency.
+
 This document provides step-by-step instructions for installing Vanadium.
 
 # System requirements

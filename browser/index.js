@@ -58,21 +58,6 @@ domready(function() {
     require('./clipboard')();
   }
 
-  // Run the scroll listener on landing page only. Other pages have the header
-  // fixed.
-  if (pathname === '/' || pathname === '/index.html') {
-    var body = document.body;
-    function onScroll() {
-      if(body.scrollTop < 15) {
-         body.classList.add('not-scrolled');
-      } else {
-         body.classList.remove('not-scrolled');
-      }
-    }
-    onScroll();
-    document.addEventListener('scroll', onScroll);
-  }
-
   // Update img elements to display alt text in a figcaption.
   dom.all('main img').forEach(function(img) {
     var a = dom.element('a');

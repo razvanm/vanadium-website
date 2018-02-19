@@ -1,6 +1,6 @@
 SHELL := /bin/bash -euo pipefail
 PATH := node_modules/.bin:$(PATH)
-MDRIP ?= $(JIRI_ROOT)/third_party/go/bin/mdrip
+MDRIP ?= mdrip
 
 .DELETE_ON_ERROR:
 .DEFAULT_GOAL := all
@@ -35,20 +35,13 @@ MDRIP ?= $(JIRI_ROOT)/third_party/go/bin/mdrip
 # Tooling and infrastructure
 
 # Find nodejs and add it to PATH.
-NODE_BIN := $(shell jiri profile env --profiles=v23:base,v23:nodejs NODE_BIN=)
+NODE_BIN ?= /usr/local/bin
 export PATH := $(NODE_BIN):$(PATH)
 
 # Note, we run npm using 'node npm' to avoid relying
 # on the shebang line in the npm script, which can exceed the Linux shebang
 # length limit on Jenkins.
 npm := node $(NODE_BIN)/npm
-
-# mdrip is a tool for extracting shell scripts from any markdown content which
-# might have code blocks in it (like the tutorials). The mdrip tool is also
-# capable of running the extracted code in a subshell, simulating a user
-# stepping through the tutorials in a step by step fashion.
-$(MDRIP):
-	jiri go install github.com/monopole/mdrip
 
 #############################################################################
 # Variables, functions, and helpers
@@ -89,8 +82,6 @@ tutCleanup     = tutorials/cleanup
 tutWipeSlate   = tutorials/wipe-slate
 tutHello       = tutorials/hello-world
 tutBasics      = tutorials/basics
-tutSyncbaseLocalPersist    = tutorials/syncbase/localPersist
-tutSyncbaseSync  = tutorials/syncbase/sync
 tutPrincipals  = tutorials/security/principals-and-blessings
 tutPermsAuth   = tutorials/security/permissions-authorizer
 tutCaveats1st  = tutorials/security/first-party-caveats
@@ -105,13 +96,6 @@ tutGlobber     = tutorials/naming/globber
 tutJavaAndroid = tutorials/java/android
 tutJavaFortune = tutorials/java/fortune
 
-syncbaseAndroidQuickstart = syncbase/quickstart
-syncbaseAndroidFirstApp   = syncbase/first-app
-syncbaseAndroidDataModel  = syncbase/guides/data-model
-syncbaseAndroidDataFlow   = syncbase/guides/data-flow
-syncbaseAndroidDataSync   = syncbase/guides/synchronization
-syncbaseAndroidBatches    = syncbase/guides/batches
-
 # Scripts that 'complete' the named tutorials, creating all relevant files
 # (code, credentials, etc.) but skipping ephemeral steps like starting servers,
 # running clients, etc. Such scripts need exist only for tutorials that create
@@ -120,8 +104,6 @@ completer = public/sh/tut-completer
 completerScripts = \
 	$(completer)-hello-world.sh \
 	$(completer)-basics.sh \
-	$(completer)-syncbase-local-persist.sh \
-	$(completer)-syncbase-sync.sh \
 	$(completer)-permissions-authorizer.sh \
 	$(completer)-custom-authorizer.sh \
 	$(completer)-suffix-part1.sh \
@@ -180,7 +162,7 @@ public/css: $(shell find stylesheets/*) node_modules
 public/js/bundle.js: browser/index.js $(shell find browser) node_modules
 	$(call BROWSERIFY,$<,$@)
 
-build: $(bundles) $(scripts) $(haiku_inputs) node_modules | $(MDRIP)
+build: $(bundles) $(scripts) $(haiku_inputs) node_modules
 	haiku build --helpers helpers.js --build-dir $@
 	@touch $@
 
@@ -228,7 +210,7 @@ lint: banned_words node_modules
 
 # Vanadium install script.
 # This can be run as a prerequisite for tutorial setup.
-$(install_sh): content/$(install_md) | $(MDRIP)
+$(install_sh): content/$(install_md)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 3 test $^ > $@
 
@@ -247,7 +229,7 @@ $(install_sh): content/$(install_md) | $(MDRIP)
 # appear in the subshell, not in the preamble.
 $(scenario)-a-setup.sh: \
 	content/$(tutSetup).md \
-	content/$(tutCheckup).md | $(MDRIP)
+	content/$(tutCheckup).md
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 
@@ -257,53 +239,35 @@ $(scenario)-a-setup.sh: \
 
 depsHello = $(depsCommon) content/$(tutHello).md
 .PHONY: test-hello-world
-test-hello-world: $(depsHello) | $(MDRIP)
+test-hello-world: $(depsHello)
 	$(MDRIP) --subshell test $^
-$(completer)-hello-world.sh: $(depsHello) | $(MDRIP)
+$(completer)-hello-world.sh: $(depsHello)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 
 depsBasics = $(depsCommon) content/$(tutBasics).md
 .PHONY: test-basics
-test-basics: $(depsBasics) | $(MDRIP)
+test-basics: $(depsBasics)
 	$(MDRIP) --subshell test $^
-$(completer)-basics.sh: $(depsBasics) | $(MDRIP)
+$(completer)-basics.sh: $(depsBasics)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 $(scenario)-b-setup.sh: $(completer)-basics.sh
 	cp $^ $@
 
-depsSyncbaseLocalPersist = $(depsBasics) content/$(tutSyncbaseLocalPersist).md
-.PHONY: test-syncbase-local-persist
-test-syncbase-local-persist: $(depsSyncbaseLocalPersist) | $(MDRIP)
-	$(MDRIP) --subshell test $^
-$(completer)-syncbase-local-persist.sh: $(depsSyncbaseLocalPersist) | $(MDRIP)
-	mkdir -p $(@D)
-	$(MDRIP) --preambled 0 completer $^ > $@
-$(scenario)-f-setup.sh: $(completer)-syncbase-local-persist.sh
-	cp $^ $@
-
-depsSyncbaseSync = $(depsSyncbaseLocalPersist) content/$(tutSyncbaseSync).md
-.PHONY: test-syncbase-sync
-test-syncbase-sync: $(depsSyncbaseSync) | $(MDRIP)
-	$(MDRIP) --subshell test $^
-$(completer)-syncbase-sync.sh: $(depsSyncbaseSync) | $(MDRIP)
-	mkdir -p $(@D)
-	$(MDRIP) --preambled 0 completer $^ > $@
-
 depsPrincipals = $(depsBasics) content/$(tutPrincipals).md
 .PHONY: test-principals
-test-principals: $(depsPrincipals) | $(MDRIP)
+test-principals: $(depsPrincipals)
 	$(MDRIP) --subshell test $^
-$(scenario)-c-setup.sh: $(depsPrincipals) | $(MDRIP)
+$(scenario)-c-setup.sh: $(depsPrincipals)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 
 depsPermsAuth = $(depsPrincipals) content/$(tutPermsAuth).md
 .PHONY: test-permissions-authorizer
-test-permissions-authorizer: $(depsPermsAuth) | $(MDRIP)
+test-permissions-authorizer: $(depsPermsAuth)
 	$(MDRIP) --subshell test $^
-$(completer)-permissions-authorizer.sh: $(depsPermsAuth) | $(MDRIP)
+$(completer)-permissions-authorizer.sh: $(depsPermsAuth)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 $(scenario)-d-setup.sh: $(completer)-permissions-authorizer.sh
@@ -311,9 +275,9 @@ $(scenario)-d-setup.sh: $(completer)-permissions-authorizer.sh
 
 depsMultiDisp = $(depsPermsAuth) content/$(tutSuffixPart1).md
 .PHONY: test-multiservice-dispatcher
-test-multiservice-dispatcher: $(depsMultiDisp) | $(MDRIP)
+test-multiservice-dispatcher: $(depsMultiDisp)
 	$(MDRIP) --subshell test $^
-$(completer)-multiservice-dispatcher.sh: $(depsMultiDisp) | $(MDRIP)
+$(completer)-multiservice-dispatcher.sh: $(depsMultiDisp)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 $(scenario)-e-setup.sh: $(completer)-multiservice-dispatcher.sh
@@ -321,58 +285,58 @@ $(scenario)-e-setup.sh: $(completer)-multiservice-dispatcher.sh
 
 depsCaveats1st = $(depsPermsAuth) content/$(tutCaveats1st).md
 .PHONY: test-caveats-1st
-test-caveats-1st: $(depsCaveats1st) | $(MDRIP)
+test-caveats-1st: $(depsCaveats1st)
 	$(MDRIP) --subshell test $^
 
 depsCaveats3rd = $(depsPermsAuth) content/$(tutCaveats3rd).md
 .PHONY: test-caveats-3rd
-test-caveats-3rd: $(depsCaveats3rd) | $(MDRIP)
+test-caveats-3rd: $(depsCaveats3rd)
 	$(MDRIP) --subshell test $^
 
 depsAgent = $(depsPermsAuth) content/$(tutAgent).md
 .PHONY: test-agent
-test-agent: $(depsAgent) | $(MDRIP)
+test-agent: $(depsAgent)
 	$(MDRIP) --subshell test $^
 
 depsCustomAuth = $(depsPermsAuth) content/$(tutCustomAuth).md
 .PHONY: test-custom-auth
-test-custom-auth: $(depsCustomAuth) | $(MDRIP)
+test-custom-auth: $(depsCustomAuth)
 	$(MDRIP) --subshell test $^
-$(completer)-custom-authorizer.sh: $(depsCustomAuth) | $(MDRIP)
+$(completer)-custom-authorizer.sh: $(depsCustomAuth)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 
 depsMountTable = $(depsBasics) content/$(tutMountTable).md
 .PHONY: test-mount-table
-test-mount-table: $(depsMountTable) | $(MDRIP)
+test-mount-table: $(depsMountTable)
 	$(MDRIP) --subshell test $^
 
 depsNamespace = $(depsBasics) content/$(tutNamespace).md
 .PHONY: test-namespace
-test-namespace: $(depsNamespace) | $(MDRIP)
+test-namespace: $(depsNamespace)
 	$(MDRIP) --subshell test $^
 
 depsSuffixPart1 = $(depsBasics) content/$(tutSuffixPart1).md
 .PHONY: test-suffix-part1
-test-suffix-part1: $(depsSuffixPart1) | $(MDRIP)
+test-suffix-part1: $(depsSuffixPart1)
 	$(MDRIP) --subshell test $^
-$(completer)-suffix-part1.sh: $(depsSuffixPart1) | $(MDRIP)
+$(completer)-suffix-part1.sh: $(depsSuffixPart1)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 
 depsSuffixPart2 = $(depsMultiDisp) content/$(tutSuffixPart2).md
 .PHONY: test-suffix-part2
-test-suffix-part2: $(depsSuffixPart2) | $(MDRIP)
+test-suffix-part2: $(depsSuffixPart2)
 	$(MDRIP) --subshell test $^
-$(completer)-suffix-part2.sh: $(depsSuffixPart2) | $(MDRIP)
+$(completer)-suffix-part2.sh: $(depsSuffixPart2)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 
 depsGlobber = $(depsMultiDisp) content/$(tutGlobber).md
 .PHONY: test-globber
-test-globber: $(depsGlobber) | $(MDRIP)
+test-globber: $(depsGlobber)
 	$(MDRIP) --subshell test $^
-$(completer)-globber.sh: $(depsGlobber) | $(MDRIP)
+$(completer)-globber.sh: $(depsGlobber)
 	mkdir -p $(@D)
 	$(MDRIP) --preambled 0 completer $^ > $@
 
@@ -404,98 +368,11 @@ depsOneBigCoreTutorialTest = \
 	content/$(tutSuffixPart2).md \
 	content/$(tutWipeSlate).md \
 	content/$(tutBasics).md \
-	content/$(tutSyncbaseLocalPersist).md \
-	content/$(tutSyncbaseSync).md \
 
-
-# An ordering that lets us test all the Java tutorials faster than running the
-# individual tests in sequence.
-# depsOneBigSyncbaseAndroidTest = content/$(syncbaseAndroidDataSync).md
-depsOneBigSyncbaseAndroidTest = \
-	content/$(syncbaseAndroidQuickstart).md \
-	content/$(syncbaseAndroidFirstApp).md \
-	content/$(syncbaseAndroidDataModel).md \
-	content/$(syncbaseAndroidDataFlow).md \
-	content/$(syncbaseAndroidDataSync).md \
-	content/$(syncbaseAndroidBatches).md
 
 .PHONY: test
-test: test-site test-tutorials-core test-tutorials-java test-syncbase-android
+test: test-site
 
 .PHONY: test-site
 test-site: build node_modules
 	tape test/test-*.js
-
-# Test core tutorials against an existing development install.
-#
-# This is the target to run to see if the tutorials work against Vanadium
-# changes that have not been checked in.
-#
-# Called from v.io/x/devtools/jiri-test/internal/test/website.go.
-# This test fails if JIRI_ROOT isn't defined.
-# This test defines V_TUT (a tutorial variable) appropriately in terms of
-# JIRI_ROOT.
-.PHONY: test-tutorials-core
-test-tutorials-core: build
-	jiri go install v.io/v23/... v.io/x/ref/...
-	$(MDRIP) --subshell --blockTimeOut 1m test content/testing.md $(depsOneBigCoreTutorialTest)
-
-
-# Test Java tutorials.
-.PHONY: test-tutorials-java
-test-tutorials-java: build
-	$(MDRIP) --blockTimeOut 5m --subshell test $(depsOneBigJavaTutorialTest)
-
-# Test Syncbase quickstart, guides and tutorials for Android.
-# Called from v.io/x/devtools/jiri-test/internal/test/website.go.
-test-syncbase-android: build
-	$(MDRIP) --blockTimeOut 15m --subshell test $(depsOneBigSyncbaseAndroidTest)
-
-# Test tutorials against fresh external install.
-#
-# This runs an install from v.io, then runs the tutorials against that install,
-# exactly as an external user would run them. Local changes of Vanadium have no
-# impact on this test. This test does not require definition of JIRI_ROOT; it
-# uses VANADIUM_RELEASE instead, per the installation instructions on the external
-# site.
-ext_tut_jiri_root := ~/tutorial-install
-.PHONY: test-tutorials-external
-test-tutorials-external: build
-	rm -rf $(ext_tut_jiri_root)
-	JIRI_ROOT=$(ext_tut_jiri_root) $(MDRIP) --subshell --blockTimeOut 10m test content/$(install_md) $(depsOneBigCoreTutorialTest)
-
-# Test tutorials without install. Assumes JIRI_ROOT and VANADIUM_RELEASE are defined.
-#
-# This runs tests without first doing any installation step, and assumes
-# JIRI_ROOT and VANADIUM_RELEASE are properly defined. It's a time saver if you are
-# happy with your installation and are just debugging tutorial code.
-.PHONY: test-tutorials-no-install
-test-tutorials-no-install: build
-	$(MDRIP) --subshell test $(depsOneBigCoreTutorialTest)
-
-# Used to upgrade all occurrences of
-# dependencies {
-#  compile 'io.v:syncbase:<version>'
-# }
-# to the constant $SYNCBASE_ANDROID_VERSION defined below.
-#
-# This target should be used as part of the release process to update
-# the website to the stable release of Syncbase Android.
-#
-# Please run the `test-syncbase-android` after upgrade and fix
-# any breaking API changes in the tutorials and code snippets before
-# committing and submitting the changes.
-#
-# Example flow:
-#
-# # Change SYNCBASE_ANDROID_VERSION to the newest version.
-# make upgrade-syncbase-android
-# make test-syncbase-android
-# git stage .
-# git commit -m "Upgrading Syncbase Android Version"
-# jiri cl mail
-.PHONY: upgrade-syncbase-android
-# Change this to the desired version before running the target.
-SYNCBASE_ANDROID_VERSION=0.1.7
-upgrade-syncbase-android:
-	find content/syncbase -type f -exec sed -i "s/\(compile 'io.v:syncbase:\)\(.*\)'/\1$(SYNCBASE_ANDROID_VERSION)'/g" {} \;

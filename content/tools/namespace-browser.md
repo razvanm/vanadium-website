@@ -8,8 +8,7 @@ namespaces, find services, and invoke methods on these services. Vanadium
 namespaces can be public, in that they are accessible (and thus browsable) to
 a large number of users and devices, or they can be private to an individual
 or an organization. The Namespace Browser is especially useful for exploring
-existing public namespaces, inspecting data in a Syncbase service,
-or developing of new Vanadium applications.
+existing public namespaces or developing of new Vanadium applications.
 
 The user can specify a mount table, browse through the graph of referenced
 mount tables, then see where services are mounted.

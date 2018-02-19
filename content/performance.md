@@ -36,36 +36,5 @@ Sending a 1 byte "echo" request and receiving the response over an established
 connection. The Vanadium RPC protocol multiplexes RPCs over a single
 established connection.
 
-# Syncbase
-
-## Put
-
-Results: <a href="https://benchmarks.v.io/?q=v.io%2Fv23%2Fsyncbase%2Fnosql.BenchmarkTinyPut+uploader%3Avlab#">v.io/v23/sycnbase/nosql.BenchmarkTinyPut</a>.
-
-Writing a small piece of structured information to the syncbase daemon via the
-[Table](https://godoc.org/v.io/v23/syncbase/nosql#Table) API.
-
-## Get
-
-Results: <a href="https://benchmarks.v.io/?q=v.io%2Fv23%2Fsyncbase%2Fnosql.BenchmarkTinyGet+uploader%3Avlab#">v.io/v23/sycnbase/nosql.BenchmarkTinyGet</a>.
-
-Reading read a small piece of structured information from the syncbase daemon
-via the [Table](https://godoc.org/v.io/v23/syncbase/nosql#Table) API.
-
-## Sync
-
-Results: <a href="https://benchmarks.v.io/?q=v.io%2Fv23%2Fsyncbase%2Ffeaturetests.BenchmarkPingPongPair+uploader%3Avlab#">v.io/v23/syncbase/featuretests.BenchmarkPingPongPair</a>.
-
-As of February 2016, this measures 500x the time it takes for peers in a
-syncgroup to notice updates made to each other. For example, on desktop/laptop
-class machines [benchmarks.v.io] reported 1m40s, which means 100/500 seconds =
-200ms to sync an update. The 500x multiplier is an artifact of the benchmark
-implementation, not the sync protocol.
-
-This also includes any idle time between attempts to contact the peer syncbase
-instance for updates. Changes to the sync protocol (changing the polling
-interval or using a push-notification mechanism) were being iterated on at the
-time of this writing. These numbers are very sensitive to such changes.
-
 [benchmarks.v.io]: https://benchmarks.v.io
 [Vanadium authentication protocol]: /designdocs/authentication.html
