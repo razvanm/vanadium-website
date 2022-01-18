@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+
+{{- partial "sidebar.html" . -}}
+{{- partial "toc" . -}}
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">{{ .Title }}</h1>
+
+    {{ if .Params.wherein }}
+    <p><strong>Wherein</strong> {{ .Params.wherein }}</p>
+    {{ end }}
+
+    {{- partial "prerequisites" . -}}
+
+    <content>
+      {{ .Content }}
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  {{ if .Params.prev }}
+    {{ with .Site.GetPage .Params.prev }}
+      <a href="{{ .RelPermalink }}" class="p-8 flex justify-start items-center bg-cyan-800 grow">
+        <div class="flex items-center justify-center w-[48px] h-[48px]">
+          <i class="material-icons text-white">arrow_back</i>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="text-white/70 text-xs">Previous</div>
+          <div class="text-white">{{ .Title }}</div>
+        </div>
+      </a>
+    {{ end }}
+  {{ end }}
+
+  {{ if .Params.next }}
+    {{ with .Site.GetPage .Params.next }}
+      <a href="{{ .RelPermalink }}" class="p-8 flex justify-end items-center bg-primary-color grow">
+        <div class="flex flex-col items-end">
+          <div class="text-white/70 text-xs">Next</div>
+          <div class="text-white">{{ .Title }}</div>
+        </div>
+        <div class="flex items-center justify-center w-[48px] h-[48px]">
+          <i class="material-icons text-white">arrow_forward</i>
+        </div>
+      </a>
+    {{ end }}
+  {{ end }}
+</nav>
+
+  <!-- <div class="grow"></div>
+
+  <div class="pt-2 bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] grow-0">
+  </div> -->
+</div>
+
+{{end}}

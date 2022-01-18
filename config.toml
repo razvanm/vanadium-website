@@ -1,0 +1,13 @@
+baseURL = 'https://v.io/'
+languageCode = 'en-us'
+title = 'Vanadium'
+theme = 'vanadium'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+  [markup.tableOfContents]
+  startLevel = 1
+  endLevel = 3
+  ordered = false

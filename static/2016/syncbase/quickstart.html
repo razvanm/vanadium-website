@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1,
+                                   minimum-scale=1,
+                                   maximum-scale=1,
+                                   user-scalable=no,
+                                   minimal-ui">
+  
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+    <title>Quick Start - Vanadium</title>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic|Source+Code+Pro">
+  
+    <link rel="stylesheet" href="/2016/css/github.css">
+    <link rel="stylesheet" href="/2016/css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+    <script src="/2016/js/react-0.14.3.min.js"></script>
+    <script src="/2016/js/react-dom-0.14.3.min.js"></script>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="/2016/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2016/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2016/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2016/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2016/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2016/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2016/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2016/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2016/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2016/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2016/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2016/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/2016/favicons/favicon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/2016/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileColor" content="#00acc1">
+    <meta name="msapplication-TileImage" content="/2016/favicons/mstile-144x144.png">
+  
+    <link rel="stylesheet" href="/2016/css/bundle.cyan.css">
+    <script src="/2016/js/bundle.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-59720824-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <header class="mdl-shadow--2dp">
+      <div class="row">
+        <div class="icon menu"><i class="material-icons">menu</i></div>
+        <div class="icon v-icon"><a href="/2016"><img src="/2016/images/v-icon-white.svg"></a></div>
+        <div class="logo"><a href="/2016/syncbase">Syncbase</a></div>
+        <div class="spacer"></div>
+        <nav>
+          <a href="/2016/syncbase">Overview</a>
+          <a href="/2016/syncbase/quickstart.html">Quick Start</a>
+          <a href="/2016/syncbase/tutorial/introduction.html">Tutorial</a>
+        </nav>
+      </div>
+    </header>
+    <div data-subsite="syncbase" class="sidebar"></div>
+    <div class="sidebar-data">
+      <a href="/2016/syncbase/">Overview</a>
+      <a href="/2016/syncbase/quickstart.html">Quick Start</a>
+      <a href="/2016/syncbase/first-app.html">Your First App</a>
+      <a href="/2016/syncbase/tutorial/introduction.html" class="nav">Tutorial</a>
+       <nav>
+        <a href="/2016/syncbase/tutorial/introduction.html">Introduction</a>
+   </nav>
+    
+      <a href="#" class="nav">Guides</a>
+      <nav>
+        <a href="/2016/syncbase/guides/data-model.html">Data Model</a>
+    <a href="/2016/syncbase/guides/data-flow.html">Data Flow</a>
+    <a href="/2016/syncbase/guides/synchronization.html">Syncing Data</a>
+    <a href="/2016/syncbase/guides/batches.html">Batches</a>
+  </nav>
+    
+      <a href="/2016/syncbase/my-cloud-syncbase.html">My Cloud Syncbase</a>
+    
+      <a href="/2016/syncbase/example-apps.html">Example Apps</a>
+      <a href="/2016/syncbase/api-reference.html">API Reference</a>
+    </div>
+    <main class="hide-cat-eof-lines">
+      <h1 class="title">
+        
+        Quick Start
+      </h1>
+
+      <div class="toc"></div>
+
+      <div class="note warning"><h2 id="work-in-progress-">Work in Progress!</h2>
+<p>We&#39;re actively working on finishing up the Syncbase API and implementation.
+The code below compiles, but may not execute successfully. Please join
+our <a href="/community/mailing-lists.html">mailing list</a> for updates.</p>
+</div>
+
+
+<h1 id="setup">Setup</h1>
+<p>This tutorial uses Android Studio, but feel free to use your IDE of choice.</p>
+<p>We will start by creating an empty project in Android Studio
+<code>File -&gt; New -&gt; Project</code>.
+Select <code>API 21</code> or above for the Minimum SDK and pick <code>Empty Activity</code> as the
+template.</p>
+<h1 id="install-syncbase">Install Syncbase</h1>
+<p>Syncbase&#39;s Android library is published to both <a href="https://bintray.com/vanadium/io.v/vanadium-android">JCenter</a> and <a href="http://repo1.maven.org/maven2/io/v/vanadium-android">MavenCentral</a>.
+To install the library, add the following to your <code>build.gradle</code> file.</p>
+<!-- @addSyncbaseDependency @test -->
+<pre><code>cat - &lt;&lt;EOF &gt;&gt; $PROJECT_DIR/app/build.gradle
+dependencies {
+  compile &#39;io.v:syncbase:0.1.7&#39;
+}
+EOF
+</code></pre><h1 id="setup-cloud-syncbase">Setup Cloud Syncbase</h1>
+<p>Head to <a href="https://sb-allocator.v.io/">https://sb-allocator.v.io/</a> to setup a free
+developer cloud Syncbase instance.</p>
+<p>Make note of the Syncbase <strong>Address</strong> and the <strong>Blessing</strong> for your cloud
+instance, they are required by the Syncbase API during initialization.</p>
+<div class="note info"><h2 id="note">Note</h2>
+<p>Requiring a cloud Syncbase is temporary. We are planning to allow the API to be
+used without a cloud Syncbase soon.</p>
+</div>
+
+<h1 id="use-syncbase">Use Syncbase</h1>
+<p>In your <code>MainActivity</code>, import Syncbase and read/write some data!</p>
+<!-- @generateMainActivity @test -->
+<pre><code>cat - &lt;&lt;EOF | sed &#39;s///&#39; &gt; $PROJECT_DIR/app/src/main/java/io/v/syncbase/example/MainActivity.java
+{#dim}{#dim-children}package io.v.syncbase.example;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;{/dim-children}{/dim}
+import io.v.syncbase.Collection;
+import io.v.syncbase.Syncbase;
+import io.v.syncbase.exception.SyncbaseException;
+
+{#dim}{#dim-children}public class MainActivity extends AppCompatActivity {
+    private static final String TAG = &quot;QuickStart&quot;;
+
+    // Note: Replace CLOUD_NAME and CLOUD_ADMIN with your cloud syncbase name
+    // and blessing from https://sb-allocator.v.io
+    private static final String CLOUD_NAME = &quot;&lt;cloud name&gt;&quot;;
+    private static final String CLOUD_ADMIN = &quot;&lt;cloud admin&gt;&quot;;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);{/dim-children}{/dim}
+        try {
+            String rootDir = getDir(&quot;syncbase&quot;, Context.MODE_PRIVATE).getAbsolutePath();
+            Syncbase.Options options =
+                    Syncbase.Options.cloudBuilder(rootDir, CLOUD_NAME, CLOUD_ADMIN)
+                            .build();
+            Syncbase.init(options);
+        } catch (SyncbaseException e) {
+            Log.e(TAG, &quot;Syncbase failed to initialize&quot;, e);
+        }
+
+        Syncbase.loginAndroid(this, new Syncbase.LoginCallback() {
+            @Override
+            public void onSuccess() {
+                Log.i(TAG, &quot;Syncbase is ready&quot;);
+
+                // Interact with syncbase!
+                try {
+                    Collection collection = Syncbase.database().createCollection();
+                    collection.put(&quot;myKey&quot;, &quot;myValue&quot;);
+                    String value = collection.get(&quot;myKey&quot;, String.class);
+                } catch (SyncbaseException e) {
+                    Log.e(TAG, &quot;Syncbase error&quot;, e);
+                }
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                Log.e(TAG, &quot;Syncbased failed to login&quot;, e);
+            }
+        });
+{#dim}{#dim-children}    }
+}{/dim-children}{/dim}
+EOF
+</code></pre><p><strong>That&#39;s all!</strong> You are now using Syncbase!</p>
+<h1 id="got-10-more-minutes-">Got 10 More Minutes?</h1>
+<p>Let&#39;s create a simple <em>Dice Roller</em> app and see it sync peer-to-peer in action!</p>
+<p><a href="syncbase/first-app.html" class="button-passive">
+Create your first app
+</a></p>
+
+    </main>
+  </body>
+</html>

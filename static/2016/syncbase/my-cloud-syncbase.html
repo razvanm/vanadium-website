@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1,
+                                   minimum-scale=1,
+                                   maximum-scale=1,
+                                   user-scalable=no,
+                                   minimal-ui">
+  
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+    <title>My Cloud Syncbase - Vanadium</title>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic|Source+Code+Pro">
+  
+    <link rel="stylesheet" href="/2016/css/github.css">
+    <link rel="stylesheet" href="/2016/css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+    <script src="/2016/js/react-0.14.3.min.js"></script>
+    <script src="/2016/js/react-dom-0.14.3.min.js"></script>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="/2016/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2016/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2016/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2016/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2016/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2016/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2016/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2016/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2016/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2016/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2016/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2016/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/2016/favicons/favicon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/2016/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileColor" content="#00acc1">
+    <meta name="msapplication-TileImage" content="/2016/favicons/mstile-144x144.png">
+  
+    <link rel="stylesheet" href="/2016/css/bundle.cyan.css">
+    <script src="/2016/js/bundle.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-59720824-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <header class="mdl-shadow--2dp">
+      <div class="row">
+        <div class="icon menu"><i class="material-icons">menu</i></div>
+        <div class="icon v-icon"><a href="/2016"><img src="/2016/images/v-icon-white.svg"></a></div>
+        <div class="logo"><a href="/2016/syncbase">Syncbase</a></div>
+        <div class="spacer"></div>
+        <nav>
+          <a href="/2016/syncbase">Overview</a>
+          <a href="/2016/syncbase/quickstart.html">Quick Start</a>
+          <a href="/2016/syncbase/tutorial/introduction.html">Tutorial</a>
+        </nav>
+      </div>
+    </header>
+    <div data-subsite="syncbase" class="sidebar"></div>
+    <div class="sidebar-data">
+      <a href="/2016/syncbase/">Overview</a>
+      <a href="/2016/syncbase/quickstart.html">Quick Start</a>
+      <a href="/2016/syncbase/first-app.html">Your First App</a>
+      <a href="/2016/syncbase/tutorial/introduction.html" class="nav">Tutorial</a>
+       <nav>
+        <a href="/2016/syncbase/tutorial/introduction.html">Introduction</a>
+   </nav>
+    
+      <a href="#" class="nav">Guides</a>
+      <nav>
+        <a href="/2016/syncbase/guides/data-model.html">Data Model</a>
+    <a href="/2016/syncbase/guides/data-flow.html">Data Flow</a>
+    <a href="/2016/syncbase/guides/synchronization.html">Syncing Data</a>
+    <a href="/2016/syncbase/guides/batches.html">Batches</a>
+  </nav>
+    
+      <a href="/2016/syncbase/my-cloud-syncbase.html">My Cloud Syncbase</a>
+    
+      <a href="/2016/syncbase/example-apps.html">Example Apps</a>
+      <a href="/2016/syncbase/api-reference.html">API Reference</a>
+    </div>
+    <main class="hide-cat-eof-lines">
+      <h1 class="title">
+        
+        My Cloud Syncbase
+      </h1>
+
+      <div class="toc"></div>
+
+      <h1 id="introduction">Introduction</h1>
+<p>The Syncbase Allocator service at
+<a href="https://sb-allocator.v.io/">https://sb-allocator.v.io/</a> (log in with Google
+required) allows you to create and manage up to 3 free cloud Syncbase instances.</p>
+<p>Each instance is running in a dedicated container, isolated from all the other
+instances.  Access is restricted to the creator of the instance.</p>
+<div class="note warning"><h2 id="note">Note</h2>
+<p>The instances are meant to be used for development.  There are no guarantees
+about availability or performance.  Data stored in the instances can be lost at
+any time.  No sensitive or personal data should be stored in the instances.</p>
+</div>
+
+<h1 id="usage">Usage</h1>
+<h2 id="viewing-your-instances">Viewing your Instances</h2>
+<p>After logging in, you&#39;ll see a list of all your instances (sorted in reverse
+chronological order by creation time).  Each instance displays its address and
+blessing patterns.  You can manage your instances from this view.</p>
+<h2 id="creating-an-instance">Creating an Instance</h2>
+<p>The <code>CREATE NEW</code> button spins up a new syncbase instance.  It takes about 25
+seconds, after which you&#39;ll see your newly created instance.  The instance is
+assigned a stable address that makes reachable from clients and peers.</p>
+<h2 id="destroying-an-instance">Destroying an Instance</h2>
+<p>The <code>DESTROY</code> button removes the instance.  Note, all data in the instance is
+lost; this operation cannot be undone.</p>
+<h2 id="suspending-resuming-an-instance">Suspending/Resuming an Instance</h2>
+<p>The <code>SUSPEND</code> button allows you to stop your instance.  <code>RESUME</code> restarts it.
+The data in the instance is preserved.</p>
+<h2 id="resetting-an-instance">Resetting an Instance</h2>
+<p>The <code>RESET</code> button re-creates the instance&#39;s persisted storage.  Note, all data
+in the instance is lost; this operation cannot be undone.  Resetting preserves
+the instance&#39;s address and blessing patterns, which makes it a suitable
+alternative to destroying and recreating an instance when stability of the
+address and blessing patterns is desired.</p>
+<h2 id="inspecting-an-instance">Inspecting an Instance</h2>
+<p>The <code>DASHBOARD</code> button opens a page showing load and resource utilization for
+the instance.  The <code>DEBUG</code> button opens a page showing details about the
+instance like its blessings, stats, and a browse view of the databases.</p>
+
+    </main>
+  </body>
+</html>

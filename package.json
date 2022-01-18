@@ -1,0 +1,16 @@
+{
+  "name": "vanadium-website.hugo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "tailwindcss -i ./src/styles.css -o ./static/bundle.css",
+    "watch:css": "tailwindcss -i ./src/styles.css -o ./static/bundle.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  }
+}

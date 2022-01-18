@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  a {
+    @apply text-primary-color;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 40px;
+    @apply text-blue-grey-500 mt-12 mb-5 tracking-tight;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+    @apply text-blue-grey-800 mt-7 mb-3;
+  }
+
+  p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  content ul {
+    @apply list-disc list-outside pl-7;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  pre code {
+    font-size: 14px;
+    @apply bg-amber-50 block p-4 -mx-4;
+  }
+  code {
+    font-family: "Source Code Pro", monospace;
+    @apply bg-gray-100 px-1;
+  }
+
+  nav#TableOfContents ul {
+    @apply list-none pl-0;
+  }
+
+  nav#TableOfContents li {
+    @apply my-1;
+  }
+
+  nav#TableOfContents li > ul {
+    font-size: 12px;
+    @apply pl-3;
+  }
+
+  nav#TableOfContents a {
+    @apply font-normal text-black;
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1,
+                                   minimum-scale=1,
+                                   maximum-scale=1,
+                                   user-scalable=no,
+                                   minimal-ui">
+  
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+    <title>SyncSlides - Vanadium</title>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic|Source+Code+Pro">
+  
+    <link rel="stylesheet" href="/2016/css/github.css">
+    <link rel="stylesheet" href="/2016/css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+    <script src="/2016/js/react-0.14.3.min.js"></script>
+    <script src="/2016/js/react-dom-0.14.3.min.js"></script>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="/2016/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2016/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2016/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2016/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2016/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2016/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2016/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2016/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2016/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2016/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2016/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2016/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/2016/favicons/favicon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/2016/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileColor" content="#00acc1">
+    <meta name="msapplication-TileImage" content="/2016/favicons/mstile-144x144.png">
+  
+    <link rel="stylesheet" href="/2016/css/bundle.cyan.css">
+    <script src="/2016/js/bundle.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-59720824-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <header class="mdl-shadow--2dp">
+      <div class="row">
+        <div class="icon menu"><i class="material-icons">menu</i></div>
+        <div class="icon v-icon"><a href="/2016"><img src="/2016/images/v-icon-white.svg"></a></div>
+        <div class="logo"><a href="/2016/syncbase">Syncbase</a></div>
+        <div class="spacer"></div>
+        <nav>
+          <a href="/2016/syncbase">Overview</a>
+          <a href="/2016/syncbase/quickstart.html">Quick Start</a>
+          <a href="/2016/syncbase/tutorial/introduction.html">Tutorial</a>
+        </nav>
+      </div>
+    </header>
+    <div data-subsite="syncbase" class="sidebar"></div>
+    <div class="sidebar-data">
+      <a href="/2016/syncbase/">Overview</a>
+      <a href="/2016/syncbase/quickstart.html">Quick Start</a>
+      <a href="/2016/syncbase/first-app.html">Your First App</a>
+      <a href="/2016/syncbase/tutorial/introduction.html" class="nav">Tutorial</a>
+       <nav>
+        <a href="/2016/syncbase/tutorial/introduction.html">Introduction</a>
+   </nav>
+    
+      <a href="#" class="nav">Guides</a>
+      <nav>
+        <a href="/2016/syncbase/guides/data-model.html">Data Model</a>
+    <a href="/2016/syncbase/guides/data-flow.html">Data Flow</a>
+    <a href="/2016/syncbase/guides/synchronization.html">Syncing Data</a>
+    <a href="/2016/syncbase/guides/batches.html">Batches</a>
+  </nav>
+    
+      <a href="/2016/syncbase/my-cloud-syncbase.html">My Cloud Syncbase</a>
+    
+      <a href="/2016/syncbase/example-apps.html">Example Apps</a>
+      <a href="/2016/syncbase/api-reference.html">API Reference</a>
+    </div>
+    <main class="hide-cat-eof-lines">
+      <h1 class="title">
+        
+        SyncSlides
+      </h1>
+
+
+      <h1 id="functionality">Functionality</h1>
+<p>Peer-to-peer slide presentation.  Allows audience to ask questions.
+Presenter can delegate control of the presentation to an audience member temporarily.</p>
+<h2 id="key-behaviors">Key Behaviors</h2>
+<ul>
+<li>Distribute slide content to audience</li>
+<li>Slide images are blobs</li>
+<li>Presenter’s location gets synced to audience</li>
+<li>Audience can explore slides independently of presenter</li>
+<li>Audience can ask questions</li>
+<li>Presenter can delegate control of the presentation to an audience member</li>
+<li>Presenter and audience can take notes that are shared only with that user’s devices</li>
+</ul>
+<h1 id="schema">Schema</h1>
+<h2 id="data-types">Data Types</h2>
+<pre><code class="lang-Go">// VDeck is the metadata for a set of slides.
+type VDeck struct {
+  Title string
+  Thumbnail []byte
+}
+
+// VSlide contains the image content for the slide.
+type VSlide struct {
+  // A low-res version of the image stored as JPG.
+  Thumbnail []byte
+  // A high-res version of the image stored as JPG.
+  Fullsize Blobref
+}
+
+// VNote contains private-to-the-user notes for a specific slide.
+type VNote struct {
+  Text string
+}
+
+// VPresentation represents a live display of a VDeck.
+type VPresentation struct {
+  // The unique ID of the deck used in this presentation
+  DeckId String
+  // Owner is responsible for advertising the presentation and has full
+  // control of it.
+  Owner VPerson
+  // Driver represents who has control of the presentation.  Usually, it is
+  // the presenter, but the presenter can give control to an audience member
+  // by changing this field.
+  Driver VPerson
+}
+
+// VPerson represents either an audience member or the presenter.
+type VPerson struct {
+  Blessing string
+  // The person&#39;s full name.
+  Name string
+}
+
+// VCurrentSlide contains state for the live presentation.  It is separate
+// from the VPresentation so that the presenter can temporarily delegate
+// control of the VCurrentSlide without giving up control of the entire
+// presentation.
+type VCurrentSlide struct {
+  // The number of the slide that the presenter is talking about.
+  SlideNum int32
+  // In the future, we could add markup/doodles here.  That markup would be
+  // transient if stored here.  Maybe better to put it in a separate row...
+}
+
+// VQuestion represents a member of the audience asking a question of the
+// presenter. TODO(kash): Add support for the user to type in their question.
+// Right now, they need to ask their question verbally.
+type VQuestion struct {
+  // The person who asked the question.
+  Questioner VPerson
+  // Time when the question was asked in milliseconds since the epoch.
+  Time int64
+  // Track whether this question has been answered.
+  Answered bool
+}
+
+// VSession represents UI state that most apps would consider to be ephemeral.
+// By storing it in Syncbase, we can resume a session on another device.
+// It also simplifies the Android implementation because we don&#39;t have to store
+// all of this state in a Bundle for each Activity/Fragment.
+type VSession struct {
+  DeckId string
+  PresentationId string
+  // When the user is not driving the presentation, he can go forward/back in
+  // the deck on his own.  A value of -1 means the user is following the
+  // driver of the presentation.
+  LocalSlide int32
+  // The time that this session was last used in milliseconds since the epoch.
+  // This field allows us to find the most recently used session and prompt
+  // the user to resume it.
+  LastTouched int64
+}
+</code></pre>
+<h2 id="organization">Organization</h2>
+<pre><code>Collection &lt;deckId&gt;
+  deck → VDeck
+  slides/1 → VSlide
+  slides/2 → VSlide
+  …
+
+Collection &lt;presentationId&gt;
+  presentation → VPresentation
+  questions/&lt;uuid&gt; → VQuestion
+  questions/&lt;uuid&gt; → VQuestion
+
+Collection &lt;presentationId + “control”&gt;
+  currentSlides → VCurrentSlide
+  Collection &lt;userblessing + “ui”&gt;
+  &lt;sessionId&gt; → VSession
+</code></pre><h1 id="syncing-and-permissions">Syncing and permissions</h1>
+<ul>
+<li>There is a separate collection for the deck so that it can be used in multiple presentations.</li>
+<li>The presentation collection is writable by the presenter and read-only for the audience.</li>
+<li>The <presentationId + “control”> collection is read-write for the presenter and read-only for the audience.  When the presenter wants to give control to an audience member, the presenter changes the ACL on this collection appropriately.</li>
+<li>Without fine-grained ACLs, it is difficult to use sync to ask questions.  Either we fully trust the audience and allow complete access to all questions or we use RPCs to send the questions to the presenter.  Seems like RPCs is the better way to go</li>
+</ul>
+<h1 id="conflicts">Conflicts</h1>
+<p>No conflicts expected, but last-one-wins would probably work.</p>
+
+    </main>
+  </body>
+</html>

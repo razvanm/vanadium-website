@@ -1,0 +1,6 @@
+{{ if .Params.toc }}
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">{{ .Title }}</div>
+    {{ .TableOfContents }}
+  </div>
+{{ end }}

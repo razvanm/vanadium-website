@@ -1,0 +1,90 @@
+{{ define "main" }}
+
+<div class="flex flex-col h-screen">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] text-center">
+    <img src="/images/v-icon-white.svg"/ class="inline w-[48px] sm:w-[96px] lg:w-[128px] my-7">
+  </div>
+
+  <div class="flex justify-center">
+    <div>
+      <p class="my-4 text-center text-[#455A64] font-light text-2xl">
+        <!-- <h2 class="text-primary-color font-light text-4xl text-center">Vanadium Core</h2> -->
+        <strong>Vanadium Core</strong> makes building secure distributed
+        applications easier.
+      </p>
+
+      <ul class="leading-tight">
+        <li class="mb-3 lg:mb-0 text-center lg:text-left">
+          <span class="text-xl lg:text-base lg:leading-tight block text-center lg:inline-block lg:w-32 lg:text-right lg:mr-3">Introduction</span>
+          <a href="/overview">Overview</a> •
+          <a href="/installation">Installation</a>
+        </li>
+
+        <li class="mb-3 lg:mb-0 text-center lg:text-left">
+          <span class="text-xl lg:text-base lg:leading-tight block text-center lg:inline-block lg:w-32 lg:text-right lg:mr-3">Tutorials</span>
+          <a href="/tutorials/hello-world">Hello World</a> •
+          <a href="/tutorials/basics">Client/Server Basics</a> •
+          <a href="/tutorials/security">Security</a> •
+          <a href="/tutorials/naming">Naming</a> •
+          <a href="/tutorials/java">Java</a> •
+          <a href="/tutorials/faq">Tutorial FAQ</a>
+        </li>
+
+        <li class="mb-3 lg:mb-0 text-center lg:text-left">
+          <span class="text-xl lg:text-base lg:leading-tight block text-center lg:inline-block lg:w-32 lg:text-right lg:mr-3">Tools</span>
+          <a href="/tools/identity-service-faq">Vanadium Identity Service</a> •
+          <a href="/tools/namespace-browser">Namespace Browser</a> •
+          <a href="/tools/services">Vanadium Cloud Services</a>
+        </li>
+
+        <li class="mb-3 lg:mb-0 text-center lg:text-left">
+          <span class="text-xl lg:text-base lg:leading-tight block text-center lg:inline-block lg:w-32 lg:text-right lg:mr-3">Concepts</span>
+          <a href="/concepts/rpc">RPC System</a> •
+          <a href="/concepts/naming">Naming</a> •
+          <a href="/concepts/security">Security</a> •
+          <a href="/concepts/device-management">Device Management</a>
+        </li>
+
+        <li class="mb-3 lg:mb-0 text-center lg:text-left">
+          <span class="text-xl lg:text-base lg:leading-tight block text-center lg:inline-block lg:w-32 lg:text-right lg:mr-3">Design Docs</span>
+          <a href="/designdocs/authentication">Authentication Protocol</a> •
+          <a href="/designdocs/identity-service">Identity Service</a> •
+          <a href="/designdocs/vdl-spec">VDL Specification</a> •
+          <a href="/designdocs/vom-spec">VOM Specification</a>
+        </li>
+
+        <li class="mb-3 lg:mb-0 text-center lg:text-left">
+          <span class="text-xl lg:text-base lg:leading-tight block text-center lg:inline-block lg:w-32 lg:text-right lg:mr-3">API Reference</span>
+          <a href="">v23</a> •
+          <a href="">ref</a> •
+          <a href="">lib</a>
+        </li>
+
+        <li class="mb-3 lg:mb-0 text-center lg:text-left">
+          <span class="text-xl lg:text-base lg:leading-tight block text-center lg:inline-block lg:w-32 lg:text-right lg:mr-3"></span>
+          <a href="/glossary">Glossary</a> •
+          <a href="/faq">FAQ</a>
+        </li>
+
+        <li class="mb-3 lg:mb-0 text-center lg:text-left">
+          <span class="text-xl lg:text-base lg:leading-tight block text-center lg:inline-block lg:w-32 lg:text-right lg:mr-3">Community</span>
+          <a href="/community/coding-guidelines">Coding Guidelines</a> •
+          <a href="/community/contributing">Contributing</a> •
+          <a href="/community/mailing-lists">Mailing List</a> •
+          <a href="/community/roadmap">Roadmap</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grow"></div>
+
+  <div class="mt-7 mb-3 text-center text-xs grow-0">
+    <a href="">Terms of Service</a> | <a href="">Privacy Policy</a>
+  </div>
+
+  <div class="pt-2 bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] grow-0">
+  </div>
+</div>
+
+{{ end }}
