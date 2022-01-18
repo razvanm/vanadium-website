@@ -1,0 +1,765 @@
+/* Copyright 2015 The Vanadium Authors. All rights reserved. */
+/* Use of this source code is governed by a BSD-style */
+/* license that can be found in the LICENSE file. */
+/* Copyright 2015 The Vanadium Authors. All rights reserved. */
+/* Use of this source code is governed by a BSD-style */
+/* license that can be found in the LICENSE file. */
+/* Copyright 2015 The Vanadium Authors. All rights reserved. */
+/* Use of this source code is governed by a BSD-style */
+/* license that can be found in the LICENSE file. */
+.button,
+.button-passive,
+.button-secondary,
+.button-disabled {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  outline: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px 0px;
+}
+.buttons {
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding: 16px;
+}
+.button-passive {
+  color: #00796B;
+  background-color: transparent;
+  border: 1px solid #00796B;
+  transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-passive:hover,
+.button-passive:active {
+  color: #ffffff;
+  background-color: #00796B;
+  border: 1px solid #00796B;
+}
+.button-secondary {
+  background-color: #00796B;
+}
+.button-secondary,
+.button-secondary:hover,
+.button-secondary:active {
+  color: #ffffff;
+}
+.button-disabled,
+.button-disabled:hover,
+.button-disabled:active {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  cursor: default;
+}
+.build-android,
+.build-core,
+.build-ios {
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  margin: 0px 8px;
+  background-position-y: center;
+  background-position-x: 8px;
+  background-size: 24px;
+  text-transform: none;
+}
+.build-android {
+  background-image: url(/2016/images/android-icon-green.svg);
+}
+.build-ios {
+  background-image: url(/2016/images/ios-icon.svg);
+}
+.build-core {
+  background-image: url(/2016/images/go.png);
+}
+/* Copyright 2015 The Vanadium Authors. All rights reserved. */
+/* Use of this source code is governed by a BSD-style */
+/* license that can be found in the LICENSE file. */
+/* https://www.google.com/design/spec/style/color.html */
+/* Copyright 2015 The Vanadium Authors. All rights reserved. */
+/* Use of this source code is governed by a BSD-style */
+/* license that can be found in the LICENSE file. */
+pre,
+code {
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+}
+pre .hljs-code-dim,
+code .hljs-code-dim {
+  opacity: 0.35;
+  visibility: hidden;
+  font-size: 0px;
+}
+pre .hljs-code-dim .hljs-code-dim-children,
+code .hljs-code-dim .hljs-code-dim-children {
+  visibility: visible;
+  font-size: 12px;
+}
+pre:hover .hljs-code-dim,
+code:hover .hljs-code-dim {
+  opacity: 0.1;
+}
+code {
+  background-color: #f5f5f5;
+  padding: 0 4px;
+}
+pre {
+  margin: 0 -16px;
+  width: inherit;
+  /* Include <pre> because clipboard buttons are in <pre>, not <code>. */
+}
+@media (max-width: 800px) {
+  pre {
+    width: auto;
+  }
+}
+pre:not(.noclipboard),
+pre code:not(.noclipboard),
+pre .hljs:not(.noclipboard) {
+  background-color: #fff8e1;
+}
+pre code,
+pre .hljs {
+  display: block;
+  padding: 16px;
+  overflow-x: auto;
+}
+.clipboard {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+.clipboard .status {
+  color: #00796B;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.clipboard .icon {
+  color: #00796B;
+}
+.hide-cat-eof-lines .hljs-catline,
+.hide-cat-eof-lines .hljs-eofline {
+  display: none;
+}
+/* Copyright 2015 The Vanadium Authors. All rights reserved. */
+/* Use of this source code is governed by a BSD-style */
+/* license that can be found in the LICENSE file. */
+.not-scrolled header {
+  background-color: transparent;
+  box-shadow: none;
+}
+.home-layout {
+  background-image: url(/2016/images/background.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #eceff1;
+}
+@media (max-width: 800px) {
+  .home-layout {
+    background-size: cover;
+  }
+}
+.home-layout header {
+  transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  opacity: 0.99;
+}
+.home-layout main {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0px;
+  padding: 0px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.home-layout section {
+  max-width: 100%;
+  width: 100%;
+  padding: 64px 32px;
+}
+.home-layout .menu {
+  display: none !important;
+}
+.home-layout .v-icon {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.home-layout .section-container {
+  max-width: 800px;
+  margin: auto;
+}
+.home-layout h1,
+.home-layout h2,
+.home-layout h3 {
+  margin: 16px 0px;
+}
+.home-layout h1 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+}
+.home-layout h2 {
+  color: #00796B;
+  font-size: 38px;
+  font-weight: 100;
+}
+.home-layout h3 {
+  color: #607d8b;
+  font-size: 22px;
+  font-weight: 100;
+}
+.home-layout .intro {
+  text-align: center;
+}
+.home-layout .mobile {
+  background: #ffffff;
+}
+.home-layout .core {
+  background: #eceff1;
+  -ms-flex: 1;
+      flex: 1;
+}
+.home-layout footer {
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #cfd8dc;
+  padding: 16px;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home-layout footer .main {
+  -ms-flex: 1;
+      flex: 1;
+}
+.home-layout footer .main a {
+  display: inline-block;
+  margin-right: 16px;
+  color: #607d8b;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.home-layout footer .social a {
+  margin-left: 32px;
+}
+.home-layout .icon-github {
+  background-image: url(/2016/images/github-grey.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-size: 24px auto;
+}
+.intro-detail {
+  margin: 28px 0;
+  padding-left: 80px;
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+.intro-detail-offline {
+  background-image: url(/2016/images/offline.svg);
+}
+.intro-detail-security {
+  background-image: url(/2016/images/security.svg);
+}
+.intro-detail-codebase {
+  background-image: url(/2016/images/codebase.svg);
+}
+.intro-detail-discovery {
+  background-image: url(/2016/images/discovery.svg);
+}
+.embed-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+  /* YouTube aspect ratio */
+}
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Copyright 2015 The Vanadium Authors. All rights reserved. */
+/* Use of this source code is governed by a BSD-style */
+/* license that can be found in the LICENSE file. */
+.icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #ffffff;
+}
+/**
+ * Note to contributors: The style rules below have been tuned and tested
+ * extensively across various device types and screen sizes. If you wish to make
+ * changes, please consult the primary authors to ensure that your changes will
+ * not break anything.
+ */
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #37474f;
+  margin: 1.2em 0 0.4em;
+  line-height: 1.5;
+}
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+h1.title {
+  color: #00796B;
+  font-size: 45px;
+  line-height: 48px;
+}
+h1 {
+  color: #607d8b;
+  font-size: 34px;
+  line-height: 40px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  color: #607d8b;
+  font-size: 12px;
+}
+p {
+  margin: 1em 0;
+  line-height: 1.7;
+}
+a {
+  color: #00796B;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: #00695C;
+}
+blockquote {
+  background-color: #f5f5f5;
+  margin: 0 -16px;
+  padding: 0 16px;
+  overflow: hidden;
+  font-style: normal;
+  /* Undo the effects of MDL. */
+}
+blockquote:before,
+blockquote:after {
+  position: static;
+  content: "";
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+figure img {
+  max-width: 100%;
+}
+figcaption {
+  margin: 8px 0;
+  color: #607d8b;
+  font-size: 12px;
+  font-weight: 500;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  border: 1px solid #f5f5f5;
+  padding: 16px;
+}
+th {
+  font-weight: bold;
+}
+/* Page components ************************************************************/
+header {
+  /* Copyright 2015 The Vanadium Authors. All rights reserved. */
+  /* Use of this source code is governed by a BSD-style */
+  /* license that can be found in the LICENSE file. */
+  color: #ffffff;
+  background-color: #00695C;
+  /* Similar to .logo-row in sidebar.less. */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+header a,
+header a:hover,
+header a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+header .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 32px;
+  height: 64px;
+}
+header .row .icon {
+  margin: 0 8px 0 calc(12px - 32px);
+}
+header .row .menu {
+  display: none;
+}
+@media (max-width: 800px) {
+  header .row .menu {
+    display: block;
+    padding: 12px;
+  }
+}
+header .row .v-icon {
+  padding: 6px;
+  cursor: auto;
+}
+@media (max-width: 800px) {
+  header .row .v-icon {
+    display: none;
+  }
+}
+header .spacer {
+  -ms-flex: 1;
+      flex: 1;
+}
+header nav a {
+  display: inline-block;
+  line-height: 64px;
+  padding: 0 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  header nav {
+    display: none;
+  }
+}
+header::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ff6e40;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-bottom-left-radius: 4px;
+  content: "Developer Preview";
+}
+/* Adjust for sidebar. */
+main,
+.previous-next {
+  margin-left: 200px;
+}
+@media (max-width: 800px) {
+  main,
+  .previous-next {
+    margin-left: 0;
+  }
+}
+main {
+  position: relative;
+  -ms-flex: 1;
+      flex: 1;
+  margin-top: 64px;
+  padding: 0 calc(32px + 16px) 32px;
+  max-width: 800px;
+  /* Prevent headings from being obscured by the <header> for #heading urls. */
+}
+@media (max-width: 800px) {
+  main {
+    padding: 0 32px 32px;
+  }
+}
+main h1[id],
+main h2[id],
+main h3[id],
+main h4[id],
+main h5[id],
+main h6[id] {
+  /**
+     * Prevent the :before block from obscuring the element above. Note: The
+     * meaning of "obscuring" here is subtle. The "visibility: hidden" rule
+     * makes it so the :before block doesn't visually obscure anything, but it
+     * does still obscure certain UI behaviors. For example, if there's a code
+     * block with a horizontal scrollbar directly above a heading element,
+     * hovering over that scrollbar doesn't bring it into focus.
+     */
+  position: relative;
+  z-index: -1;
+}
+main h1[id]:before,
+main h2[id]:before,
+main h3[id]:before,
+main h4[id]:before,
+main h5[id]:before,
+main h6[id]:before {
+  display: block;
+  content: "";
+  margin-top: calc(-1 * (64px + 16px));
+  height: calc(64px + 16px);
+  visibility: hidden;
+}
+.previous-next {
+  /* Copyright 2015 The Vanadium Authors. All rights reserved. */
+  /* Use of this source code is governed by a BSD-style */
+  /* license that can be found in the LICENSE file. */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  margin-top: 32px;
+}
+.previous-next a {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+  padding: 32px;
+  text-decoration: none;
+  overflow: hidden;
+}
+.previous-next .text-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.previous-next .previous {
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  background-color: #00695C;
+}
+.previous-next .previous .text-wrapper {
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+.previous-next .next {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  background-color: #00796B;
+}
+.previous-next .next .text-wrapper {
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+.previous-next small {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+}
+.previous-next .text {
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.sidebar {
+  /* Copyright 2015 The Vanadium Authors. All rights reserved. */
+  /* Use of this source code is governed by a BSD-style */
+  /* license that can be found in the LICENSE file. */
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  /* Similar to .row in header.less. */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  z-index: 2;
+  /* below header */
+}
+.sidebar .logo-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 32px;
+  height: 64px;
+  color: #00796B;
+}
+.sidebar .logo-row .icon {
+  margin: 0 8px 0 calc(12px - 32px);
+}
+.sidebar .logo-row .v-icon {
+  padding: 6px;
+  cursor: auto;
+}
+.sidebar .items {
+  padding: 16px 0;
+}
+.sidebar .items a {
+  display: block;
+  padding: 8px 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-weight: 400;
+}
+.sidebar .items a.active {
+  background-color: #cfd8dc;
+  font-weight: 500;
+}
+.sidebar .items nav {
+  overflow: hidden;
+}
+.sidebar .items nav a {
+  padding: 6px;
+  padding-left: 32px;
+  font-size: 13px;
+}
+.sidebar .items nav nav a {
+  padding-left: calc(32px + 16px);
+}
+@media (max-width: 800px) {
+  .sidebar {
+    top: 0;
+    z-index: 5;
+    /* above mdl-layout__obfuscator */
+    transform: translateX(-200px);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .sidebar.is-visible {
+    transform: translateX(0);
+  }
+}
+.toc {
+  /* Copyright 2015 The Vanadium Authors. All rights reserved. */
+  /* Use of this source code is governed by a BSD-style */
+  /* license that can be found in the LICENSE file. */
+  border-left: 4px solid #f5f5f5;
+  padding: 16px;
+  overflow-y: auto;
+}
+.toc .title {
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.toc .heading {
+  display: block;
+  margin: 6px 0;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+}
+.toc .heading.active {
+  color: #00796B;
+  font-weight: 500;
+}
+@media (min-width: 1200px) {
+  .toc {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+  }
+}
+.sidebar-data {
+  display: none;
+}
+/* The logo element appears in the header and in the sidebar. */
+.logo {
+  font-size: 20px;
+}
+.note {
+  /* Copyright 2015 The Vanadium Authors. All rights reserved. */
+  /* Use of this source code is governed by a BSD-style */
+  /* license that can be found in the LICENSE file. */
+  margin: 32px -16px;
+  padding: 0 16px;
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.note.warning {
+  border-color: #ff6e40;
+}
+.note h1,
+.note h2,
+.note h3,
+.note h4 {
+  margin: 16px 0;
+}
+.note pre {
+  width: inherit;
+}
+.rows {
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.rows > * {
+  -ms-flex: 1;
+      flex: 1;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+/* https://www.google.com/design/spec/style/color.html */

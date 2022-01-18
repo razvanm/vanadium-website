@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">Raspberry Pi</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#building-on-a-raspberrypi">Building on a RaspberryPi</a></li>
+    <li><a href="#cross-compiling-from-your-laptopdesktop">Cross-compiling from your laptop/desktop</a></li>
+    <li><a href="#using-the-gpio-ports">Using the GPIO ports</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">Raspberry Pi</h1>
+
+    
+<content>
+      <p>Vanadium can be used to write software for <a href="https://www.raspberrypi.org/">RaspberryPi</a>s. This page details
+how to set things up so you can build and run Vanadium <a href="https://golang.org">Go</a> binaries on them.</p>
+<h1 id="prerequisites">Prerequisites</h1>
+<p>You need a <a href="https://www.raspberrypi.org/">RaspberryPi</a> with an installed operating system. See <a href="https://www.raspberrypi.org/documentation/">installation
+instructions at raspberrypi.org</a>.
+Advanced or adventurous users may want to install <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">Raspian</a> directly.</p>
+<h1 id="building-on-a-raspberrypi">Building on a RaspberryPi</h1>
+<p>You could use the <a href="https://www.raspberrypi.org/">RaspberryPi</a> as your complete development environment -
+write code, compile it and run it all on the Pi. To do that you will:</p>
+<ol>
+<li>Need the <a href="https://golang.org">Go</a> compiler. Starting with Go 1.6, the official release includes
+binaries that work on the Pi (the armv6l architecture).</li>
+<li>Download the Vanadium sources:
+<pre tabindex="0"><code>export GOPATH=$HOME/vanadium  # Or any other directory of your choosing
+go get v.io/x/ref/...
+</code></pre></li>
+</ol>
+<p>At this point, you should be ready to develop your own Vanadium binaries and
+build them using <code>go build</code> or <code>go install</code>.</p>
+<h1 id="cross-compiling-from-your-laptopdesktop">Cross-compiling from your laptop/desktop</h1>
+<p>Developing and building on the Pi is all great, but if you have a
+laptop/desktop that you prefer to use instead - which has all your editor
+customizations, screen size, keyboard you love etc., then you can also build
+binaries for the <a href="https://www.raspberrypi.org/">RaspberryPi</a> on it.</p>
+<p>The Vanadium codebase includes some C-code, and thus you need a cross-compiler
+that can compile C-code into a binary suitable for the ARM architecture. If you
+performed the setup steps described in the <a href="/2016/community/contributing.html">contribution guidelines</a>, you can
+use the <a href="/2016/tools/jiri.html">jiri</a> tool to install the required cross-compiler.</p>
+<pre tabindex="0"><code># Install the cross-compiler
+jiri profile-v23 install --target=arm-linux v23:base
+
+# Compiling a binary for the Pi
+jiri go -target=arm-linux install v.io/x/ref/cmd/principal
+</code></pre><p>This will place the binary under
+<code>$JIRI_ROOT/release/go/bin/linux_arm/principal</code>.  You can then copy this binary
+using <code>scp</code> or some other mechanism to your Pi.</p>
+<h1 id="using-the-gpio-ports">Using the GPIO ports</h1>
+<p>Your RaspberryPi projects might involve some circuit manipulation using the
+available GPIO ports. <a href="https://www.google.com/search?q=golang+gpio+raspberry+pi">Search the web</a> to settle on
+which of a variety of Go libraries to manipulate the GPIO ports you&rsquo;d like to
+play with.</p>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

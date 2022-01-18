@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Vanadium</title>
+    <link>https://v.io/tools/</link>
+    <description>Recent content in Tools on Vanadium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://v.io/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Namespace Browser</title>
+      <link>https://v.io/tools/namespace-browser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tools/namespace-browser/</guid>
+      <description>The Vanadium Namespace Browser is an interactive tool to browse Vanadium namespaces, find services, and invoke methods on these services. Vanadium namespaces can be public, in that they are accessible (and thus browsable) to a large number of users and devices, or they can be private to an individual or an organization. The Namespace Browser is especially useful for exploring existing public namespaces, inspecting data in a Syncbase service, or developing of new Vanadium applications.</description>
+    </item>
+    
+    <item>
+      <title>Jiri</title>
+      <link>https://v.io/tools/jiri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tools/jiri/</guid>
+      <description>jiri is a command-line tool for managing multi-repository projects. jiri was originally designed to aid Vanadium development, but has since been extracted into a standalone project, and is now used by various other projects.
+jiri is available here: https://github.com/vanadium/go.jiri
+The &amp;ldquo;fetch repositories&amp;rdquo; step of Vanadium installation installs the jiri tool in $JIRI_ROOT/.jiri_root/scripts.
+Run jiri help to learn more about the tool. (Note, this command assumes your PATH contains $JIRI_ROOT/.jiri_root/scripts.)</description>
+    </item>
+    
+    <item>
+      <title>Vanadium Cloud Services</title>
+      <link>https://v.io/tools/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tools/services/</guid>
+      <description>While it&amp;rsquo;s possible to run all Vanadium infrastructure services on your own we host several of them to ease development overhead. The following services are available to use and are often the default values for most configurations. All services listed here are covered by the the terms of service.
+Mount table The Mount table is a service that allows other Vanadium applications to discover and address one another. To be discovered an application will mount itself at a &amp;ldquo;name&amp;rdquo; and other applications (clients) can then address the service.</description>
+    </item>
+    
+    <item>
+      <title>Vanadium Identity Service</title>
+      <link>https://v.io/tools/identity-service-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tools/identity-service-faq/</guid>
+      <description>The Vanadium Identity Service is a cloud service that is a blessing root for blessing names that begin with dev.v.io. Applications can choose to recognize the authority of this service in order to broker authentication between different principals that the application communicates with.
+The web interface for this service is accessible at https://dev.v.io/auth and the design of this service (along with how to obtain a blessing from it) is described in this document.</description>
+    </item>
+    
+  </channel>
+</rss>

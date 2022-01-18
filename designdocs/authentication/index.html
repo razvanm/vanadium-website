@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">Authentication Protocol</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#principals--blessings">Principals &amp; blessings</a></li>
+    <li><a href="#authentication">Authentication</a></li>
+    <li><a href="#current-implementation">Current implementation</a>
+      <ul>
+        <li><a href="#server-privacy">Server Privacy</a></li>
+        <li><a href="#correctness-proof">Correctness Proof</a></li>
+        <li><a href="#code-pointers">Code pointers</a></li>
+      </ul>
+    </li>
+    <li><a href="#questions">Questions</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">Authentication Protocol</h1>
+
+    
+<content>
+      <p>When a network connection is established between two Vanadium processes, they
+authenticate each other, i.e., exchange blessings so that both ends can identify
+the specific principal at the other end. The remote blessing names are then used
+to authorize RPCs.  This document describes:</p>
+<ul>
+<li>the properties desired from the authentication protocol</li>
+<li>the current implementation that provides these properties</li>
+<li>the reasons behind various design choices in a question-and-answer format.</li>
+</ul>
+<h1 id="principals--blessings">Principals &amp; blessings</h1>
+<p>A <a href="/2016/glossary.html#principal">principal</a> is defined by a unique (public, private) key pair <code>(P, S)</code> and a
+set of blessings in the form of certificate chains that bind a name to <code>P</code>.  For
+more details, read <a href="/2016/concepts/security.html">security concepts</a>.</p>
+<p>Within the Go codebase, the set of blessings is encapsulated within the
+<a href="https://godoc.org/v.io/v23/security#Blessings"><code>v.io/v23/security.Blessings</code></a> type. The principal and all private key
+operations are encapsulated in the <a href="https://godoc.org/v.io/v23/security#Principal"><code>v.io/v23/security.Principal</code></a> type.</p>
+<h1 id="authentication">Authentication</h1>
+<p>Communication between two processes takes place after they establish a
+confidential, authenticated connection. Encryption with keys derived from an
+<a href="http://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman">Elliptic curve Diffie-Hellman</a> (ECDH) exchange is used to provide message
+confidentiality and integrity . The goal of the authentication protocol is to
+exchange the blessings in a way that provides the following properties:</p>
+<ol>
+<li><em>Session binding</em>: The private counterpart <code>S</code> of the public key <code>P</code> to which
+the blessings are bound must be possessed by the same process with which the
+session encryption keys have been established.</li>
+<li><em>Client Privacy</em>: An active or passive network attacker listening in on all
+communication between the two processes cannot determine the set of blessings
+presented by the initiator of the connection (the &ldquo;Client&rdquo;).</li>
+</ol>
+<p>Additionally the protocol also offers an optional mode where <em>Server Privacy</em>
+is upheld, i.e., an active or passive network attacker cannot determine the set
+of blessings presented by the responder of the connection (the &ldquo;Server&rdquo;). This
+mode makes use of <a href="https://en.wikipedia.org/wiki/ID-based_encryption">Identity-Based Encryption</a> and has an additional performance
+overhead.</p>
+<h1 id="current-implementation">Current implementation</h1>
+<p>As of March 2016, the reference implementation of the Vanadium networking stack
+in [<code>v.io/x/ref/runtime/internal/flow/conn</code>] provides confidential,
+authenticated communication streams (referred to as virtual circuits or VCs).
+Blessings bound to the public key used to establish the communication stream are
+provided with each RPC request.</p>
+<p>In this implementation, <a href="https://godoc.org/golang.org/x/crypto/nacl/box">NaCl/box</a> is used to establish an
+<a href="http://en.wikipedia.org/wiki/Authenticated_encryption">authenticated-encryption</a> channel based on an ECDH key exchange.</p>
+<p><img src="/2016/images/authentication-flow.svg" alt="Authentication flow diagram"></p>
+<p>Where:</p>
+<ul>
+<li><code>{foo}k</code> represents the message <code>foo</code> encrypted using the key <code>k</code></li>
+<li>Channel bindings C1 and C2 at the Client and Server ends respectively are
+constructed by appending a specific tag to the (sorted) pair of <a href="https://godoc.org/golang.org/x/crypto/nacl/box">NaCl/box</a>
+public keys generated for the session. The tags are different for the Client
+and Server ends, and are meant to prevent <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.6010&amp;rep=rep1&amp;type=pdf">type
+flaws</a>.</li>
+<li><code>ClientPublicKey</code> and <code>ServerPublicKey</code> are the public keys to which the
+blessings are bound. The NaCl/box public keys are ephemeral and distinct from
+these public keys.</li>
+</ul>
+<h2 id="server-privacy">Server Privacy</h2>
+<p>In the protocol described above, the server presents its blessings first and
+thus reveals it to active network attackers that initiate a connection to it.
+(Note that while such active network attackers may learn the server&rsquo;s blessings
+they would not be able to complete the protocol unless they can present valid
+blessings that satisfy the server&rsquo;s authorization policy.) In light of this
+privacy threat, the protocol offers a <em>server privacy</em> mode wherein the server&rsquo;s
+blessings only get revealed to clients that satisfy its authorization policy.</p>
+<p>The key primitive in the design of our protocols is a mechanism to encrypt a
+message under an authorization policy so that it can only be decrypted by
+principals possessing blessings satisfying the policy. Once we have such a
+primitive we can modify the above protocol by having the server send its
+blessings encrypted under its authorization policy. This would ensure that the
+server&rsquo;s blessings get revealed only to authorized clients and thus protect the
+server&rsquo;s privacy.</p>
+<p>Authorization policies in Vanadium are based on <a href="/2016/glossary.html#blessing-pattern">blessing patterns</a>, which are a
+special form of name prefixes. Encrypting a message under a blessing pattern is
+possible using a <a href="https://eprint.iacr.org/2013/068.pdf">prefix-encryption scheme</a> which can be built
+using <a href="https://en.wikipedia.org/wiki/ID-based_encryption">Identity-Based Encryption</a> (IBE).</p>
+<p>An IBE scheme requires a trusted root authority for extracting and handing out
+<em>identity secret keys</em> corresponding to the blessing names possessed by principals.
+Such trusted root authorities may coincide with <a href="/2016/glossary.html#blessing-root">blessing roots</a> in the Vanadium setting.
+For example, the principal Alice could be an IBE root as well as a blesing roots that
+issues a blessing and an identity secret key for the name <code>Alice:Device:TV</code> to its
+television set.</p>
+<h2 id="correctness-proof">Correctness Proof</h2>
+<p>The protocol along with the guarantees that it makes has been formalized in
+<a href="http://prosecco.gforge.inria.fr/personal/bblanche/proverif/">ProVerif</a> to provide a proof of correctness. This formalization is available
+<a href="https://vanadium.github.io/proofs/authentication/">here</a></p>
+<h2 id="code-pointers">Code pointers</h2>
+<p>Pointers to code in the reference implementation of the Vanadium APIs:</p>
+<ul>
+<li>Session encryption is encapsulated in the
+<a href="https://vanadium.googlesource.com/release.go.x.ref/+/master/runtime/internal/flow/crypto/control_cipher.go"><code>ControlCipher</code></a>
+interface</li>
+<li><a href="https://vanadium.googlesource.com/release.go.x.ref/+/master/runtime/internal/flow/crypto/box_cipher.go">NaCl/box implementation</a> of the interface)</li>
+<li>The authentication protocol is implemented by the <code>dialHandshake</code> and
+<code>acceptHandshake</code> functions in
+<a href="https://vanadium.googlesource.com/release.go.x.ref/+/master/runtime/internal/flow/conn/auth.go"><code>v.io/x/ref/runtime/internal/flow/auth/conn.go</code></a></li>
+<li><a href="https://godoc.org/v.io/x/ref/lib/security/bcrypter">Blessing-Based Encryption library</a> for encrypting messages with respect to blessing pattern policies,
+implemented as a wrapper around the Identity-Based Encryption (IBE) library</li>
+<li><a href="https://godoc.org/v.io/x/lib/ibe">Identity-Based Encryption library</a></li>
+</ul>
+<h1 id="questions">Questions</h1>
+<ul>
+<li>
+<p><em>Why don&rsquo;t the the Client and Server send their blessings in parallel, instead
+of Server first?</em></p>
+<p>Doing so provides Client privacy.</p>
+<p>If the Client sent its blessings before validating and authorizing the
+server&rsquo;s blessings then an active network intermediary can learn the Client&rsquo;s
+blessings and compromise Client privacy as it will learn of the Client&rsquo;s
+intention to communicate.</p>
+</li>
+<li>
+<p><em>Can an intermediary fake a blessing by modifying messages between the Client
+and Server?</em></p>
+<p>No.</p>
+<p>Since all messages are exchanged using a negotiated encryption key, the only
+malicious intermediary to consider is one that breaks the connection and
+establishes separate encrypted sessions with the Client and Server. Doing so
+will result in different channel bindings and the processes will realize that
+they are not directly connected.</p>
+<p>This session binding technique is inspired by Dirk Balfanz and Ryan Hamilton&rsquo;s
+<a href="http://tools.ietf.org/html/draft-balfanz-tls-channelid-00">channel ids</a> proposal.</p>
+</li>
+<li>
+<p><em>Did you consider using TLS instead of NaCl/box?</em></p>
+<p>Initially, TLS 1.2 was used instead of NaCl/box to establish the encrypted
+sesssion. However, only a stripped down version was needed (since TLS was used
+only for establishing an encrypted session, not for authentication via
+exchange of blessings) and the libraries being used made this more
+heavy-weight than NaCl/box. For example, using TLS 1.2 required 3 round-trips to
+establish the session keys while with NaCl/box, a single round-trip suffices.</p>
+<p>TLS 1.3 is simpler and more robust compared to TLS 1.2; we may consider switching
+to it once the standard is stable and implemented by standard libraries.</p>
+</li>
+<li>
+<p><em>Why are blessings encrypted with the session key?</em></p>
+<p>The reason is threefold:</p>
+<ul>
+<li>To bind the session key to the blessings presented by each end. By
+encrypting its blessings under the session key (using an
+<a href="http://en.wikipedia.org/wiki/Authenticated_encryption">authenticated-encryption</a> scheme) each end proves knowledge of the session
+key to the other end.</li>
+<li>To prevent passive network sniffers from determining the blessings being
+exchanged over a network connection.</li>
+<li>To prevent active network attackers from learning the Client&rsquo;s blessings.</li>
+</ul>
+</li>
+</ul>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

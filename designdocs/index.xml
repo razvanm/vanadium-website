@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Designdocs on Vanadium</title>
+    <link>https://v.io/designdocs/</link>
+    <description>Recent content in Designdocs on Vanadium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://v.io/designdocs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Authentication Protocol</title>
+      <link>https://v.io/designdocs/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/designdocs/authentication/</guid>
+      <description>When a network connection is established between two Vanadium processes, they authenticate each other, i.e., exchange blessings so that both ends can identify the specific principal at the other end. The remote blessing names are then used to authorize RPCs. This document describes:
+ the properties desired from the authentication protocol the current implementation that provides these properties the reasons behind various design choices in a question-and-answer format.  Principals &amp;amp; blessings A principal is defined by a unique (public, private) key pair (P, S) and a set of blessings in the form of certificate chains that bind a name to P.</description>
+    </item>
+    
+    <item>
+      <title>Identity Service</title>
+      <link>https://v.io/designdocs/identity-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/designdocs/identity-service/</guid>
+      <description>The Vanadium Identity Service generates blessings. It uses an OAuth2 identity provider to get the email address of the user on whose behalf the request is made and then issues a blessing for that email address. Blessings issued by this service are of two kinds:
+ User-Blessing: A user-blessing authorizes the (blessed) principal to act on behalf of the user. The blessing is namespaced under the user&amp;rsquo;s email address and is of the form dev.</description>
+    </item>
+    
+    <item>
+      <title>VDL Specification</title>
+      <link>https://v.io/designdocs/vdl-spec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/designdocs/vdl-spec/</guid>
+      <description>This is a reference manual for VDL, the Vanadium Definition Language. The intended audience is both end-users writing VDL files, as well as core developers implementing VDL.
+VDL is an interface definition language for describing Vanadium components. It is designed to enable interoperability between implementations executing in heterogeneous environments. E.g. it enables an Android application running on a phone to communicate with a backend written in Go running on a server.</description>
+    </item>
+    
+    <item>
+      <title>VOM Specification</title>
+      <link>https://v.io/designdocs/vom-spec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/designdocs/vom-spec/</guid>
+      <description>Vanadium Object Marshalling (VOM) is a data format capable of serializing all values representable in VDL. It is the underlying serialization format used by the Vanadium RPC system.
+VOM is a binary format that represents a stream of typed values. The sending side sequentially encodes values into a stream of bytes, and the receiving side decodes the stream of bytes back into the original sequence of values.
+The format is self-describing.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">VOM Specification</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#binary-format">Binary format</a>
+      <ul>
+        <li><a href="#grammar">Grammar</a></li>
+        <li><a href="#var128">Var128</a></li>
+        <li><a href="#control-entries">Control entries</a></li>
+        <li><a href="#primitives">Primitives</a></li>
+        <li><a href="#built-in-types">Built-in types</a></li>
+        <li><a href="#wire-types">Wire types</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">VOM Specification</h1>
+
+    
+<content>
+      <p>Vanadium Object Marshalling (VOM) is a data format capable of serializing all
+values representable in <a href="/2016/designdocs/vdl-spec.html">VDL</a>.  It is the underlying serialization format used
+by the Vanadium <a href="/2016/concepts/rpc.html">RPC</a> system.</p>
+<p>VOM is a binary format that represents a stream of typed values.  The sending
+side sequentially encodes values into a stream of bytes, and the receiving side
+decodes the stream of bytes back into the original sequence of values.</p>
+<p>The format is self-describing.  Given all data generated by an encoder, a
+generic decoder with no a priori knowledge of the contents can recover the types
+and values that were originally encoded.  This enables support for reflection,
+and allows generic tools to be written to process the data.  E.g. a storage
+system might use VOM to encode user-provided values into its log files.
+Specific fields of the data may be indexed for fast lookups, and the log files
+may be decoded even if the original encoding program no longer exists.</p>
+<h1 id="binary-format">Binary format</h1>
+<p>VOM is a byte-based binary format, consisting of a sequence of messages.  Each
+message is either a type definition (<code>TypeMsg</code>) or a value definition
+(<code>ValueMsg</code>).  Types must be defined before they are instantiated by values.</p>
+<p>The format starts with a single version byte, which must be <code>0x80</code> for the
+initial version of VOM.</p>
+<h2 id="grammar">Grammar</h2>
+<p>The format is described by the following grammar:</p>
+<pre tabindex="0"><code>// VOM starts with a version byte, followed by a sequence of messages.
+VOM:         version Message*
+// Each message defines either a type or a value.  Both kinds of messages
+// start with a typeid, and are distinguished by whether the typeid is
+// positive or negative.
+Message:     TypeMsg | ValueMsg
+
+// Type messages start with a negative ID that identifies the type,
+// followed by the WireType that defines the type, encoded just like
+// any other main value.
+TypeMsg:     -typeid MainValue(WireType)
+
+// Value messages start with a positive ID that references a previously
+// defined type, which describes the static type of the value,
+// followed by the main value encoding.
+ValueMsg:    +typeid MainValue
+
+// If the main value is a primitive, its encoding is based on its type.
+// Otherwise it's a composite, which starts with the unsigned byte length
+// of the rest of the encoding, followed by the composite encoding.
+MainValue:   primitive | bytelen CompositeV
+// Other values (e.g. elements of an list) are encoded like the main value,
+// without the byte length prefix for composites.
+Value:       primitive | CompositeV
+
+// Composite values have various encodings based on the kind of type.
+CompositeV:  SeqV | SeqPairV | SparseSeqV | ElemV | OptV | AnyV
+// Arrays, lists and sets are encoded as a dense sequence, starting with
+// the unsigned number of items, followed by that many elements.
+SeqV:        num Value*{num}
+// Maps are encoded as a dense sequence of pairs, starting with the
+// unsigned number of entries, followed by that many (key, elem) pairs.
+SeqPairV:    num (Value Value)*{num}
+// Structs are encoded as a sparse sequence of (index, field) pairs.
+// The index is the 0-based unsigned index of the struct field.
+// Zero-valued fields are skipped, and fields may be encoded in any order.
+// The fields are terminated by an END control byte.
+SparseSeqV:  (index Value)* END
+// Unions are encoded as a single (index, field) pair.
+// The index is the 0-based unsigned index of the union field.
+ElemV:       index Value
+// Optional is encoded as either a NIL control byte representing
+// non-existence, or the value.
+OptV:        NIL | Value
+// Any is encoded as either a NIL control byte representing
+// non-existence, or the unsigned type ID followed by the value.
+AnyV:        NIL | typeid Value
+</code></pre><p>All rules in the above grammar terminate in primitive values; the entire VOM
+encoding comprises combinations of primitives.  The encoding of primitive values
+is in turn based on a single concept called var128.</p>
+<h2 id="var128">Var128</h2>
+<p>The basis for VOM encoding is var128, a variable-length unsigned integer with a
+maximum size of 128 bits (16 bytes).  This is a byte-based encoding.  Values in
+the range [0, 127] are encoded verbatim in a single byte.  Larger values use the
+first byte to encode the byte length of the value, with subsequent bytes
+encoding the value in its minimal big-endian representation.</p>
+<p>The first byte of the encoding is the crux of the encoding.  Of the 256 possible
+states for the first byte, 128 states are used to represent the values [0, 127],
+and another 16 states are used to represent the multi-byte lengths [1, 16].
+That leaves 112 states, which are reserved for control entries.</p>
+<table>
+<thead>
+<tr><th>var128 first byte</th><th>7</th><th>6</th><th>5</th><th>4</th><th>3</th><th>2</th><th>1</th><th>0</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>0x00..0x7F</strong><br>Single byte value</td><td>0</td><td colspan=7>value in range [0, 127]</td><tr>
+<tr><td><strong>0x80..0xBF</strong><br>Control1<br>(64 entries)</td><td>1</td><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><tr>
+<tr><td><strong>0xC0..0xDF</strong><br>Control2<br>(32 entries)</td><td>1</td><td>1</td><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><tr>
+<tr><td><strong>0xE0..0xEF</strong><br>Control3<br>(16 entries)</td><td>1</td><td>1</td><td>1</td><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><tr>
+<tr><td><strong>0xF0..0xFF</strong><br>Multi-byte length<br>(FF=1, FE=2, ...)</td><td>1</td><td>1</td><td>1</td><td>1</td><td colspan="4">len in range [1, 16]</td><tr>
+</tbody>
+</table>
+<p>The encoding of the value and control entries are disjoint from each other; each
+var128 can either hold a single value of up to 128 bits, or a control entry with
+112 possible states, grouped in consecutive 4, 5 and 6 bit chunks.  The encoding
+favors small values; values less than 128 and all control entries are encoded in
+a single byte.</p>
+<p>This is based on the fundamental format for the Go <a href="http://golang.org/pkg/encoding/gob/">gob</a> encoding, with the
+addition of the control entries.  This format strikes a balance between size and
+speed; we try not to be wasteful of space, but still keep the format simple and
+fast to encode and decode.</p>
+<h2 id="control-entries">Control entries</h2>
+<p>The var128 control entries are used to represent special properties in the VOM
+encoding.  We take advantage of the fact that control entries may appear at the
+same position where regular values are expected, and distinguished
+appropriately.</p>
+<p>Most control entries are currently unused, but reserved for future expansion.</p>
+<table>
+<tbody>
+<tr><th>0xE0</th><td>NIL</td><td>Represents a non-existent value</td></tr>
+<tr><th>0xE1</th><td>END</td><td>Represents the end of a sequence</td></tr>
+</tbody>
+</table>
+<h2 id="primitives">Primitives</h2>
+<p>Primitives types are encoded using either var128 or raw bytes.</p>
+<ul>
+<li>Bool: Encoded directly as a single raw byte; 0 means false and 1 means true.</li>
+<li>Byte: Encoded directly as a single raw byte.</li>
+<li>Unsigned integer: Encoded directly as a var128.</li>
+<li>Signed integer: Encoded as a var128, with bits 1 and up containing the value,
+and bit 0 indicating whether to complement the other bits to recover the
+signed integer.</li>
+<li>Floating point: Encoded as a var128 containing a byte-reversed <a href="http://en.wikipedia.org/wiki/IEEE_floating_point">IEEE 754</a>
+64-bit float.</li>
+<li>Complex number: Encoded as two consecutive floats, the first representing the
+real component and the second representing the imaginary component.</li>
+<li>String: Encoded as a var128 containing the byte length, followed by that many
+raw bytes.</li>
+</ul>
+<h2 id="built-in-types">Built-in types</h2>
+<p>A fixed set of built-in types are used to bootstrap the encoding format, and are
+assumed to be known by both the encoder and decoder.  Each built-in type has a
+fixed type ID.  The semantics of the built-in types are defined by the
+<a href="/2016/designdocs/vdl-spec.html#types">VDL type system</a>.</p>
+<style>
+.z {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.c {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+</style>
+<table>
+<tbody>
+<tr><th class="z">ID</th><th class="z">Built-in type</th></tr>
+<tr><th class="c" colspan=2>Primitive types</th></tr>
+<tr><td class="z">1</td><td class="z">`bool`</td></tr>
+<tr><td class="z">2</td><td class="z">`byte`</td></tr>
+<tr><td class="z">3</td><td class="z">`string`</td></tr>
+<tr><td class="z">4</td><td class="z">`uint16`</td></tr>
+<tr><td class="z">5</td><td class="z">`uint32`</td></tr>
+<tr><td class="z">6</td><td class="z">`uint64`</td></tr>
+<tr><td class="z">7</td><td class="z">`int16`</td></tr>
+<tr><td class="z">8</td><td class="z">`int32`</td></tr>
+<tr><td class="z">9</td><td class="z">`int64`</td></tr>
+<tr><td class="z">10</td><td class="z">`float32`</td></tr>
+<tr><td class="z">11</td><td class="z">`float64`</td></tr>
+<tr><td class="z">12</td><td class="z">`complex64`</td></tr>
+<tr><td class="z">13</td><td class="z">`complex128`</td></tr>
+<tr><td class="z">14</td><td class="z">`typeobject`</td></tr>
+<tr><td class="z">15</td><td class="z">`any`</td></tr>
+<tr><th class="c" colspan=2>Composite types</th></tr>
+<tr><td class="z">39</td><td class="z">`[]byte`</td></tr>
+<tr><td class="z">40</td><td class="z">`[]string`</td></tr>
+<tr><th class="c" colspan=2>User defined types</th></tr>
+<tr><td class="z">41</td><td class="z">first user defined type id</td></tr>
+</tbody>
+</table>
+<h2 id="wire-types">Wire types</h2>
+<p>User defined types are described in values of type <code>WireType</code>, and encoded into
+<code>TypeMsg</code> just like regular values.  Unlike the regular encoding process,
+<code>WireType</code> cannot result in the generation of further type messages; there must
+be an end to the recursion.  Similar to the built-in types, <code>WireType</code> and its
+sub types are assumed to be known by both the encoder and decoder, for
+bootstrapping purposes.</p>
+<p>The space of all types consists of the built-in types, and user-defined types
+as described by <code>WireType</code>.</p>
+<p><code>WireType</code> and associated sub types are defined as follows.  Since these types
+are used to bootstrap the system, the ordering of fields within each of these
+types is fixed and cannot be changed.</p>
+<pre tabindex="0"><code>// WireType represents a user-defined type, and is encoded into the
+// payload portion of each type message.
+type WireType union {
+  NamedT    WireNamed    // INDEX = 0
+  EnumT     WireEnum     // INDEX = 1
+  ArrayT    WireArray    // INDEX = 2
+  ListT     WireList     // INDEX = 3
+  SetT      WireSet      // INDEX = 4
+  MapT      WireMap      // INDEX = 5
+  StructT   WireStruct   // INDEX = 6
+  UnionT    WireUnion    // INDEX = 7
+  OptionalT WireOptional // INDEX = 8
+}
+
+// TypeID uniquely identifies a type definition within a VOM stream.
+type TypeID uint64
+
+// WireNamed represents the definition of named primitive types.
+type WireNamed struct {
+  Name string // INDEX = 0
+  Base TypeID // INDEX = 1
+}
+
+// WireEnum represents the definition of enum types.
+type WireEnum struct {
+  Name   string   // INDEX = 0
+  Labels []string // INDEX = 1
+}
+
+// WireArray represents the definition of array types.
+type WireArray struct {
+  Name string // INDEX = 0
+  Elem TypeID // INDEX = 1
+  Len  uint64 // INDEX = 2
+}
+
+// WireList represents the definition of list types.
+type WireList struct {
+  Name string // INDEX = 0
+  Elem TypeID // INDEX = 1
+}
+
+// WireSet represents the definition of set types.
+type WireSet struct {
+  Name string // INDEX = 0
+  Key  TypeID // INDEX = 1
+}
+
+// WireMap represents the definition of map types.
+type WireMap struct {
+  Name string // INDEX = 0
+  Key  TypeID // INDEX = 1
+  Elem TypeID // INDEX = 2
+}
+
+// WireField represents a field in a struct or union type.
+type WireField struct {
+  Name string // INDEX = 0
+  Type TypeID // INDEX = 1
+}
+
+// WireStruct represents the definition of struct types.
+type WireStruct struct {
+  Name   string      // INDEX = 0
+  Fields []WireField // INDEX = 1
+}
+
+// WireUnion represents the definition of union types.
+type WireUnion struct {
+  Name   string      // INDEX = 0
+  Fields []WireField // INDEX = 1
+}
+
+// WireOptional represents the definition of optional types.
+type WireOptional struct {
+  Name string // INDEX = 0
+  Elem TypeID // INDEX = 1
+}
+</code></pre>
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

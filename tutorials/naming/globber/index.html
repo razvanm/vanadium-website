@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">Globber</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#file-server">File server</a>
+      <ul>
+        <li><a href="#services">Services</a>
+          <ul>
+            <li><a href="#file-service">File service</a></li>
+            <li><a href="#directory-service">Directory service</a></li>
+          </ul>
+        </li>
+        <li><a href="#dispatcher">Dispatcher</a></li>
+        <li><a href="#main">main</a></li>
+      </ul>
+    </li>
+    <li><a href="#try-it">Try it</a></li>
+    <li><a href="#exercises">Exercises</a></li>
+    <li><a href="#cleanup">Cleanup</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">Globber</h1>
+
+    
+    <p><strong>Wherein</strong> you use the Globber interface to create your own server namespace. This is an advanced tutorial.</p>
+    
+  <div class="my-8 -mx-4 px-4 border border-blue-grey-50/100 rounded">
+    <p>
+      <strong>Prerequisites</strong>:<br>
+      All tutorials require Vanadium <a href="/installation/">installation</a>,
+      and must run in a <a href="/tutorials/faq.html#why-bash-">bash shell</a>.
+    </p>
+
+    
+      <p>
+        Further, please
+        <a href="/sh/scenario-e-setup.sh"
+           download="scenario-e-setup.sh">
+           download this script
+        </a>
+        then <a href="/tutorials/faq.html#why-source-">source</a> it:
+      </p>
+
+      <pre><code>source ~/Downloads/scenario-e-setup.sh</code></pre>
+
+      <p>
+        This command wipes tutorial files and defines shell environment
+        variables. If you start a new terminal, and just want to re-establish
+        the environment, see instructions
+        <a href="/tutorials/setup.html">here</a>.
+      </p>
+    
+
+    
+      <p>
+        If you would like to generate files from this tutorial without the
+        copy/paste steps, download and source
+        <a href="/sh/tut-completer-globber.sh"
+            download="tut-completer-globber.sh">
+            this script
+        </a>.
+        Files will be created in the <code>$V_TUT</code>
+        <a href="/tutorials/setup.html">directory</a>.
+      </p>
+    
+  </div>
+
+<content>
+      <h1 id="introduction">Introduction</h1>
+<p>In the suffix <a href="/2016/tutorials/naming/suffix-part1.html">Part I</a> and <a href="/2016/tutorials/naming/suffix-part2.html">Part II</a> tutorials, we introduced the concept of
+server namespace where multiple services on a single server can be accessed by
+name and can be discovered with the <em>namespace glob</em> command.</p>
+<p>There are two variants of the <code>Globber</code> interface defined in <a href="https://vanadium.googlesource.com/release.go.v23/+/master/rpc/model.go">rpc/model.go</a>:
+<code>AllGlobber</code>, and <code>ChildrenGlobber</code>. <code>AllGlobber</code> is the most flexible option,
+but also the most difficult to implement correctly. It is used by specialized
+applications like a mount table server. <code>ChildrenGlobber</code> provides most of the
+same functionality, but is much easier to implement.</p>
+<p>In this tutorial, you will learn how to implement complex namespaces
+using the <code>ChildrenGlobber</code> interface.</p>
+<h1 id="file-server">File server</h1>
+<p>A namespace is a tree structure similar to a file system. In the namespace,
+the nodes are service objects and the edges are their names. In a file
+system, the nodes are files or directories, and the edges are the file names
+and directory names.</p>
+<p>Let&rsquo;s create a server that mirrors a local directory tree in its namespace.</p>
+<p>To do this, we&rsquo;ll use two new services and a custom dispatcher.</p>
+<h2 id="services">Services</h2>
+<p>Let&rsquo;s create two services: one for files, one for directories.</p>
+<h3 id="file-service">File service</h3>
+<!-- @newFileService @test @completer -->
+<pre tabindex="0"><code> mkdir -p $V_TUT/src/fileserver
+ cat - &lt;&lt;EOF &gt;$V_TUT/src/fileserver/file_service.go
+package main
+
+import (
+  &quot;errors&quot;
+  &quot;v.io/v23/context&quot;
+  &quot;v.io/v23/rpc&quot;
+)
+
+type fileService struct {
+  name string
+}
+
+func (s *fileService) GetContents(*context.T, rpc.ServerCall) ([]byte, error) {
+  return nil, errors.New(&quot;method not implemented&quot;)
+}
+
+func (s *fileService) SetContents(*context.T, rpc.ServerCall, []byte) (error) {
+  return errors.New(&quot;method not implemented&quot;)
+}
+EOF
+</code></pre><p><strong>Code walk</strong></p>
+<p>Since we&rsquo;re not going to send any calls to the file service in this example, we
+leave it unimplemented.</p>
+<p>The directory service is the interesting part.</p>
+<h3 id="directory-service">Directory service</h3>
+<!-- @newDirService @test @completer -->
+<pre tabindex="0"><code> cat - &lt;&lt;EOF &gt;$V_TUT/src/fileserver/dir_service.go
+package main
+
+import (
+  &quot;os&quot;
+  &quot;v.io/v23/context&quot;
+  &quot;v.io/v23/glob&quot;
+  &quot;v.io/v23/naming&quot;
+  &quot;v.io/v23/rpc&quot;
+)
+
+type dirService struct {
+  name string
+}
+
+func (s *dirService) GlobChildren__(
+    _ *context.T, call rpc.GlobChildrenServerCall, m *glob.Element) error {
+  f, err := os.Open(s.name)
+  if err != nil {
+    return err
+  }
+  defer f.Close()
+  fi, err := f.Readdir(0)
+  if err != nil {
+    return err
+  }
+  sender := call.SendStream()
+  for _, file := range fi {
+    name := file.Name()
+    if m.Match(name) {
+      if err := sender.Send(naming.GlobChildrenReplyName{name}); err != nil {
+        return err
+      }
+    }
+  }
+  return nil
+}
+EOF
+</code></pre><p><strong>Code walk</strong></p>
+<p><code>GlobChildren__</code> is a special method that is automatically detected by the
+Vanadium infrastructure. It is called when the server receives a glob request,
+e.g. from a client using <code>namespace glob</code> to inspect the server&rsquo;s namespace.</p>
+<p>Service objects that can have children must implement <code>GlobChildren__</code> in
+order to have their children appear in the server&rsquo;s namespace.</p>
+<p>The <em>directory service</em>&rsquo;s implementation iterates through the files in the
+directory and sends the ones that match.</p>
+<p>Since <em>files</em> don&rsquo;t have children, the <em>file service</em> doesn&rsquo;t need to implement
+<code>GlobChildren__</code>.</p>
+<p>Let&rsquo;s add a custom dispatcher that uses our two services.</p>
+<h2 id="dispatcher">Dispatcher</h2>
+<!-- @newDispatcher @test @completer -->
+<pre tabindex="0"><code> cat - &lt;&lt;EOF &gt;$V_TUT/src/fileserver/dispatcher.go
+package main
+
+import (
+  &quot;os&quot;
+  &quot;path/filepath&quot;
+  &quot;strings&quot;
+  &quot;v.io/v23/context&quot;
+  &quot;v.io/v23/security&quot;
+)
+
+type myDispatcher struct {
+  rootDir string
+}
+
+func (d *myDispatcher) Lookup(
+    _ *context.T, suffix string) (interface{}, security.Authorizer, error) {
+
+  relPath := filepath.Join(strings.Split(suffix, &quot;/&quot;)...)
+  path := filepath.Join(d.rootDir, relPath)
+  fi, err := os.Stat(path)
+  switch {
+  case err != nil:
+    return nil, nil, err
+  case fi.IsDir():
+    return &amp;dirService{path}, nil, nil
+  default:
+    return &amp;fileService{path}, nil, nil
+  }
+}
+EOF
+</code></pre><p><strong>Code walk</strong></p>
+<p>This dispatcher maps the suffix to a file or directory on the local file system.
+If it is a file, <code>Lookup</code> returns a <code>fileService</code> object. If it is a directory,
+it returns a <code>dirService</code> object.</p>
+<p>You might have noticed that we haven&rsquo;t used any <a href="/2016/glossary.html#vanadium-definition-language-vdl-">VDL</a>-generated stub code.
+That&rsquo;s to keep this example as simple as possible. The main benefit of using
+stub code in servers is <a href="https://en.wikipedia.org/wiki/Type_system#Type_checking">static type-checking</a>, which means that the compiler
+will enforce that all the method arguments and return values have the types
+defined in the <a href="/2016/glossary.html#vanadium-definition-language-vdl-">VDL</a> file. Adding a <a href="/2016/glossary.html#vanadium-definition-language-vdl-">VDL</a> file is left as an exercise.</p>
+<p>All we need now is the <code>main</code> function.</p>
+<h2 id="main">main</h2>
+<!-- @newMain @test @completer -->
+<pre tabindex="0"><code> cat - &lt;&lt;EOF &gt;$V_TUT/src/fileserver/main.go
+package main
+
+import (
+  &quot;flag&quot;
+  &quot;log&quot;
+  &quot;v.io/v23&quot;
+  &quot;v.io/x/ref/lib/signals&quot;
+  _ &quot;v.io/x/ref/runtime/factories/generic&quot;
+)
+
+var (
+  name = flag.String(
+    &quot;mount-name&quot;, &quot;&quot;, &quot;Name for service in default mount table.&quot;)
+  root = flag.String(
+    &quot;root-dir&quot;, &quot;.&quot;, &quot;The root directory of the file server.&quot;)
+)
+
+func main() {
+  ctx, shutdown := v23.Init()
+  defer shutdown()
+
+  _, _, err := v23.WithNewDispatchingServer(ctx, *name, &amp;myDispatcher{*root})
+  if err != nil {
+    log.Panic(&quot;Failure creating server: &quot;, err)
+  }
+  &lt;-signals.ShutdownOnSignals(ctx)
+}
+EOF
+go build fileserver
+</code></pre><p><strong>Code walk</strong></p>
+<p>The <code>main</code> function creates the vanadium server that serves our custom
+dispatcher.</p>
+<h1 id="try-it">Try it</h1>
+<p>Start a mount table.</p>
+<!-- @startMountTable @test @sleep -->
+<pre tabindex="0"><code>PORT_MT=23000  # Pick an unused port.
+kill_tut_process TUT_PID_MT
+$V_BIN/mounttabled \
+    --v23.credentials $V_TUT/cred/basics \
+    --v23.tcp.address :$PORT_MT &amp;
+TUT_PID_MT=$!
+export V23_NAMESPACE=/localhost:$PORT_MT
+</code></pre><p>Fire up the file server with its root directory set to &ldquo;$V_TUT&rdquo;:</p>
+<!-- @buildServer @test @completer -->
+<pre tabindex="0"><code>go install fileserver
+</code></pre><!-- @runServer @test @sleep -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+$V_TUT/bin/fileserver \
+    --v23.credentials $V_TUT/cred/basics \
+    --mount-name my-file-server \
+    --root-dir &quot;$V_TUT&quot; &amp;
+TUT_PID_SERVER=$!
+</code></pre><p>Let&rsquo;s take a look at the server&rsquo;s namespace.</p>
+<!-- @glob @test -->
+<pre tabindex="0"><code>$V_BIN/namespace \
+    --v23.credentials $V_TUT/cred/basics \
+    glob &quot;my-file-server/...&quot;
+</code></pre><p>All the files under &ldquo;$V_TUT&rdquo; are in the server&rsquo;s namespace.</p>
+<h1 id="exercises">Exercises</h1>
+<ol>
+<li>
+<p>What would it take to modify the fortune server from <a href="/2016/tutorials/naming/suffix-part1.html">The suffix - Part I</a>
+to organize the fortune services by category, e.g. romance, finance, sports,
+etc.?</p>
+</li>
+<li>
+<p>Finish the implementation of the file and directory services:</p>
+</li>
+</ol>
+<ul>
+<li>Write a service definition in <a href="/2016/glossary.html#vanadium-definition-language-vdl-">VDL</a>.</li>
+<li>Implement the missing methods.</li>
+<li>Write a client for them.</li>
+<li>Add your own Authorizer.</li>
+</ul>
+<h1 id="cleanup">Cleanup</h1>
+<!-- @cleanup @test -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+kill_tut_process TUT_PID_MT
+unset V23_NAMESPACE
+</code></pre><h1 id="summary">Summary</h1>
+<ul>
+<li>Services that can have children in the namespace need to implement
+the <code>GlobChildren__</code> method.</li>
+</ul>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

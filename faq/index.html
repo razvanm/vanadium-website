@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">FAQ</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#who-should-consider-using-this-vanadium-pre-release">Who should consider using this Vanadium pre-release?</a></li>
+    <li><a href="#who-should-not-consider-using-this-vanadium-pre-release">Who should not consider using this Vanadium pre-release?</a></li>
+    <li><a href="#why-did-you-choose-the-go-language">Why did you choose the Go language?</a></li>
+    <li><a href="#how-does-vanadium-relate-to-other-google-open-source-projects">How does Vanadium relate to other Google open source projects?</a></li>
+    <li><a href="#why-did-you-build-your-own-rpc-system">Why did you build your own RPC system?</a></li>
+    <li><a href="#why-did-you-build-your-own-encoding-format">Why did you build your own encoding format?</a></li>
+    <li><a href="#are-there-benchmarks-for-the-vanadium-rpc-system">Are there benchmarks for the Vanadium RPC system?</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">FAQ</h1>
+
+    
+<content>
+      <h1 id="who-should-consider-using-this-vanadium-pre-release">Who should consider using this Vanadium pre-release?</h1>
+<p>Anyone who&rsquo;s interested in learning what the system can do, or is excited about
+the prospect of being an early adopter or contributor of what we hope will
+become a comprehensive framework for building distributed applications and
+multi-device UIs.</p>
+<h1 id="who-should-not-consider-using-this-vanadium-pre-release">Who should not consider using this Vanadium pre-release?</h1>
+<p>Anyone who needs to build a production quality system or application over the
+next few months — although we believe our code is well tested, we expect
+to continue to make changes to the core APIs and services as we learn from our
+early adopters. Keeping up with such changes in a production environment is
+likely to be problematic.</p>
+<h1 id="why-did-you-choose-the-go-language">Why did you choose the Go language?</h1>
+<p>We anticipated that we would be more productive using Go than one of the other
+systems programming languages available to us.</p>
+<h1 id="how-does-vanadium-relate-to-other-google-open-source-projects">How does Vanadium relate to other Google open source projects?</h1>
+<p>Vanadium is an ongoing project, with a clear and ambitious long-term goal of
+making it easier to build distributed multi-device apps and UIs. We&rsquo;ll use
+whatever technology helps us meet those goals and design new technology whenever
+we need to. We&rsquo;ll use whatever open source projects makes sense for us to use,
+whether they originate from Google or anywhere else. We recognize that there is
+overlap with many existing projects, but there is no single project that meets
+our requirements or goals.</p>
+<h1 id="why-did-you-build-your-own-rpc-system">Why did you build your own RPC system?</h1>
+<p>One of our design principles is to <strong>put security first</strong> and we wanted an RPC
+protocol that has symmetrical end-to-end authentication, encryption, and the
+ability to run through proxies without compromising that security. No existing
+protocol that we are aware of meets these requirements, so we designed one. As
+an example, our protocol allows a client and proxy to authenticate with each
+other and for the client to authenticate with the server directly and
+independently of the proxy. This allows an independent company to run a proxy
+service for paying clients and service providers without having to implement its
+own authentication scheme. All clients still authenticate directly with the
+services they interact with and do not have to rely on the proxy service for the
+validity of that authentication.</p>
+<h1 id="why-did-you-build-your-own-encoding-format">Why did you build your own encoding format?</h1>
+<p>We wanted an encoding that can be used when the producer and consumer don&rsquo;t
+necessarily share a common code base or &lsquo;stub library&rsquo;. This loose coupling can
+be in terms of space (e.g. a client and server implemented by two different code
+bases and/or organizations) and time (e.g. a log file is written today, but read
+10 years from now without access to the original code). This implies an encoding
+that is language independent and self-describing; given a log file written using
+our encoding, it should be possible to algorithmically construct the data types
+needed to read that log file by examining that log file alone. Naturally we&rsquo;d
+like the encoding to be as efficient as possible, both in terms of space and
+computational cost. We are not aware of any modern encoding format that meets
+these requirements.</p>
+<h1 id="are-there-benchmarks-for-the-vanadium-rpc-system">Are there benchmarks for the Vanadium RPC system?</h1>
+<p>Benchmark code used to measure the performance of the Vanadium RPC stack is
+<a href="https://github.com/vanadium/go.ref/blob/master/runtime/internal/rpc/benchmark/benchmark_test.go">available on GitHub</a>. Results from the latest version of the
+codebase are regularly measured and archived. Numbers from March, 2016 are
+summarized in this table, but for the latest numbers <a href="/performance.html">see this
+page</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Benchmark</th>
+<th style="text-align:center">Linux Desktop</th>
+<th style="text-align:center">Raspberry Pi 2</th>
+<th style="text-align:center">Nexus 5X Phone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://benchmarks.v.io/?q=v.io%2Fx%2Fref%2Fruntime%2Finternal%2Frpc%2Fbenchmark.BenchmarkConnectionEstablishment+uploader%3Adev.v.io%3Arole%3Avlab%3Aapp%3Abenchmarks%3A20160218">Connection</a></td>
+<td style="text-align:center">4 ms</td>
+<td style="text-align:center">130 ms</td>
+<td style="text-align:center">90 ms</td>
+</tr>
+<tr>
+<td><a href="https://benchmarks.v.io/?q=v.io%2Fx%2Fref%2Fruntime%2Finternal%2Frpc%2Fbenchmark.Benchmark____1B+uploader%3Adev.v.io%3Arole%3Avlab%3Aapp%3Abenchmarks%3A20160218">RPC (echo 1B)</a></td>
+<td style="text-align:center">0.4 ms/rpc</td>
+<td style="text-align:center">5 ms/rpc</td>
+<td style="text-align:center">4 ms/rpc</td>
+</tr>
+</tbody>
+</table>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

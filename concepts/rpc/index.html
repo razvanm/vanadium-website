@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">RPC System</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basics">Basics</a></li>
+    <li><a href="#vdl">VDL</a></li>
+    <li><a href="#vom">VOM</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">RPC System</h1>
+
+    
+<content>
+      <p>The Vanadium remote procedure call (<a href="http://en.wikipedia.org/wiki/Remote_procedure_call">RPC</a>) system enables <a href="http://en.wikipedia.org/wiki/Inter-process_communication">communication</a>
+between processes by presenting an API based on local function calls.  Function
+calls are a familiar model to developers, and the API hides low-level details
+like the underlying network transport and data serialization protocols.</p>
+<h1 id="basics">Basics</h1>
+<p>There are two participants in RPC-based communication.  The caller of an RPC is
+known as the <strong>client</strong> and the receiver that implements the RPC is known as the
+<strong>server</strong>.  A single device may often behave as a client for some operations,
+and as a server for other operations.</p>
+<p>An example of a simple RPC:</p>
+<pre tabindex="0"><code>  Divide(x, y int32) (quotient, remainder int32 | error)
+</code></pre><p>The client calls <code>Divide</code> like a regular function, providing two integer input
+arguments <code>x</code> and <code>y</code>.  The server implements <code>Divide</code> and returns either the
+result of <code>x/y</code> as two integer output arguments <code>quotient</code> and <code>remainder</code>, or
+an error.  Notice that errors may always occur, e.g. the client may be unable to
+contact the server if the server isn&rsquo;t running.  Every RPC includes the
+possibility of returning an error rather than the specified output arguments.</p>
+<p>An example of a streaming RPC:</p>
+<pre tabindex="0"><code>  Print(format string) stream&lt;int32, string&gt; (string | error)
+</code></pre><p>The client calls <code>Print</code> and provides a single string argument <code>format</code>.
+Thereafter the client may stream zero or more integer arguments to the server,
+and the server will reply with the string representation of that argument.  When
+the operation is finished, the server responds with a string containing any
+final output.  The input and output arguments behave identically to the
+non-streaming example.</p>
+<p>The streaming arguments are transferred after the input arguments are sent from
+client to server, and before the output arguments are sent from server to
+client.  The exact protocol for the streaming arguments is determined by the
+application; supported modes include client to server streaming for uploads,
+server to client streaming for downloads, as well as bi-directional streaming
+for other use cases.</p>
+<p>The RPC system takes care of the underlying protocols necessary for all of these
+forms of communication.</p>
+<h1 id="vdl">VDL</h1>
+<p>The Vanadium Definition Language (VDL) enables interoperability between software
+components executing in different computing environments. For example, an Android application written in Java running on a mobile phone may wish to
+communicate with a backend written in Go running in the cloud.</p>
+<p>VDL has a well-defined type system and semantics that specify the baseline
+behavior for all RPCs.  Each native computing environment or programming
+language has a mapping between native concepts and VDL.  Specifying application
+level RPC protocols in terms of VDL enables clients and servers to be easily
+written for any supported environment.</p>
+<p>VDL can define four different entities:</p>
+<p><strong>Interfaces</strong> contain methods that can be invoked via RPCs.</p>
+<pre tabindex="0"><code>// Restaurant contains methods to order items of food,
+// and to check their price without ordering.
+type Restaurant interface {
+  // Order orders the item of food, and returns its price.
+  Order(item Food) (Price | error)
+  // Price returns the price for the item of food.
+  Price(item Food) (Price | error)
+}
+</code></pre><p><strong>Types</strong> define data sent via RPC.</p>
+<pre tabindex="0"><code>// Food enumerates the available food items.
+type Food enum {
+  Pizza
+  Pasta
+  Calzone
+}
+// Price represents the price of a food item.
+type Price uint16
+</code></pre><p><strong>Constants</strong> to hold fixed data used by the application protocol.</p>
+<pre tabindex="0"><code>// StandardPrices holds standard fixed prices for each
+// food item.
+const StandardPrices map[Food]Price{
+  Pizza: 10, Pasta: 8, Calzone: 9,
+}
+</code></pre><p><strong>Errors</strong> that may be returned from failing RPCs, with support for
+internationalization of the error messages.</p>
+<pre tabindex="0"><code>// MissingIngredients is returned when a food item is
+// unavailable, because an ingredient is out of stock.
+error MissingIngredients(ingredientName string) {
+  &quot;en&quot; : &quot;{ingredientName} is out of stock&quot;
+}
+</code></pre><p>For more details see the <a href="/2016/designdocs/vdl-spec.html">VDL specification</a>.</p>
+<h1 id="vom">VOM</h1>
+<p>The Vanadium Object Marshalling (VOM) format is the underlying serialization
+format used by the RPC system.  VOM supports serialization of all types
+representable in VDL. It is a self-describing protocol that retains full type
+information when transmitting values and, in particular, retains type
+information for all method arguments.</p>
+<p>For more details see the <a href="/2016/designdocs/vom-spec.html">VOM specification</a>.</p>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

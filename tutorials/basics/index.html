@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">Client/Server Basics</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#terminology">Terminology</a></li>
+    <li><a href="#define-a-service">Define a service</a>
+      <ul>
+        <li><a href="#the-interface">The interface</a></li>
+        <li><a href="#stub-code">Stub code</a></li>
+        <li><a href="#implementation">Implementation</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-a-server">Build a server</a>
+      <ul>
+        <li><a href="#authorizer">Authorizer</a></li>
+        <li><a href="#dispatcher">Dispatcher</a></li>
+        <li><a href="#initializer">Initializer</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-a-client">Build a client</a></li>
+    <li><a href="#run-the-binaries">Run the binaries</a>
+      <ul>
+        <li><a href="#first-run">First run</a></li>
+        <li><a href="#warning-the-next-command-demonstrates-failure">Warning: The next command demonstrates failure!</a></li>
+        <li><a href="#second-run">Second run</a></li>
+        <li><a href="#authorization">Authorization</a></li>
+        <li><a href="#the-vrpc-client">The vrpc client</a></li>
+        <li><a href="#clean-up">Clean up</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">Client/Server Basics</h1>
+
+    
+    <p><strong>Wherein</strong> you build a fortune teller service and a client to talk to it.</p>
+    
+  <div class="my-8 -mx-4 px-4 border border-blue-grey-50/100 rounded">
+    <p>
+      <strong>Prerequisites</strong>:<br>
+      All tutorials require Vanadium <a href="/installation/">installation</a>,
+      and must run in a <a href="/tutorials/faq.html#why-bash-">bash shell</a>.
+    </p>
+
+    
+      <p>
+        Further, please
+        <a href="/sh/scenario-a-setup.sh"
+           download="scenario-a-setup.sh">
+           download this script
+        </a>
+        then <a href="/tutorials/faq.html#why-source-">source</a> it:
+      </p>
+
+      <pre><code>source ~/Downloads/scenario-a-setup.sh</code></pre>
+
+      <p>
+        This command wipes tutorial files and defines shell environment
+        variables. If you start a new terminal, and just want to re-establish
+        the environment, see instructions
+        <a href="/tutorials/setup.html">here</a>.
+      </p>
+    
+
+    
+      <p>
+        If you would like to generate files from this tutorial without the
+        copy/paste steps, download and source
+        <a href="/sh/tut-completer-basics.sh"
+            download="tut-completer-basics.sh">
+            this script
+        </a>.
+        Files will be created in the <code>$V_TUT</code>
+        <a href="/tutorials/setup.html">directory</a>.
+      </p>
+    
+  </div>
+
+<content>
+      <h1 id="introduction">Introduction</h1>
+<p>In the <a href="/2016/tutorials/hello-world.html">hello world tutorial</a>, you got a client and server running.</p>
+<p>In this tutorial, you&rsquo;ll build a slightly more complex client and
+server that will serve as the framework for deeper explorations of
+Vanadium <em>security</em> and <em>service discovery</em>.</p>
+<p>This time, the server code is split into <em>multiple files</em>.  The
+new code structure lets later tutorials change only the parts that
+need to change (e.g., a dispatcher, an authorizer), keeping later
+code shorter and clearer. That means doing a few odd things here, like
+writing whole code files that, for the time being, only return
+<strong>nil</strong>.</p>
+<p>This tutorial will otherwise repeat the structure of the <a href="/2016/tutorials/hello-world.html">hello world
+tutorial</a>.</p>
+<h1 id="terminology">Terminology</h1>
+<p>A Vanadium program can hold any number of <strong>servers</strong> and <strong>clients</strong>.
+When the distinction between these roles isn&rsquo;t important to the
+context, a program may be called a <strong>peer</strong>.</p>
+<p>A server consists of an <strong>endpoint</strong>, a Vanadium address encapsulating
+a hostname, port and other information, and a <strong>dispatcher</strong>.  A
+dispatcher maps an incoming request to an <strong>authorizer</strong> and a
+<strong>service</strong>.  The request only makes it to the service if the
+authorizer approves.  A dispatcher holds an authorizer
+and one or more services.</p>
+<p>A client is just stub code, typed to match a particular service
+interface, bound to one or more endpoints on the network via a name
+(more on that in the <a href="/2016/tutorials/naming/">naming tutorials</a>).  It&rsquo;s the boilerplate
+used to contact remote services.</p>
+<p><img src="/2016/images/tut/basic-program-1auth.svg" alt=""></p>
+<p>A service has no knowledge of the authorizer protecting it.  Neither
+the services nor the authorizers are aware of the dispatcher holding
+them.</p>
+<p>A typical program will have one server and many clients.  The program
+will offer some services to others, and contact other programs in an
+effort to provide these services (e.g. a television might contact
+several content providers).</p>
+<p>A network of programs looks like this:</p>
+<p><img src="/2016/images/tut/basic-programs-connected.svg" alt=""></p>
+<p>In this tutorial you&rsquo;ll build two programs.  The first holds one
+server and no clients, and - at the risk of overloading terms - is simply
+called <em>the server</em>.  The second, via similar reasoning, is called
+<em>the client</em>.</p>
+<h1 id="define-a-service">Define a service</h1>
+<p>A service is an object that responds to remote procedure calls (RPCs).
+The service you&rsquo;ll build here stores and offers up fortunes.</p>
+<h2 id="the-interface">The interface</h2>
+<p>The first step to making a Vanadium service is to define it using the
+<a href="/2016/glossary.html#vanadium-definition-language-vdl-">Vanadium Definition Language</a> (VDL).</p>
+<p>The following command (read more about <code>cat</code> usage
+<a href="/2016/tutorials/faq.html#where-is-the-source-code-">here</a>) will put the VDL in the right spot:</p>
+<!-- @defineService @buildjs @test @testui @completer -->
+<pre tabindex="0"><code>mkdir -p $V_TUT/src/fortune/ifc
+ cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/ifc/fortune.vdl
+package ifc
+
+type Fortune interface {
+  // Returns a random fortune.
+  Get() (wisdom string | error)
+  // Adds a fortune to the set used by Get().
+  Add(wisdom string) error
+}
+EOF
+</code></pre><p>This file defines the <a href="/tutorials/faq.html#do-i-need-to-know-go-">Go</a> package <code>ifc</code> (an abbreviation of
+<em>interface</em>).  You&rsquo;ll soon define the packages <code>service</code>, <code>util</code> and
+<code>main</code>.  Package symbols will be isolated from each other, per Go
+namespace rules, making it easier to reason about code dependencies.</p>
+<h2 id="stub-code">Stub code</h2>
+<p>Use the <code>fortune.vdl</code> you just made to create the file
+<code>fortune.vdl.go</code>.  This Go code provides stubbed attachment points
+that will soon be linked into a client and server.</p>
+<!-- @compileInterface @buildjs @test @testui @completer -->
+<pre tabindex="0"><code>VDLROOT=$VANADIUM_RELEASE/src/v.io/v23/vdlroot \
+    VDLPATH=$V_TUT/src \
+    $V_BIN/vdl generate --lang go $V_TUT/src/fortune/ifc
+go build fortune/ifc
+</code></pre><p>The <code>go build</code> command here is just a check for errors. In this
+case, the command doesn&rsquo;t create object or executable
+files.  In these tutorials, <code>cat</code> commands that <em>create code files</em>
+are immediately followed by commands that attempt compilation as a
+quick check for errors.  When the code file created is a main program,
+<code>go install</code> is used to install (or replace) an executable in
+<code>$V_TUT/bin</code>.</p>
+<h2 id="implementation">Implementation</h2>
+<p>The following implementation stores fortune strings in memory,
+choosing one randomly when <code>Get</code> is called.  A client can add more
+fortunes via <code>Add</code>.</p>
+<!-- @serviceImpl @test @testui @completer -->
+<pre tabindex="0"><code>mkdir -p $V_TUT/src/fortune/service
+ cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/service/service.go
+package service
+
+import (
+  &quot;math/rand&quot;
+  &quot;fortune/ifc&quot;
+  &quot;sync&quot;
+  &quot;v.io/v23/context&quot;
+  &quot;v.io/v23/rpc&quot;
+)
+
+type impl struct {
+  wisdom []string      // All known fortunes.
+  random *rand.Rand    // To pick a random index in 'wisdom'.
+  mu     sync.RWMutex  // To safely enable concurrent use.
+}
+
+// Makes an implementation.
+func Make() ifc.FortuneServerMethods {
+  return &amp;impl {
+    wisdom: []string{
+        &quot;You will reach the heights of success.&quot;,
+        &quot;Conquer your fears or they will conquer you.&quot;,
+        &quot;Today is your lucky day!&quot;,
+    },
+    random: rand.New(rand.NewSource(99)),
+  }
+}
+
+func (f *impl) Get(_ *context.T, _ rpc.ServerCall) (blah string, err error) {
+  f.mu.RLock()
+  defer f.mu.RUnlock()
+  if len(f.wisdom) == 0 {
+    return &quot;[empty]&quot;, nil
+  }
+  return f.wisdom[f.random.Intn(len(f.wisdom))], nil
+}
+
+func (f *impl) Add(_ *context.T, _ rpc.ServerCall, blah string) error {
+  f.mu.Lock()
+  defer f.mu.Unlock()
+  f.wisdom = append(f.wisdom, blah)
+  return nil
+}
+EOF
+go build fortune/service
+</code></pre><h1 id="build-a-server">Build a server</h1>
+<p>Service in hand, we need a place to put it.</p>
+<p><a href="#terminology">Recall</a> that a server associates an endpoint with a
+dispatcher, and a dispatcher contains one or more services.  This
+tutorial covers the simple case of a program with just <em>one</em> server -
+just one active port.  Further, the server has just <em>one</em> service and
+<em>one</em> authorizer.</p>
+<h2 id="authorizer">Authorizer</h2>
+<p>Vanadium checks every request via a policy defined in an
+implementation of <code>security.Authorizer</code>.</p>
+<p>The tutorials will use several authorizer implementations.</p>
+<p>At any given time, one implementation will be provided by a factory
+function called <code>util.MakeAuthorizer</code> in a file called
+<code>authorizer.go</code>.  To keep code simple (no branches, no signature
+changes, etc.), switching to a new implementation means replacing the
+file and recompiling.</p>
+<p>The first version of <code>authorizer.go</code> invokes the default Vanadium
+authorization policy (to be discussed <a href="/2016/tutorials/security/principals-and-blessings.html#default-authorization-policy">later</a>):</p>
+<!-- @authorizer @test @testui @completer -->
+<pre tabindex="0"><code>mkdir -p $V_TUT/src/fortune/server/util
+ cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/server/util/authorizer.go
+package util
+
+import (
+  &quot;v.io/v23/security&quot;
+)
+
+// Returns Vanadium's default authorizer.
+func MakeAuthorizer() security.Authorizer {
+  return security.DefaultAuthorizer()
+}
+EOF
+go build fortune/server/util
+</code></pre><h2 id="dispatcher">Dispatcher</h2>
+<p>Dispatcher implementations will be provided by a factory function
+called <code>util.MakeDispatcher</code> in a file called <code>dispatcher.go</code>, an
+arrangement allowing for low tech implementation swaps as described
+above for the authorizer.</p>
+<p>The version of <code>dispatcher.go</code> defined here results in the use of a
+dispatcher built into Vanadium.  It&rsquo;s initialized with only <em>one</em>
+service and uses reflection to invoke server methods.</p>
+<!-- @dispatcher @test @testui @completer -->
+<pre tabindex="0"><code>mkdir -p $V_TUT/src/fortune/server/util
+ cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/server/util/dispatcher.go
+package util
+
+import (
+  &quot;v.io/v23/rpc&quot;
+)
+
+// Returns nil to trigger use of the default dispatcher.
+func MakeDispatcher() (d rpc.Dispatcher) {
+  return nil
+}
+EOF
+go build fortune/server/util
+</code></pre><h2 id="initializer">Initializer</h2>
+<p>The following utility package allows endpoints to be written to a flag
+controlled file.</p>
+<p>In this tutorial, rather than specify a port as was done in the
+<a href="/2016/tutorials/hello-world.html">hello world tutorial</a>, we let the system pick a free one, and from it
+generate an <em>endpoint specification</em>.</p>
+<p>Every time the server starts, the endpoint address changes.  The
+address is written to a file named via a flag.  A client must know
+this address in order to connect to the server, so it reads it from
+the file.</p>
+<p>The <a href="/2016/tutorials/naming/mount-table.html">mount table tutorial</a> describes how a <em>mount table</em> replaces this
+file-based exchange with a service.</p>
+<!-- @intializer @test @testui @completer -->
+<pre tabindex="0"><code>mkdir -p $V_TUT/src/fortune/server/util
+ cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/server/util/initializer.go
+package util
+
+import (
+  &quot;flag&quot;
+  &quot;fmt&quot;
+  &quot;io/ioutil&quot;
+  &quot;log&quot;
+
+  &quot;v.io/v23/naming&quot;
+)
+
+var (
+  fileName = flag.String(
+      &quot;endpoint-file-name&quot;, &quot;&quot;,
+      &quot;Write endpoint address to given file.&quot;)
+)
+
+func SaveEndpointToFile(e naming.Endpoint) {
+  if *fileName == &quot;&quot; {
+    return
+  }
+  contents := []byte(
+      naming.JoinAddressName(e.String(), &quot;&quot;) + &quot;\n&quot;)
+  if ioutil.WriteFile(*fileName, contents, 0644) != nil {
+    log.Panic(&quot;Error writing &quot;, *fileName)
+  }
+  fmt.Printf(&quot;Wrote endpoint name to %v.\n&quot;, *fileName)
+}
+
+EOF
+go build fortune/server/util
+</code></pre><h2 id="installation">Installation</h2>
+<p>Construct a server executable by defining a <code>main</code> function.</p>
+<p>The server&rsquo;s custom behavior will be encapsulated by the authorizer
+and dispatcher defined above.</p>
+<!-- @server @test @testui @completer -->
+<pre tabindex="0"><code>mkdir -p $V_TUT/src/fortune/server
+ cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/server/main.go
+package main
+
+import (
+  &quot;flag&quot;
+  &quot;fmt&quot;
+  &quot;log&quot;
+  &quot;fortune/ifc&quot;
+  &quot;fortune/server/util&quot;
+  &quot;fortune/service&quot;
+
+  &quot;v.io/v23&quot;
+  &quot;v.io/v23/rpc&quot;
+  &quot;v.io/x/ref/lib/signals&quot;
+  _ &quot;v.io/x/ref/runtime/factories/generic&quot;
+)
+
+var (
+  serviceName = flag.String(
+      &quot;service-name&quot;, &quot;&quot;,
+      &quot;Name for service in default mount table.&quot;)
+)
+
+func main() {
+  ctx, shutdown := v23.Init()
+  defer shutdown()
+
+  // Attach the 'fortune service' implementation
+  // defined above to a queriable, textual description
+  // of the implementation used for service discovery.
+  fortune := ifc.FortuneServer(service.Make())
+
+  // If the dispatcher isn't nil, it's presumed to have
+  // obtained its authorizer from util.MakeAuthorizer().
+  dispatcher := util.MakeDispatcher()
+
+  // Start serving.
+  var err error
+  var server rpc.Server
+  if dispatcher == nil {
+    // Use the default dispatcher.
+    _, server, err = v23.WithNewServer(
+        ctx, *serviceName, fortune, util.MakeAuthorizer())
+  } else {
+    _, server, err = v23.WithNewDispatchingServer(
+        ctx, *serviceName, dispatcher)
+  }
+  if err != nil {
+    log.Panic(&quot;Error serving service: &quot;, err)
+  }
+  endpoint := server.Status().Endpoints[0]
+  util.SaveEndpointToFile(endpoint)
+  fmt.Printf(&quot;Listening at: %v\n&quot;, endpoint)
+
+  // Wait forever.
+  &lt;-signals.ShutdownOnSignals(ctx)
+}
+EOF
+go install fortune/server
+</code></pre><p>Successful installation places a new executable in the bin directory.</p>
+<pre tabindex="0"><code>ls $V_TUT/bin
+</code></pre><p>The server is now ready to go.  Next, make a client to work with it.</p>
+<h1 id="build-a-client">Build a client</h1>
+<p>This client is short-lived; it starts, makes one call (<code>Get</code> or <code>Add</code>)
+depending on a flag value, then exits.</p>
+<!-- @client @test @testui @completer -->
+<pre tabindex="0"><code>mkdir -p $V_TUT/src/fortune/client
+ cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/client/main.go
+package main
+
+import (
+  &quot;flag&quot;
+  &quot;fmt&quot;
+  &quot;time&quot;
+
+  &quot;fortune/ifc&quot;
+
+  &quot;v.io/v23&quot;
+  &quot;v.io/v23/context&quot;
+  &quot;v.io/x/lib/vlog&quot;
+  _ &quot;v.io/x/ref/runtime/factories/generic&quot;
+)
+
+var (
+  server = flag.String(
+      &quot;server&quot;, &quot;&quot;, &quot;Name of the server to connect to&quot;)
+  newFortune = flag.String(
+      &quot;add&quot;, &quot;&quot;, &quot;A new fortune to add to the server's set&quot;)
+)
+
+func main() {
+  ctx, shutdown := v23.Init()
+  defer shutdown()
+
+  if *server == &quot;&quot; {
+    vlog.Error(&quot;--server must be specified&quot;)
+    return
+  }
+  f := ifc.FortuneClient(*server)
+  ctx, cancel := context.WithTimeout(ctx, time.Minute)
+  defer cancel()
+
+  if *newFortune == &quot;&quot; { // --add flag not specified
+    fortune, err := f.Get(ctx)
+    if err != nil {
+      vlog.Errorf(&quot;error getting fortune: %v&quot;, err)
+      return
+    }
+    fmt.Println(fortune)
+  } else {
+    if err := f.Add(ctx, *newFortune); err != nil {
+      vlog.Errorf(&quot;error adding fortune: %v&quot;, err)
+      return
+    }
+  }
+}
+EOF
+go install fortune/client
+</code></pre><p>If that succeeds, a second binary will appear at</p>
+<pre tabindex="0"><code>ls $V_TUT/bin
+</code></pre><h1 id="run-the-binaries">Run the binaries</h1>
+<h2 id="first-run">First run</h2>
+<p>This first run will demonstrate that we don&rsquo;t yet have enough
+things defined to make a successful request.</p>
+<p>Start the server in the background:</p>
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+$V_TUT/bin/server --endpoint-file-name $V_TUT/server.txt &amp;
+TUT_PID_SERVER=$!
+</code></pre><p>Before entering its event loop, the server writes the endpoint address
+to <code>$V_TUT/server.txt</code>.  The client will read it shortly.</p>
+<p>{{# helpers.warning }}</p>
+<h2 id="warning-the-next-command-demonstrates-failure">Warning: The next command demonstrates failure!</h2>
+<p>The correct pieces are in place to attempt a request - but the next command
+shows that you&rsquo;ve not yet established the conditions for authorization.</p>
+<p>{{/ helpers.warning }}</p>
+<p>Now run the client, feeding it the server&rsquo;s endpoint, and attempt to
+get a fortune:</p>
+<pre tabindex="0"><code>$V_TUT/bin/client --server `cat $V_TUT/server.txt`
+</code></pre><p>The client will report an authorization error.</p>
+<p>Let&rsquo;s change things to allow the call to succeed, then compare the two
+situations.</p>
+<h2 id="second-run">Second run</h2>
+<p>The simplest thing to do to allow a call to succeed under the <a href="/2016/tutorials/security/principals-and-blessings.html#default-authorization-policy">default
+authorization policy</a> is to run the client and server as
+the same <a href="/2016/glossary.html#principal">principal</a> (think of this as an <em>identity</em> for now).  This
+makes the two processes indistinguishable from an authorization point
+of view.</p>
+<p>To do this, create a principal called <code>tutorial</code>.  The next command
+writes credentials associated with the name <code>tutorial</code> into the
+<code>$V_TUT/cred/basics</code> directory:</p>
+<!-- @principalTutorial @test @testui @completer -->
+<pre tabindex="0"><code>$V_BIN/principal create \
+    --with-passphrase=false \
+    --overwrite $V_TUT/cred/basics tutorial
+</code></pre><p>The <code>--overwrite</code> flag is optional. Omit it if you want a warning if
+you attempt to overwrite an existing principal.</p>
+<p>Now kill the server and restart it, telling it to run with those
+credentials:</p>
+<!-- @runServerAsPrincipal @test @testui @sleep -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+$V_TUT/bin/server \
+    --v23.credentials $V_TUT/cred/basics \
+    --endpoint-file-name $V_TUT/server.txt &amp;
+TUT_PID_SERVER=$!
+</code></pre><p>Run the client with the same credentials:</p>
+<!-- @runClientAsPrincipal @test @testui -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/basics \
+    --server `cat $V_TUT/server.txt`
+</code></pre><p>This time, the <code>Get</code> RPC will succeed and a fortune will be displayed.</p>
+<p>Likewise, <code>Add</code> works:</p>
+<!-- @clientGet @test @testui -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/basics \
+    --server `cat $V_TUT/server.txt` \
+    --add 'Fortune favors the bold.'
+</code></pre><p>Feel free to rerun this without the <code>--add</code> flag until you
+randomly recover the new fortune.</p>
+<h2 id="authorization">Authorization</h2>
+<p>Vanadium is secure by default. All communication channels are
+encrypted and authenticated and all communication must satisfy an
+authorization policy.</p>
+<p>In the first run above, no credentials were specified, so the server&rsquo;s
+Vanadium runtime assigned <em>randomly generated</em> credentials, including
+a characteristic name generated from the environment, e.g.</p>
+<blockquote>
+<p><code>{user}@{hostname}_{randomNumber}</code></p>
+</blockquote>
+<p>Likewise, the client ran with randomly generated credentials.  Random
+credentials accompany requests, appear in logs, etc. and are
+preferrable to building a policy around <em>missing</em> credentials.</p>
+<p>In the first run, the server didn&rsquo;t recognize the client&rsquo;s randomly
+different credentials and thus didn&rsquo;t authorize it.</p>
+<p>In the second run, the server effectively recognized the client as
+itself, and authorized the call. The client and server ran with the
+same credentials - they had the same principal and blessings.</p>
+<p>In practice, it is absolutely <em>not normal</em> to use the same principal
+for distinct processes. Usually the client and server processes would
+be on different machines, so running them as the same principal would
+imply copying private keys around the network, completely defeating
+the concept of <em>private</em>.</p>
+<h2 id="the-vrpc-client">The vrpc client</h2>
+<p>Before continuing with more advanced tutorials, let&rsquo;s first introduce
+a generally useful generic client called <a href="/2016/glossary.html#vrpc">vrpc</a>.</p>
+<p>It can talk to any Vanadium service.  Try it with yours:</p>
+<!-- @checkMethods @test @testui -->
+<pre tabindex="0"><code>$V_BIN/vrpc --v23.credentials $V_TUT/cred/basics \
+    call `cat $V_TUT/server.txt` Get
+$V_BIN/vrpc --v23.credentials $V_TUT/cred/basics \
+    call `cat $V_TUT/server.txt` Add \&quot;More cowbell.\&quot;
+</code></pre><p>It is also possible to inspect the services offered by your server:</p>
+<!-- @checkTheSignature @test @testui -->
+<pre tabindex="0"><code>$V_BIN/vrpc --v23.credentials $V_TUT/cred/basics \
+  signature `cat $V_TUT/server.txt`
+</code></pre><p>That output includes methods you wrote, plus built-in methods that
+support Vanadium security and service discovery.</p>
+<p>Report single methods like this:</p>
+<!-- @checkMethods @test @testui -->
+<pre tabindex="0"><code>$V_BIN/vrpc --v23.credentials $V_TUT/cred/basics \
+  signature `cat $V_TUT/server.txt` Add
+$V_BIN/vrpc --v23.credentials $V_TUT/cred/basics \
+  signature `cat $V_TUT/server.txt` Get
+</code></pre><h2 id="clean-up">Clean up</h2>
+<!-- @killServer @test @testui -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+</code></pre><h1 id="summary">Summary</h1>
+<ul>
+<li>
+<p>You created a server that hosted a Fortune service defined using VDL
+and made RPCs to it with a simple command line client.</p>
+</li>
+<li>
+<p>The <a href="/2016/tutorials/security/principals-and-blessings.html#default-authorization-policy">default security policy</a> prevented your initial
+RPCs from working.</p>
+</li>
+<li>
+<p>You &lsquo;fixed&rsquo; this by running the client and server as the <em>same</em>
+principal, allowing requests to succeed.</p>
+</li>
+<li>
+<p>You were introduced to the generic client <code>vrpc</code>.</p>
+</li>
+</ul>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+    
+      <a href="/tutorials/hello-world/" class="p-8 flex justify-start items-center bg-cyan-800 grow">
+        <div class="flex items-center justify-center w-[48px] h-[48px]">
+          <i class="material-icons text-white">arrow_back</i>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="text-white/70 text-xs">Previous</div>
+          <div class="text-white">Hello World</div>
+        </div>
+      </a>
+    
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

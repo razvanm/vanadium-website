@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">The Device Manager</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#credentials">Credentials</a></li>
+    <li><a href="#install-and-start-a-device-manager">Install and start a device manager</a></li>
+    <li><a href="#claim-the-device-manager">Claim the device manager</a></li>
+    <li><a href="#bring-up-a-server">Bring up a server</a></li>
+    <li><a href="#run-the-client">Run the client</a></li>
+    <li><a href="#cleanup">Cleanup</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">The Device Manager</h1>
+
+    
+    <p><strong>Wherein</strong> you learn about running applications with the device manager</p>
+    
+  <div class="my-8 -mx-4 px-4 border border-blue-grey-50/100 rounded">
+    <p>
+      <strong>Prerequisites</strong>:<br>
+      All tutorials require Vanadium <a href="/installation/">installation</a>,
+      and must run in a <a href="/tutorials/faq.html#why-bash-">bash shell</a>.
+    </p>
+
+    
+      <p>
+        Further, please
+        <a href="/sh/scenario-b-setup.sh"
+           download="scenario-b-setup.sh">
+           download this script
+        </a>
+        then <a href="/tutorials/faq.html#why-source-">source</a> it:
+      </p>
+
+      <pre><code>source ~/Downloads/scenario-b-setup.sh</code></pre>
+
+      <p>
+        This command wipes tutorial files and defines shell environment
+        variables. If you start a new terminal, and just want to re-establish
+        the environment, see instructions
+        <a href="/tutorials/setup.html">here</a>.
+      </p>
+    
+
+    
+  </div>
+
+<content>
+      <h1 id="introduction">Introduction</h1>
+<p>In the <a href="/2016/tutorials/basics.html">basics tutorial</a>, you ran the fortune server as a background process
+from the terminal.</p>
+<p>In this tutorial, you&rsquo;ll learn how to use the device manager to run your server
+remotely (however, the device manager you&rsquo;ll be running as part of the tutorial
+is running on the same computer to keep things simple).</p>
+<h1 id="credentials">Credentials</h1>
+<p>We&rsquo;ll be using default <a href="/2016/tutorials/basics.html#authorization">credentials</a> for all the commands and servers we start
+from the terminal. Recall that <code>tutorial</code> is the blessing name for these credentials:</p>
+<!-- @setCredentials @test -->
+<pre tabindex="0"><code>export V23_CREDENTIALS=&quot;$V_TUT/cred/basics&quot;
+&quot;${V_BIN}/principal&quot; dump -s
+</code></pre><h1 id="install-and-start-a-device-manager">Install and start a device manager</h1>
+<p>The <strong>device manager</strong> is a Vanadium application that runs on a device and is
+responsible for installing and running other Vanadium applications on behalf of
+users.</p>
+<p>The first step is to install and start a device manager on your computer (taking
+care first to clean up any previous ones). The device manager uses the security
+agent introduced in the <a href="/2016/tutorials/security/agent.html">agent tutorial</a> to manage principals for itself and all
+the applications run under it.</p>
+<p>The device manager has a built-in mount table, which we can us for service
+discovery (as we learned in the <a href="/2016/tutorials/naming/mount-table.html">mount table tutorial</a>). So give it a fixed
+port.</p>
+<!-- @installAndStartDeviceManager @test @sleep -->
+<pre tabindex="0"><code>export V23_DEVICE_DIR=&quot;$V_TUT/devmgr&quot;
+PORT_MT=24000
+&quot;${V_BIN}/deviced&quot; stop 2&gt;/dev/null
+&quot;${V_BIN}/deviced&quot; uninstall --suid_helper=&quot;${V_BIN}/suidhelper&quot;
+V23_CREDENTIALS=&quot;&quot; &quot;${V_BIN}/deviced&quot; install --suid_helper=&quot;${V_BIN}/suidhelper&quot; --agent=&quot;${V_BIN}/agentd&quot; -- --v23.tcp.address=&quot;:$PORT_MT&quot; --name=&quot;&quot;
+V23_CREDENTIALS=&quot;&quot; &quot;${V_BIN}/deviced&quot; start
+</code></pre><p>Check that the device manager service is mounted in the mount table. This
+should print <code>/localhost:24000/devmgr</code>:</p>
+<!-- @globMountTable @test -->
+<pre tabindex="0"><code>&quot;${V_BIN}/namespace&quot; glob &quot;/localhost:$PORT_MT/*&quot;
+</code></pre><h1 id="claim-the-device-manager">Claim the device manager</h1>
+<p>The device manager is currently <strong>unclaimed</strong>, meaning that it does not have a
+blessing (other than the one it generates for itself).  The user must <strong>claim</strong>
+the device manager to unlock its functionality.  Claiming involves conferring a
+blessing, which then becomes the device manager&rsquo;s default blessing. We&rsquo;ll bless
+our device manager as <code>hal</code>, and verify that the device manager presents itself
+as <code>tutorial/hal</code>:</p>
+<!-- @claimDeviceManager @test -->
+<pre tabindex="0"><code>DEVICE_NAME=/localhost:$PORT_MT/devmgr
+&quot;${V_BIN}/device&quot; claim &quot;${DEVICE_NAME}/device&quot; hal
+&quot;${V_BIN}/vrpc&quot; identify &quot;${DEVICE_NAME}/device&quot;
+</code></pre><h1 id="bring-up-a-server">Bring up a server</h1>
+<p>We&rsquo;re now ready to deploy a Vanadium application on the device manager. We&rsquo;ll
+use the fortune server as our application.</p>
+<p>First, install the application, recording the installation name:</p>
+<!-- @installFortune @test -->
+<pre tabindex="0"><code>INSTALLATION_NAME=$( \
+  &quot;${V_BIN}/device&quot; install-local &quot;${DEVICE_NAME}/apps&quot; \
+  fortuneserver &quot;${V_TUT}/bin/server&quot; --service-name=myFortunes \
+)
+echo &quot;Installed: ${INSTALLATION_NAME}&quot;
+</code></pre><p>Then create an instance of the application just installed and run it, providing
+the instance with a blessing called <code>fortune</code>. Record the instance name:</p>
+<!-- @startFortune @test -->
+<pre tabindex="0"><code>INSTANCE_NAME=$(&quot;${V_BIN}/device&quot; instantiate &quot;${INSTALLATION_NAME}&quot; fortune)
+&quot;${V_BIN}/device&quot; run &quot;${INSTANCE_NAME}&quot;
+echo &quot;Instantiated and started: ${INSTANCE_NAME}&quot;
+</code></pre><p>Verify that the fortune server app runs with the expected blessing name, <code>tutorial/fortune</code>:</p>
+<!-- @identifyFortune @test -->
+<pre tabindex="0"><code>&quot;${V_BIN}/vrpc&quot; identify &quot;/localhost:$PORT_MT/myFortunes&quot;
+</code></pre><p>At this point, you can look at the log files from your server. To see what log files are available:</p>
+<!-- @listLogFiles @test -->
+<pre tabindex="0"><code> ${V_BIN}/namespace glob &quot;${INSTANCE_NAME}/logs/*&quot;
+</code></pre><p>You can use <em>debug logs read</em> to read any of these files. For example:</p>
+<!-- @readLogFiles @test -->
+<pre tabindex="0"><code>LOGFILE=`${V_BIN}/namespace glob &quot;${INSTANCE_NAME}/logs/STDOUT-*&quot;`
+${V_BIN}/debug logs read $LOGFILE
+</code></pre><h1 id="run-the-client">Run the client</h1>
+<p>As in the <a href="/2016/tutorials/basics.html">basics tutorial</a>, use the client to make a call to the server:</p>
+<!-- @fortuneClient @test -->
+<pre tabindex="0"><code>&quot;${V_TUT}/bin/client&quot; --server &quot;/localhost:$PORT_MT/myFortunes&quot;
+</code></pre><h1 id="cleanup">Cleanup</h1>
+<!-- @deviceManagerCleanup @test -->
+<pre tabindex="0"><code>&quot;${V_BIN}/device&quot; kill &quot;${INSTANCE_NAME}&quot;
+&quot;${V_BIN}/deviced&quot; stop
+&quot;${V_BIN}/deviced&quot; uninstall --suid_helper=&quot;${V_BIN}/suidhelper&quot;
+</code></pre><h1 id="summary">Summary</h1>
+<p>You set up a device manager on your computer, and used the <code>device</code> command-line
+tool to install and start an application on it.</p>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

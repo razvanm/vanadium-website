@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">Contributing</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#reporting-issues">Reporting issues</a></li>
+    <li><a href="#contributor-setup">Contributor setup</a>
+      <ul>
+        <li><a href="#vanadium-installation">Vanadium installation</a></li>
+        <li><a href="#contributor-license-agreement-cla">Contributor license agreement (CLA)</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#proposing-a-change">Proposing a change</a></li>
+        <li><a href="#making-a-change">Making a change</a>
+          <ul>
+            <li><a href="#creating-a-change">Creating a change</a></li>
+            <li><a href="#syncing-a-change-to-the-latest-version-of-the-project">Syncing a change to the latest version of the project</a></li>
+            <li><a href="#requesting-a-review">Requesting a review</a></li>
+            <li><a href="#reviewing-a-change">Reviewing a change</a></li>
+            <li><a href="#addressing-review-comments">Addressing review comments</a></li>
+            <li><a href="#submitting-a-change">Submitting a change</a></li>
+            <li><a href="#useful-shortcuts">Useful shortcuts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">Contributing</h1>
+
+    
+<content>
+      <h1 id="reporting-issues">Reporting issues</h1>
+<p>We use GitHub for tracking Vanadium issues:
+<a href="https://github.com/vanadium/issues/issues">https://github.com/vanadium/issues/issues</a></p>
+<h1 id="contributor-setup">Contributor setup</h1>
+<h2 id="vanadium-installation">Vanadium installation</h2>
+<p>Follow the <a href="/2016/installation/">installation instructions</a> to set up a <code>JIRI_ROOT</code> directory and
+fetch all Vanadium repositories.</p>
+<p>The instructions below assume you&rsquo;ve set the <code>JIRI_ROOT</code> environment variable
+and have added <code>$JIRI_ROOT/.jiri_root/scripts</code> to your <code>PATH</code>:</p>
+<pre><code># Edit to taste.
+export JIRI_ROOT=${HOME}/vanadium
+export PATH=$PATH:$JIRI_ROOT/.jiri_root/scripts
+</code></pre>
+<p>Recommended: Add the lines above to your <code>~/.bashrc</code> or similar.</p>
+<h2 id="contributor-license-agreement-cla">Contributor license agreement (CLA)</h2>
+<p>Before patches can be accepted, contributors must sign the Google Individual
+<a href="https://cla.developers.google.com/about/google-individual?csw=1">Contributor License Agreement (CLA)</a>, which can be done online. The CLA is
+necessary since contributors own the copyright to their code, even after it
+becomes part of the codebase, so permission is required to use and distribute
+that code. Contributors don&rsquo;t have to sign the CLA until after a patch has been
+submitted for review and a member has approved it, but the CLA must be signed
+before the patch is committed into the codebase.</p>
+<p>Contributions made by corporations are covered by a different agreement than the
+one above, the <a href="https://cla.developers.google.com/about/google-corporate?csw=1">Software Grant and Corporate Contributor License
+Agreement</a>.</p>
+<h2 id="credentials">Credentials</h2>
+<p>To send code reviews and commit changes, you must create an account on
+vanadium.googlesource.com:</p>
+<ol>
+<li>Go to <a href="https://vanadium.googlesource.com">https://vanadium.googlesource.com</a>, log in with your identity, click on
+&ldquo;Generate Password&rdquo;, and follow the instructions to store the credentials for
+accessing vanadium.googlesource.com locally.</li>
+<li>Go to <a href="https://vanadium-review.googlesource.com">https://vanadium-review.googlesource.com</a> and log in with your identity.
+This will create an account for you in the code review system.</li>
+</ol>
+<h2 id="proposing-a-change">Proposing a change</h2>
+<p>Before starting work on a large change, we recommend that you <a href="https://github.com/vanadium/issues/issues">file an
+issue</a> with your idea so that other contributors and authors can
+provide feedback and guidance. (For small changes, this is not necessary.)</p>
+<h2 id="making-a-change">Making a change</h2>
+<p>All of the individual Vanadium projects use <a href="http://git-scm.com/">Git</a> for version control. The
+&ldquo;master&rdquo; branch of each local repository is reserved for tracking the remote
+<a href="https://vanadium.googlesource.com">https://vanadium.googlesource.com</a> counterpart. All Vanadium development should
+take place on a non-master (feature) branch. Once your code has been reviewed
+and approved, it will be merged into the remote master via our code review
+system and brought to your local instance via <code>jiri update</code>.</p>
+<p><strong>The only way to contribute to master is via the Gerrit code review process.</strong></p>
+<p>To submit a change for review you will need to squash your feature branch into a
+single commit and send the patch to <a href="https://vanadium-review.googlesource.com">Gerrit</a> for code review. The <a href="/2016/tools/jiri.html">jiri</a> tool,
+in particular the <code>jiri cl</code> command, simplifies this process.</p>
+<h3 id="creating-a-change">Creating a change</h3>
+<ol>
+<li>
+<p>Sync the master branch to the latest version of the project.</p>
+<pre><code> jiri update
+</code></pre>
+</li>
+<li>
+<p>Create a new branch for your change.</p>
+<pre><code> # Replace `&lt;branch&gt;` with your branch name.
+ jiri cl new &lt;branch&gt;
+</code></pre>
+</li>
+<li>
+<p>Make modifications to the project source code.</p>
+</li>
+<li>
+<p>Stage any changed files for a commit.</p>
+<pre><code> git add &lt;file1&gt; &lt;file2&gt; ... &lt;fileN&gt;
+</code></pre>
+</li>
+<li>
+<p>Commit your modifications.</p>
+<pre><code> git commit
+</code></pre>
+</li>
+<li>
+<p>Repeat steps 3-5 as necessary.</p>
+</li>
+</ol>
+<h3 id="syncing-a-change-to-the-latest-version-of-the-project">Syncing a change to the latest version of the project</h3>
+<ol>
+<li>
+<p>Update all of the local master branches using the <code>jiri</code> command.</p>
+<pre><code> jiri update
+</code></pre>
+</li>
+<li>
+<p>If you are not already on it, switch to the feature branch that corresponds
+to the change you are trying to bring up to date with the upstream.</p>
+<pre><code> git checkout &lt;branch&gt;
+ git merge master
+</code></pre>
+</li>
+<li>
+<p>If there are no conflicts, you are done.</p>
+</li>
+<li>
+<p>If there are conflicts:</p>
+<ul>
+<li>Manually resolve the conflicting files.</li>
+<li>Stage the resolved files for a commit with <code>git add &lt;pathspec&gt;...</code>.</li>
+<li>Commit the resolved files with <code>git commit</code>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="requesting-a-review">Requesting a review</h3>
+<ol>
+<li>
+<p>Switch to the branch that corresponds to the change in question.</p>
+<pre><code> git checkout &lt;branch&gt;
+</code></pre>
+</li>
+<li>
+<p>Submit your change to Gerrit with the <code>jiri cl</code> command.</p>
+<pre><code> # &lt;reviewers&gt; is a comma-seperated list of emails or LDAPs
+ # Alternatively reviewers can be added via the Gerrit UI
+ jiri cl mail -r=&lt;reviewers&gt;
+</code></pre>
+</li>
+</ol>
+<p>If you are not sure who to add as a reviewer, you can leave off the <code>-r</code> flag.
+Our team periodically scans for unassigned CLs and a reviewer will be added to
+your CL. If you would rather not wait, feel free to let us know about your
+change by filing an issue on GitHub.</p>
+<h3 id="reviewing-a-change">Reviewing a change</h3>
+<ol>
+<li>Follow the link you received in an email notifying you about a review
+request.</li>
+<li>Add comments as you see fit.</li>
+<li>When you are finished, click on the &ldquo;Reply&rdquo; button to submit your comments,
+selecting the appropriate score.</li>
+</ol>
+<h3 id="addressing-review-comments">Addressing review comments</h3>
+<ol>
+<li>
+<p>Switch to the branch that corresponds to the change in question</p>
+<pre><code> git checkout &lt;branch&gt;
+</code></pre>
+</li>
+<li>
+<p>Modify and commit code as as described <a href="#creating-a-change">above</a>.</p>
+</li>
+<li>
+<p>Be sure to address each review comment on Gerrit.</p>
+</li>
+<li>
+<p>Once you have addressed all review comments be sure to reply at the top of
+the Gerrit UI for the specific patch.</p>
+</li>
+<li>
+<p>Once you have addressed all review comments, you can update the change with a
+new patch using:</p>
+<pre><code> jiri cl mail
+</code></pre>
+</li>
+</ol>
+<h3 id="submitting-a-change">Submitting a change</h3>
+<ol>
+<li>
+<p>Work with your reviewers to receive &ldquo;+2&rdquo; score. If your change no longer
+applies cleanly due to upstream changes, the reviewer may ask you to rebase
+it. You will need to follow the steps in the section above: <a href="#syncing-a-change-to-the-latest-version-of-the-project">&ldquo;Syncing a
+change to the latest version of the
+project&rdquo;</a> and then
+run <code>jiri cl mail</code> again.</p>
+</li>
+<li>
+<p>The reviewer will submit your change and it will be merged into the master
+branch.</p>
+</li>
+<li>
+<p>Optional: Delete the feature branch once it has been submitted:</p>
+<pre><code> git checkout master
+ jiri cl cleanup &lt;branch&gt;
+</code></pre>
+</li>
+</ol>
+<h3 id="useful-shortcuts">Useful shortcuts</h3>
+<p>There are several useful shortcuts you can use for quick access to changes and
+issues.</p>
+<ul>
+<li><a href="https://v.io/issues">v.io/issues</a>: Takes you to the issues list.</li>
+<li>v.io/i/[num]: Takes you to a specific issue.</li>
+<li><a href="https://v.io/i/new">v.io/i/new</a>: Creates a new issue.</li>
+<li><a href="https://v.io/review">v.io/review</a>: Takes you to your review dashboard.</li>
+<li>v.io/c/[num]: Takes you to the review for a specific change.</li>
+</ul>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

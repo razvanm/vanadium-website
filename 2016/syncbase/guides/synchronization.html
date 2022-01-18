@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1,
+                                   minimum-scale=1,
+                                   maximum-scale=1,
+                                   user-scalable=no,
+                                   minimal-ui">
+  
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+    <title>Syncing Data - Vanadium</title>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic|Source+Code+Pro">
+  
+    <link rel="stylesheet" href="/2016/css/github.css">
+    <link rel="stylesheet" href="/2016/css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+    <script src="/2016/js/react-0.14.3.min.js"></script>
+    <script src="/2016/js/react-dom-0.14.3.min.js"></script>
+  
+    <link rel="apple-touch-icon" sizes="57x57" href="/2016/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/2016/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/2016/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/2016/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/2016/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/2016/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/2016/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/2016/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/2016/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/2016/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/2016/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/2016/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/2016/favicons/favicon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/2016/favicons/favicon-192x192.png">
+    <meta name="msapplication-TileColor" content="#00acc1">
+    <meta name="msapplication-TileImage" content="/2016/favicons/mstile-144x144.png">
+  
+    <link rel="stylesheet" href="/2016/css/bundle.cyan.css">
+    <script src="/2016/js/bundle.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-59720824-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <header class="mdl-shadow--2dp">
+      <div class="row">
+        <div class="icon menu"><i class="material-icons">menu</i></div>
+        <div class="icon v-icon"><a href="/2016"><img src="/2016/images/v-icon-white.svg"></a></div>
+        <div class="logo"><a href="/2016/syncbase">Syncbase</a></div>
+        <div class="spacer"></div>
+        <nav>
+          <a href="/2016/syncbase">Overview</a>
+          <a href="/2016/syncbase/quickstart.html">Quick Start</a>
+          <a href="/2016/syncbase/tutorial/introduction.html">Tutorial</a>
+        </nav>
+      </div>
+    </header>
+    <div data-subsite="syncbase" class="sidebar"></div>
+    <div class="sidebar-data">
+      <a href="/2016/syncbase/">Overview</a>
+      <a href="/2016/syncbase/quickstart.html">Quick Start</a>
+      <a href="/2016/syncbase/first-app.html">Your First App</a>
+      <a href="/2016/syncbase/tutorial/introduction.html" class="nav">Tutorial</a>
+       <nav>
+        <a href="/2016/syncbase/tutorial/introduction.html">Introduction</a>
+   </nav>
+    
+      <a href="#" class="nav">Guides</a>
+      <nav>
+        <a href="/2016/syncbase/guides/data-model.html">Data Model</a>
+    <a href="/2016/syncbase/guides/data-flow.html">Data Flow</a>
+    <a href="/2016/syncbase/guides/synchronization.html">Syncing Data</a>
+    <a href="/2016/syncbase/guides/batches.html">Batches</a>
+  </nav>
+    
+      <a href="/2016/syncbase/my-cloud-syncbase.html">My Cloud Syncbase</a>
+    
+      <a href="/2016/syncbase/example-apps.html">Example Apps</a>
+      <a href="/2016/syncbase/api-reference.html">API Reference</a>
+    </div>
+    <main class="hide-cat-eof-lines">
+      <h1 class="title">
+        
+        Syncing Data
+      </h1>
+
+      <div class="toc"></div>
+
+      <h1 id="introduction">Introduction</h1>
+<p>Syncbase&#39;s sync protocol is peer-to-peer whereas most other sync systems require
+a centralized server. We believe that despite internet connectivity becoming
+more and more prevalent, there will always be times when an internet connection
+is not available. You should be able to sync with your peer, with very low
+latency, when you are physically close. For example, you shouldn&#39;t need an
+internet connection to set the temperature on your thermostat. Syncbase uses the
+cloud as another, very durable peer, but the cloud is not required for any two
+peers to interact. Because the cloud is not in the critical path for synchronization,
+apps can use Syncbase as for asynchronous, relatively low latency communication.</p>
+<p>Peer-to-peer sync, however, introduces problems not present in client-server sync:</p>
+<ul>
+<li>Sub-groups of devices can collaborate independently, leading to substantial
+data conflicts.</li>
+<li>Malicious peers can perform man-in-the-middle attacks. The system should
+prevent them.</li>
+</ul>
+<p>Syncbase internally handles both of these issues by providing:</p>
+<ul>
+<li>Automatic conflict resolution policies such as last-one-wins and an upcoming
+extensive conflict resolution API for custom conflict resolution.</li>
+<li>Strong security and access control. To prevent read-only peers
+from performing a man-in-the-middle attack, Syncbase will sign the mutations
+on behalf of the writer. The receivers automatically verify the signatures.</li>
+</ul>
+<h1 id="using-syncgroups">Using Syncgroups</h1>
+<p>A syncgroup is a set of of collections that are synchronized amongst a set of
+users (and with the cloud, if available).</p>
+<p>By default, creating a collection creates an associated syncgroup, initially
+synced amongst the creator’s devices but other users can also be added to this
+syncgroup to allow sharing.</p>
+<h2 id="sharing-collections">Sharing Collections</h2>
+<p>Sharing collections involves <strong>inviting</strong> other users to <strong>join</strong> a collection&#39;s
+syncgroup. Upon inviting a user, the invitee <strong>receives an invite event</strong>. When
+an invite is <strong>accepted</strong>, the inviter&#39;s syncgroup will be joined and shared data
+will start syncing.
+When inviting a user, an access level can be specified:</p>
+<ul>
+<li><em>read-only</em>: Invitee can only read the shared data rows.</li>
+<li><em>read-write</em>: Invitee can read, put and delete data rows and mutations will
+sync with anyone else who is part of the syncgroup.</li>
+<li><em>read-write-admin</em>: In addition to read-write, can invite others to join the
+syncgroup, eject existing members of the syncgroup or change their access level.</li>
+</ul>
+<p>On the inviter side, we just need to invite a user to join the collection&#39;s
+syncgroup:
+<!-- @inviteUser @test --></p>
+<pre><code>cat - &lt;&lt;EOF &gt;&gt; $FILE
+Collection collectionToShare = db.createCollection();
+
+collectionToShare.getSyncgroup().inviteUser(userToInvite, AccessList.AccessLevel.READ);
+EOF
+</code></pre><p>On the invitee side, we need to handle invite requests by registering a handler:
+<!-- @addInviteHandler @test --></p>
+<pre><code>cat - &lt;&lt;EOF &gt;&gt; $FILE
+db.addSyncgroupInviteHandler(new Database.SyncgroupInviteHandler() {
+  @Override
+  public void onInvite(SyncgroupInvite invite) {
+    // Prompt the user if desired then accept or reject the invite.
+    db.acceptSyncgroupInvite(invite, new Database.AcceptSyncgroupInviteCallback() {
+      @Override
+      public void onSuccess(Syncgroup sg) {
+        // Accepting invitation was successful.
+      }
+
+      @Override
+      public void onFailure(Throwable t) {
+        // Accepting invitation was unsuccessful.
+      }
+    });
+  }
+
+  @Override
+  public void onError(Throwable t) {
+    // Invite handler error.
+  }
+});
+EOF
+</code></pre><div class="note info"><h3 id="tip">Tip</h3>
+<p><code>db.removeAllSyncgroupInviteHandlers()</code> can be used in activity&#39;s <code>onDestroy</code>
+to remove all registered invite handlers.</p>
+</div>
+
+<p>When an invitation is accepted, Syncbase automatically joins the inviter&#39;s
+syncgroup and the associated collection and its data will start
+syncing into the invitee&#39;s database. As the collection syncs, data will be
+surfaced through the <em>Watch API</em>. See <a href="/2016/syncbase/guides/data-flow.html">Data Flow</a> guide for details on how
+to model your app&#39;s data flow.</p>
+<h2 id="unsharing-collections">Unsharing Collections</h2>
+<p>Ejecting a user from a collection&#39;s syncgroup will unshare the collection. If
+the target user has not accepted the invitation yet, the invite will simply
+disappear. Otherwise, the shared collection on target user&#39;s database will
+become read-only and will no longer sync and receive updates.</p>
+<!-- @unshareCollection @test -->
+<pre><code>cat - &lt;&lt;EOF &gt;&gt; $FILE
+Collection sharedCollection = db.createCollection();
+
+sharedCollection.getSyncgroup().ejectUser(userToRemove);
+EOF
+</code></pre><h2 id="updating-access-level">Updating Access Level</h2>
+<p>Simply re-inviting an already invited user with a different access level will
+update their access without triggering a new invitation.</p>
+<h2 id="listing-all-syncgroups">Listing All Syncgroups</h2>
+<p><code>db.getSyncgroups()</code> can be used to list all syncgroups. This list includes
+pre-created syncgroups for collections and other syncgroups created or joined.</p>
+<!-- @getAllSyncgroups @test -->
+<pre><code class="lang-Java">cat - &lt;&lt;EOF &gt;&gt; $FILE
+Iterator&lt;Syncgroup&gt; allSyncgroups = db.getSyncgroups();
+while(allSyncgroups.hasNext()) {
+    Syncgroup sg = allSyncgroups.next();
+}
+EOF
+</code></pre>
+<h1 id="summary">Summary</h1>
+<ul>
+<li>Syncbase&#39;s sync protocol is peer-to-peer.</li>
+<li>By default, creating a collection creates an associated syncgroup, initially
+synced amongst the creator’s devices.</li>
+<li>Sharing collections is done by inviting other users to join a collection&#39;s
+syncgroup.</li>
+<li>Access-level can be one of read-only, read-write, or read-write-admin.</li>
+</ul>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">Device Management</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#devices-and-applications">Devices and applications</a></li>
+    <li><a href="#device-manager-service">Device manager service</a></li>
+    <li><a href="#security-and-identities">Security and identities</a>
+      <ul>
+        <li><a href="#device-and-application-identities">Device and application identities</a></li>
+        <li><a href="#application-permissions">Application permissions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">Device Management</h1>
+
+    
+<content>
+      <p>Vanadium targets a broad range of compute devices and environments. Vanadium&rsquo;s device management system securely integrates physical devices and software applications available in the system.</p>
+<h1 id="devices-and-applications">Devices and applications</h1>
+<p>A <strong>device</strong> abstracts a system running Vanadium software, although the device need not be exclusively for Vanadium apps - for example, the system could be running natively installed applications alongside Vanadium applications. Typically, a device is a physical computing device, but a device could also be a virtual machine or a browser environment.</p>
+<p>An <strong>application</strong> is a piece of software built using Vanadium. We use &ldquo;app&rdquo; as shorthand for &ldquo;application&rdquo;, without adopting any of the specific meanings the term &ldquo;app&rdquo; may have elsewhere (e.g. in the context of mobile device app stores). Vanadium applications instantiate the Vanadium runtime. Usually, a running instance of a binary corresponds to an application, though applications can be multi-processed, or can be scripts, or can be <a href="https://www.docker.com/">Docker</a> images.</p>
+<p>Applications are described by an <strong>application envelope</strong>. The envelope
+contains information needed by the device to install and run the application,
+like the application title, location of its binary or script, and configuration settings.</p>
+<p>Devices, as environments for apps, are characterized by their ability to build, install, and run apps. Except in tightly controlled organizations, the landscape of devices is typically diverse. Vanadium introduces the concept of a <strong>profile</strong> in order to prevent application publishers and device administrators from having to contend with myriad possible device setups.</p>
+<p>A profile abstracts the characteristics of a physical device, its operating system, and available libraries. It is essentially a label for a particular configurations of devices, though the level of specificity will depend on the profile author. For example, a label could be as generic as <code>android</code> or as specific as <code>raspberry-ubuntu-14.04-media</code>. A device with a given profile is expected to be able to install and run applications built for that profile, and heterogeneous devices should be able to usefully support the same profile. Profiles may also be used to match configuration requirements and parameters, security policies or any piece of management information that may need to vary based on the type and configuration of a given device.</p>
+<p>A device can be assigned a profile manually, or it can programmatically deduce the set of profiles with which it is compatible. If no known profile matches the device, the device is automatically given a profile that is unique to it.</p>
+<p>Devices are matched with apps by an <strong>application repository service</strong>. The matching is based on profiles: the device presents the service with the profiles it supports, and the service returns the envelope for the application that matches at least one of the profiles presented.</p>
+<p>Matching apps with devices based on profiles is also how our build system ensures that it provides test coverage without having to support all possible machine configurations. Devices that test a given app can report back with a test status for the profile they support.</p>
+<p>Application binaries, scripts, docker images, or related data resources (e.g. images, style sheets) are stored in a <strong>binary repository service</strong>. The binary service allows uploading and downloading arbitrary binary blobs identified by their object name.</p>
+<h1 id="device-manager-service">Device manager service</h1>
+<p>Vanadium provides remote management APIs to manage devices and apps.</p>
+<p>Each device runs the Vanadium <strong>device manager service</strong>. The device manager
+allows RPCs to control the device&rsquo;s state and security properties (such as
+ownership and access privileges). The device manager also manages applications
+running on the device.</p>
+<p>An <strong>application installation</strong> is an object corresponding to an application
+envelope that was downloaded and installed by the device. A device can have several
+installations of the same application at any point in time (perhaps at different
+versions of the application). Each running instance of an application
+installation is represented by an <strong>application instance</strong> object. There can be
+zero or more instances for every application installation. Each application
+instance is provided with its own private local storage.</p>
+<p>Each application installation and each application instance is identified by an
+object name implementing the <strong>application service</strong>. This allows operations
+such as installation/uninstallation of applications,
+starting/stopping/restarting of instances, updating application versions, and
+suspension/resumption of execution:</p>
+<ul>
+<li><code>Install</code>/<code>Uninstall</code>: install a new application or uninstall the
+application installation.</li>
+<li><code>Instantiate</code>/<code>Delete</code>: create or destroy an instance of an application. Resources such as per-instance storage are allocated upon instantiation and reclaimed upon deletion.</li>
+<li><code>Run</code>/<code>Kill</code>:  start or stop the execution of an application instance. Per-instance
+storage persists between runs of the instance.</li>
+</ul>
+<p>The <strong>object naming scheme</strong> is as follows:</p>
+<ul>
+<li><code>&lt;device name&gt;/device</code>: device manager service for device</li>
+<li><code>&lt;device name&gt;/apps/&lt;app title&gt;/&lt;installation id&gt;</code>: application service for
+installed application</li>
+<li><code>&lt;device name&gt;/apps/&lt;app title&gt;/&lt;installation id&gt;/&lt;instance id&gt;</code>: application
+service for an instance of the installed application</li>
+</ul>
+<p>For example,</p>
+<ul>
+<li><code>&lt;device name&gt;/apps/google maps/0.Uninstall()</code>: uninstalls installation 0
+of the Google Maps app</li>
+<li><code>&lt;device name&gt;/apps/google maps/0/5.Kill()</code>: stops running instance 5 of
+installation 0 of the Google Maps app</li>
+</ul>
+<p>Globbing at any level of the name hierarchy reveals the appropriate subtree of
+application installations and instances.</p>
+<p>Each application exposes the <strong>app cycle manager service</strong> in addition to any
+other methods that the application may chose to expose. The app cycle manager
+service allows the device manager process to communicate with each app it runs
+for operations such as cleanly shutting down the app.</p>
+<h1 id="security-and-identities">Security and identities</h1>
+<p>The <strong>security model</strong> revolves around which principals are allowed to perform
+which management operations, and around what capabilities an app is given on a
+device (see <a href="/2016/concepts/security.html">Security Concepts</a> for an overview of
+security primitives).</p>
+<h2 id="device-and-application-identities">Device and application identities</h2>
+<p>Each device is owned by the identity of the principal who claims it. All
+permissions are initially restricted to the owner, who may update the
+permissions on the administrative and operational methods as needed.
+Management methods for an application installation or instance are initially
+restricted to the same principal that installed or started it, and to the
+administrator(s) of the device.</p>
+<p>When a client asks the device manager to start an application instance, the
+client principal must provide the application instance with a blessing which
+becomes the default blessing for the principal of the application instance.</p>
+<h2 id="application-permissions">Application permissions</h2>
+<p>Applications come signed by a publisher&rsquo;s identity which is verified by the
+device before installing the application.</p>
+<p>In the future, it will be possible to give applications permission on the
+device according to the device owner&rsquo;s trust relation with the publisher. For
+example, the owner may trust applications published by &ldquo;Google Inc.&rdquo; with all
+capabilities, whereas she may trust applications published by &ldquo;XYZ Games
+Corp.&rdquo; with access only to the screen and speakers. An application can request
+further capabilities as needed when it&rsquo;s running. On receiving requests, the
+user may allow or disallow based on their personal comfort level and/or on the
+perceived value of the app feature requesting the new capability.</p>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

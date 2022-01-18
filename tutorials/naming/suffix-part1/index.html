@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">The Suffix - Part I</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#requirements">Requirements</a>
+      <ul>
+        <li><a href="#new-dispatcher">New dispatcher</a></li>
+      </ul>
+    </li>
+    <li><a href="#try-it">Try it</a>
+      <ul>
+        <li><a href="#principal">Principal</a></li>
+        <li><a href="#start-the-server">Start the server</a></li>
+        <li><a href="#hire-cassandra">Hire Cassandra</a></li>
+      </ul>
+    </li>
+    <li><a href="#mount-it">Mount it</a></li>
+    <li><a href="#exercises">Exercises</a>
+      <ul>
+        <li><a href="#add-other-services">Add other services</a></li>
+      </ul>
+    </li>
+    <li><a href="#cleanup">Cleanup</a></li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">The Suffix - Part I</h1>
+
+    
+    <p><strong>Wherein</strong> for the first time you build a server with multiple services and use the server&#39;s namespace to address them. This is an advanced tutorial.</p>
+    
+  <div class="my-8 -mx-4 px-4 border border-blue-grey-50/100 rounded">
+    <p>
+      <strong>Prerequisites</strong>:<br>
+      All tutorials require Vanadium <a href="/installation/">installation</a>,
+      and must run in a <a href="/tutorials/faq.html#why-bash-">bash shell</a>.
+    </p>
+
+    
+      <p>
+        Further, please
+        <a href="/sh/scenario-c-setup.sh"
+           download="scenario-c-setup.sh">
+           download this script
+        </a>
+        then <a href="/tutorials/faq.html#why-source-">source</a> it:
+      </p>
+
+      <pre><code>source ~/Downloads/scenario-c-setup.sh</code></pre>
+
+      <p>
+        This command wipes tutorial files and defines shell environment
+        variables. If you start a new terminal, and just want to re-establish
+        the environment, see instructions
+        <a href="/tutorials/setup.html">here</a>.
+      </p>
+    
+
+    
+      <p>
+        If you would like to generate files from this tutorial without the
+        copy/paste steps, download and source
+        <a href="/sh/tut-completer-suffix-part1.sh"
+            download="tut-completer-suffix-part1.sh">
+            this script
+        </a>.
+        Files will be created in the <code>$V_TUT</code>
+        <a href="/tutorials/setup.html">directory</a>.
+      </p>
+    
+  </div>
+
+<content>
+      <h1 id="introduction">Introduction</h1>
+<p>In an earlier tutorial, a fortune server was
+<a href="/2016/tutorials/naming/mount-table.html#mounting">mounted in a table with the name <code>fortuneAlpha</code></a>.</p>
+<p>Since that server contained only one service, clients needed nothing
+more than that name, as seen in the mount table, to start using the
+service.</p>
+<p>If a server contains <em>multiple</em> services, a <strong>suffix</strong> is needed to
+select one.  <em>A mount table doesn&rsquo;t know about suffixes directly.</em>  A server
+encapsulates that knowledge in its dispatcher.</p>
+<p>Let&rsquo;s build an example.</p>
+<h1 id="requirements">Requirements</h1>
+<p>Your company, <em>Prophecies Inc</em>, needs a server to support its team of
+prophetic <em>consultants</em> - Cassandra, Nostradamus, etc.  Each consultant
+needs its own data and customers.</p>
+<ol>
+<li>
+<p><em>Many services</em>: To support hiring new consultants, the server
+must be able to create fortune services on the fly, each with its
+own set of fortunes.</p>
+</li>
+<li>
+<p><em>Discovery</em>: Customers must be able to discover all the available
+services.</p>
+</li>
+</ol>
+<p>To do this, we&rsquo;ll use a custom dispatcher.</p>
+<p>One thing we <em>won&rsquo;t</em> need is a new service implementation.
+The one we have can be used as is.</p>
+<h2 id="new-dispatcher">New dispatcher</h2>
+<p>Recall the basic program layout:</p>
+<p><img src="/2016/images/tut/basic-program-1auth.svg" alt=""></p>
+<p>The dispatcher owns all the services in a server.  All previous
+tutorials used servers with just one service, so a default dispatcher
+was used - its only job was to figure out which method to invoke on
+the single service.</p>
+<p>In this tutorial, we need a custom dispatcher that maps from
+<em>suffixes</em> to services.</p>
+<p>Examples below will show a client asking for a fortune from a service,
+named <code>prophInc/cassandra</code>.  The resolution process will
+determine that <code>prophInc</code> is a name associated with a server
+endpoint in a mount table (exactly like <a href="/2016/tutorials/naming/mount-table.html#mounting"><code>fortuneAlpha</code></a>
+was earlier), and that <code>cassandra</code> is a suffix.</p>
+<p>This suffix <code>cassandra</code> is ultimately passed to the <code>Lookup</code> method in
+a <a href="https://godoc.org/v.io/v23/rpc#Dispatcher">dispatcher interface</a>.  <code>Lookup</code> accepts a suffix and returns a
+service, and the authorizer that guards it.</p>
+<p>The examples will also show that <code>cassandra</code> and all other service
+names under <code>prophInc</code> are discoverable in the namespace.</p>
+<p>Here&rsquo;s an implementation satisfying the <em>service</em> requirements:</p>
+<!-- @newDispatcher @test @completer -->
+<pre tabindex="0"><code> cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/server/util/dispatcher.go
+package util
+
+import (
+  &quot;errors&quot;
+  &quot;strings&quot;
+  &quot;sync&quot;
+  &quot;fortune/ifc&quot;
+  &quot;fortune/service&quot;
+  &quot;v.io/v23/context&quot;
+  &quot;v.io/v23/rpc&quot;
+  &quot;v.io/v23/security&quot;
+)
+
+type myDispatcher struct {
+  mu sync.Mutex
+  registry map[string]interface{}
+}
+
+func (d *myDispatcher) Lookup(
+    _ *context.T, suffix string) (interface{}, security.Authorizer, error) {
+  if strings.Contains(suffix, &quot;/&quot;) {
+    return nil, nil, errors.New(&quot;unsupported service name&quot;)
+  }
+  auth := MakeAuthorizer()
+  d.mu.Lock()
+  defer d.mu.Unlock()
+  if suffix == &quot;&quot; {
+    names := make([]string, 0, len(d.registry))
+    for name, _ := range d.registry {
+      names = append(names, name)
+    }
+    return rpc.ChildrenGlobberInvoker(names...), auth, nil
+  }
+  s, ok := d.registry[suffix]
+  if !ok {
+    // Make the service on first attempt to use.
+    s = ifc.FortuneServer(service.Make())
+    d.registry[suffix] = s
+  }
+  return s, auth, nil;
+}
+
+func MakeDispatcher() rpc.Dispatcher {
+  return &amp;myDispatcher {
+    registry: make(map[string]interface{}),
+  }
+}
+EOF
+</code></pre><p><strong>Code walk</strong></p>
+<p>The server&rsquo;s <code>root</code> object is accessed with an empty suffix (<em>&quot;&quot;</em>). In
+this example, the <code>root</code> object is a <a href="/2016/tutorials/naming/globber.html#introduction">ChildrenGlobber</a> service that makes
+the fortune service names discoverable in the server&rsquo;s namespace.</p>
+<p>This dispatcher uses the suffix as a key in a string-to-service map
+called <code>registry</code>.  If the map lookup fails, <em>a new service is created
+on the fly</em>, and stored in the map using the suffix.</p>
+<p>The service object associated with the suffix is returned to the caller
+of <code>Lookup</code>.</p>
+<p><code>Lookup</code> must also return an authorizer.  A dispatcher&rsquo;s job is to
+determine which authorizer to use with a given service. In this example,
+we use the <a href="/2016/tutorials/security/principals-and-blessings.html#default-authorization-policy">default authorizer</a> for simplicity.</p>
+<p>Since any server should support concurrent access, its service map should
+be protected my a mutex.</p>
+<h1 id="try-it">Try it</h1>
+<h2 id="principal">Principal</h2>
+<p>In this example, we run the client and the server as the same [principal].
+We can re-use the <code>tutorial</code> principal from the basics tutorial.</p>
+<h2 id="start-the-server">Start the server</h2>
+<p>Fire up the server with the new dispatcher code:</p>
+<!-- @buildServer @test @completer -->
+<pre tabindex="0"><code>go install fortune/server
+</code></pre><!-- @runServer @test @sleep -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+$V_TUT/bin/server \
+    --v23.credentials $V_TUT/cred/basics \
+    --endpoint-file-name $V_TUT/server.txt &amp;
+TUT_PID_SERVER=$!
+</code></pre><h2 id="hire-cassandra">Hire Cassandra</h2>
+<p>Try to run a client as Cassandra:</p>
+<p>{{# helpers.warning }}
+Expect it to fail.
+{{/ helpers.warning }}</p>
+<!-- @firstTry -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/basics \
+    --server `cat $V_TUT/server.txt`
+</code></pre><p>The error is <em>Method does not exist: Get</em>. This is because the root
+object, i.e. the one associated with an empty <em>suffix</em>, does not implement
+the Fortune interface.</p>
+<p>To get past this, specify a <em>suffix</em>:</p>
+<!-- @secondTry -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/basics \
+    --server `cat $V_TUT/server.txt`/cassandra
+</code></pre><p>That works.  This time the server was specified with the suffix
+<code>cassandra</code>.</p>
+<p>Likewise, the client should be able to write to that service:</p>
+<!-- @writingWorksToo -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/basics \
+    --server `cat $V_TUT/server.txt`/cassandra \
+    --add 'Do not visit Sparta!'
+</code></pre><p>But how would customers know that the <code>cassandra</code> service exists? The
+answer is in the server&rsquo;s namespace.</p>
+<p>The server&rsquo;s namespace is just like the mount table namespace. It allows
+the server to publish the name of the services that it hosts. In this
+example, this is accomplished by the <a href="/2016/tutorials/naming/globber.html#introduction">ChildrenGlobber</a> service at the
+server&rsquo;s <code>root</code>.</p>
+<p><a href="/2016/tutorials/naming/globber.html#introduction">ChildrenGlobber</a> is covered in more details in the <a href="/2016/tutorials/naming/globber.html">Globber</a> tutorial.</p>
+<!-- @globServer -->
+<pre tabindex="0"><code>$V_BIN/namespace \
+    --v23.credentials $V_TUT/cred/basics \
+    --v23.namespace.root `cat $V_TUT/server.txt` \
+    glob &quot;*&quot;
+</code></pre><p>Let&rsquo;s insert a table to make service specifications easier to read.</p>
+<h1 id="mount-it">Mount it</h1>
+<p>Start a mount table and save it in
+<a href="/2016/tutorials/naming/mount-table.html#the-namespace-variable"><code>$V23_NAMESPACE</code></a>:</p>
+<!-- @startMountTable @test @sleep -->
+<pre tabindex="0"><code>PORT_MT=23000  # Pick an unused port.
+kill_tut_process TUT_PID_MT
+$V_BIN/mounttabled \
+    --v23.credentials $V_TUT/cred/basics \
+    --v23.tcp.address :$PORT_MT &amp;
+TUT_PID_MT=$!
+export V23_NAMESPACE=/localhost:$PORT_MT
+</code></pre><p>Restart the fortune server to publish itself in the mount table at the
+name <code>prophInc</code>:</p>
+<!-- @runServer2 @test @sleep -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+$V_TUT/bin/server \
+    --v23.credentials $V_TUT/cred/basics \
+    --service-name prophInc \
+    --endpoint-file-name $V_TUT/server.txt &amp;
+TUT_PID_SERVER=$!
+</code></pre><p>Now add a new fortune via a mount table lookup:</p>
+<!-- @writeViaTable @test -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/basics \
+    --server prophInc/cassandra \
+    --add 'Troy is doomed!'
+</code></pre><p>It&rsquo;s this last usage that makes the term <strong>suffix</strong> clear.</p>
+<p>The mount name <code>prophInc</code> is followed by the suffix <code>cassandra</code> to
+specify which service to access in the server.</p>
+<p>Customers can discover the service names via the mount table:</p>
+<!-- @globMounttable -->
+<pre tabindex="0"><code>$V_BIN/namespace \
+    --v23.credentials $V_TUT/cred/basics \
+    glob &quot;prophInc/*&quot;
+</code></pre><p>The server&rsquo;s namespace transparently extends the mount table&rsquo;s namespace.</p>
+<h1 id="exercises">Exercises</h1>
+<h2 id="add-other-services">Add other services</h2>
+<p>Create another service for nostradamus and watch it appear in the
+namespace next to cassandra.</p>
+<!-- @createNostradamusService @test -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/basics \
+    --server prophInc/nostradamus
+
+$V_BIN/namespace \
+    --v23.credentials $V_TUT/cred/basics \
+    glob &quot;prophInc/*&quot;
+</code></pre><h1 id="cleanup">Cleanup</h1>
+<!-- @cleanup @test -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+kill_tut_process TUT_PID_MT
+unset V23_NAMESPACE
+</code></pre><h1 id="summary">Summary</h1>
+<ul>
+<li>
+<p>Servers can contain multiple services, identified by a <strong>suffix</strong>.</p>
+</li>
+<li>
+<p>These services can be published in the server&rsquo;s namespace.</p>
+</li>
+</ul>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+    
+      <a href="/tutorials/naming/namespace/" class="p-8 flex justify-start items-center bg-cyan-800 grow">
+        <div class="flex items-center justify-center w-[48px] h-[48px]">
+          <i class="material-icons text-white">arrow_back</i>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="text-white/70 text-xs">Previous</div>
+          <div class="text-white">Namespaces</div>
+        </div>
+      </a>
+    
+  
+
+  
+    
+      <a href="/tutorials/naming/suffix-part2/" class="p-8 flex justify-end items-center bg-primary-color grow">
+        <div class="flex flex-col items-end">
+          <div class="text-white/70 text-xs">Next</div>
+          <div class="text-white">The Suffix - Part II</div>
+        </div>
+        <div class="flex items-center justify-center w-[48px] h-[48px]">
+          <i class="material-icons text-white">arrow_forward</i>
+        </div>
+      </a>
+    
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>

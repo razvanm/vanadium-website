@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vanadium</title>
+    <link>https://v.io/</link>
+    <description>Recent content on Vanadium</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://v.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fortune in Java</title>
+      <link>https://v.io/tutorials/java/fortune/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/java/fortune/</guid>
+      <description>Introduction In this tutorial, we will create a fortune teller server and a client to talk to it. The server will have two methods:
+ Add, which adds a fortune to the list of fortunes, and Get, which retrieves a random fortune.  Setting up the project In this tutorial, we will use the Gradle build tool to build the project. There is no requirement that Vanadium Java projects use Gradle, but it&amp;rsquo;s the easiest way to get started.</description>
+    </item>
+    
+    <item>
+      <title>Internal Tutorial Testing</title>
+      <link>https://v.io/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/testing/</guid>
+      <description>This page explains how to test the tutorials against a local, development branch of Vanadium.
+In the overall external instruction sequence, this page replaces the external installation instructions, allowing a Vanadium team member to use their existing installation instead.
+To run the tests, $JIRI_ROOT needs a value, and the binaries need to be in place. Check your state:
+[ -z &amp;quot;${JIRI_ROOT:?&#39;Must define JIRI_ROOT&#39;}&amp;quot; ] [ -x &amp;quot;$JIRI_ROOT/.jiri_root/scripts/jiri&amp;quot; ] || echo &#39;No jiri!</description>
+    </item>
+    
+    <item>
+      <title>Linux Prerequisites</title>
+      <link>https://v.io/installation/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/installation/linux/</guid>
+      <description>You need to install Git, curl, and Go.
+The following commands should work on a Debian-based Linux distribution. Other distributions might require use of yum instead of apt-get. Adapt as needed.
+This document assumes that you are using the Bash shell.
+Git Vanadium code is managed using Git. Learn more about Git setup on GitHub.
+sudo apt-get install git Curl The install script uses curl to download some prerequisites.
+sudo apt-get install curl Go Vanadium is mostly implemented in Go.</description>
+    </item>
+    
+    <item>
+      <title>Namespace Browser</title>
+      <link>https://v.io/tools/namespace-browser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tools/namespace-browser/</guid>
+      <description>The Vanadium Namespace Browser is an interactive tool to browse Vanadium namespaces, find services, and invoke methods on these services. Vanadium namespaces can be public, in that they are accessible (and thus browsable) to a large number of users and devices, or they can be private to an individual or an organization. The Namespace Browser is especially useful for exploring existing public namespaces, inspecting data in a Syncbase service, or developing of new Vanadium applications.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://v.io/tutorials/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/java/</guid>
+      <description>Vanadium supports writing secure and distributed applications in Java.
+By using the Vanadium Definition Language (VDL), Vanadium apps written in Java can also communicate with Vanadium servers and clients written in other languages.
+Unlike other tutorials, the Java tutorials do not require a Vanadium installation.
+  Fortune in Java
+Wherein you build a fortune teller service and a client to talk to it.
+  Location Service in Android</description>
+    </item>
+    
+    <item>
+      <title>RPC System</title>
+      <link>https://v.io/concepts/rpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/concepts/rpc/</guid>
+      <description>The Vanadium remote procedure call (RPC) system enables communication between processes by presenting an API based on local function calls. Function calls are a familiar model to developers, and the API hides low-level details like the underlying network transport and data serialization protocols.
+Basics There are two participants in RPC-based communication. The caller of an RPC is known as the client and the receiver that implements the RPC is known as the server.</description>
+    </item>
+    
+    <item>
+      <title>Java Prerequisites</title>
+      <link>https://v.io/installation/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/installation/java/</guid>
+      <description>Basic prerequisites To work with Vanadium in Java, we recommend that you have:
+ Java 7 or above Gradle  Getting the Vanadium libraries The Vanadium Java libraries are distributed using Maven.</description>
+    </item>
+    
+    <item>
+      <title>Location Service in Android</title>
+      <link>https://v.io/tutorials/java/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/java/android/</guid>
+      <description>Introduction In this tutorial, we will build a very simple Android application that will create a Vanadium server on the phone. When queried by an authorized client, the server will return the phone&amp;rsquo;s physical location (latitude and longitude).
+The tutorial will demonstrate some Android-specific aspects of the Vanadium implementation. It will also show that Vanadium allows clients to work across NAT networks transparently.
+We will be building three software components in this tutorial:</description>
+    </item>
+    
+    <item>
+      <title>Naming</title>
+      <link>https://v.io/concepts/naming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/concepts/naming/</guid>
+      <description>The Vanadium naming system enables discovery of devices, regardless of their physical locations - with or without an internet connection.
+Object names Vanadium names, usually abbreviated to &amp;ldquo;names&amp;rdquo; refer to objects.
+Objects implement RPC methods. In other words, methods are invoked on object names. The basic primitive is thus:
+name.method(args) -&amp;gt; results  For example, if the name /host:8080/a/y/foo.jpg represents a JPEG file, then /host:8080/a/y/foo.jpg.Get() will return the contents of that file.</description>
+    </item>
+    
+    <item>
+      <title>OS X Prerequisites</title>
+      <link>https://v.io/installation/os-x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/installation/os-x/</guid>
+      <description>You need to install Homebrew, OS X command line tools, Git, and Go.
+These instructions were tested on a fresh copy of OS X Mavericks, but they should work on most recent versions of OS X.
+This document assumes that you are using the default shell, which is Bash.
+Homebrew Homebrew is a widely-used OS X package manager. We&amp;rsquo;ll use it to install other prerequisites.
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot; OS X command line tools These are the standard UNIX command line tools for development.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://v.io/installation/rpi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/installation/rpi/</guid>
+      <description>Vanadium can be used to write software for RaspberryPis. This page details how to set things up so you can build and run Vanadium Go binaries on them.
+Prerequisites You need a RaspberryPi with an installed operating system. See installation instructions at raspberrypi.org. Advanced or adventurous users may want to install Raspian directly.
+Building on a RaspberryPi You could use the RaspberryPi as your complete development environment - write code, compile it and run it all on the Pi.</description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://v.io/concepts/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/concepts/security/</guid>
+      <description>The Vanadium security model defines mechanisms for identification, authentication, and authorization. The model supports fully decentralized, fine-grained, and auditable delegation of authority.
+For example, Alice could choose to delegate access to Bob only under the following conditions:
+ the operation is Read, and the current time is between 6PM and 8PM, and Bob is in Alice&amp;rsquo;s &amp;ldquo;friends&amp;rdquo; group, and Bob is in close physical proximity of Alice  Such delegations do not have to go through the cloud or any centralized service, can be accomplished by a single interaction between Alice and Bob, and encode an audit trail of the principals involved in the delegation.</description>
+    </item>
+    
+    <item>
+      <title>Device Management</title>
+      <link>https://v.io/concepts/device-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/concepts/device-management/</guid>
+      <description>Vanadium targets a broad range of compute devices and environments. Vanadium&amp;rsquo;s device management system securely integrates physical devices and software applications available in the system.
+Devices and applications A device abstracts a system running Vanadium software, although the device need not be exclusively for Vanadium apps - for example, the system could be running natively installed applications alongside Vanadium applications. Typically, a device is a physical computing device, but a device could also be a virtual machine or a browser environment.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://v.io/tutorials/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/hello-world/</guid>
+      <description>Introduction Practically speaking, Vanadium is a set of Go and Java language libraries (more languages coming), plus a few dozen services and command line tools built on top of them.
+The goal of this first tutorial is to get you to running code as quickly as possible. Subsequent tutorials will explain what&amp;rsquo;s happening here in more detail, and take you much further into security and service discovery.
+When they do so, the tutorials create files in $V_TUT (likely $HOME/v23_tutorial):</description>
+    </item>
+    
+    <item>
+      <title>Client/Server Basics</title>
+      <link>https://v.io/tutorials/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/basics/</guid>
+      <description>Introduction In the hello world tutorial, you got a client and server running.
+In this tutorial, you&amp;rsquo;ll build a slightly more complex client and server that will serve as the framework for deeper explorations of Vanadium security and service discovery.
+This time, the server code is split into multiple files. The new code structure lets later tutorials change only the parts that need to change (e.g., a dispatcher, an authorizer), keeping later code shorter and clearer.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://v.io/tutorials/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/security/</guid>
+      <description>In Vanadium, all communication channels are encrypted and authenticated, and all communication must satisfy an authorization policy.
+The following tutorials build from the Client/Server Basics tutorial to demonstrate code and pre-built tools that implement and benefit from Vanadium security.
+  Principals and Blessings
+Wherein Alice and her friend Bob take the stage to demonstrate inter-principal communication.
+  Permissions
+Wherein you meet a built-in authorizer that that lets Alice grant fine-grained access to Bob and Carol with simple lists of names.</description>
+    </item>
+    
+    <item>
+      <title>Principals and Blessings</title>
+      <link>https://v.io/tutorials/security/principals-and-blessings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/security/principals-and-blessings/</guid>
+      <description>Principals A principal in the Vanadium framework is simply a public and private key pair. It has a set of human-readable names bound to it using public-key certificate chains, called blessings. All Vanadium processes act on behalf of a principal and are authorized by other processes based on the blessing names bound to the principal.
+For example a principal Alice may have the blessings alice and bob:houseguest bound to it. A process running on behalf of Alice may authenticate to others as either alice or bob:houseguest or both.</description>
+    </item>
+    
+    <item>
+      <title>Permissions Authorizer</title>
+      <link>https://v.io/tutorials/security/permissions-authorizer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/security/permissions-authorizer/</guid>
+      <description>Permissions policy In addition to the default authorization policy, Vanadium offers another built-in authorization policy based on the commonly used idea of a permissions map. Such an authorizer allows a wide range of policies controllable via editing lists that are given to a server as flags - no need to modify code.
+{{# helpers.info }}
+Vanadium also supports the use of a completely custom policy - the procedure for building one is covered in the custom authorizer tutorial.</description>
+    </item>
+    
+    <item>
+      <title>Caveats</title>
+      <link>https://v.io/tutorials/security/first-party-caveats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/security/first-party-caveats/</guid>
+      <description>Start server with permissions This tutorial uses the server with the Permissions authorizer (described in the permissions-authorizer tutorial):
+kill_tut_process TUT_PID_SERVER $V_TUT/bin/server \ --v23.credentials $V_TUT/cred/alice \ --endpoint-file-name $V_TUT/server.txt \ --perms &#39;{&amp;quot;R&amp;quot;: {&amp;quot;In&amp;quot;: [&amp;quot;alice:family&amp;quot;, &amp;quot;alice:friend&amp;quot;]}, &amp;quot;W&amp;quot;: {&amp;quot;In&amp;quot;: [&amp;quot;alice:family&amp;quot;]}}&#39; &amp;amp; TUT_PID_SERVER=$! Blessings as delegation Blessings bind human-readable names (e.g., alice:friend:bob) to a principal (identified by its public key). Principals are authorized based on these names. For instance, permissions provide a means of specifying authorization policy using a list of patterns that match these names.</description>
+    </item>
+    
+    <item>
+      <title>Third-party Caveats</title>
+      <link>https://v.io/tutorials/security/third-party-caveats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/security/third-party-caveats/</guid>
+      <description>Introduction Earlier you learned how to add caveats to a blessing to restrict its validity. For example, one can make a blessing expire after a few minutes, or restrict it to work only when accessing a particular method on a service. These conditions are validated by the server before allowing the client to invoke a method.
+This tutorial introduces third-party caveats. The restrictions encoded in the caveat are validated by a third party that issues a proof of validity called a discharge.</description>
+    </item>
+    
+    <item>
+      <title>The Agent</title>
+      <link>https://v.io/tutorials/security/agent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/security/agent/</guid>
+      <description>Motivation In the principals tutorial you used the principal create command to create the principals Alice, Bob, etc. The operation made collections of files in the specified target directories, e.g.:
+ls $V_TUT/cred/alice $V_TUT/cred/bob Stored among these files are the private keys associated with Alice and Bob. The keys could be encrypted (there are ways to do that), but at the moment, they aren&amp;rsquo;t. At no point during earlier tutorials did you - the tutee - get prompted for a passphrase, despite frequent use of the --v23.</description>
+    </item>
+    
+    <item>
+      <title>Custom Authorizer</title>
+      <link>https://v.io/tutorials/security/custom-authorizer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/security/custom-authorizer/</guid>
+      <description>Introduction The goal of this tutorial is to make a custom authorizer and test it using some existing principals.
+This command
+ls $V_TUT/cred should list (at least) alice and bob and carol.
+The prerequisite script should have arranged for Bob to have the blessing alice:friend:bob and Carol to have the blessing alice:family:sister.
+Custom authorization policy If the Permissions authorizer and/or caveats (caveats are discussed later) aren&amp;rsquo;t sufficient for some purpose, Vanadium applications can create their own arbitrarily complex policy by implementing the security.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://v.io/tutorials/naming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/naming/</guid>
+      <description>Naming, like security, is central to Vanadium.
+Naming is Vanadium&amp;rsquo;s term for service identification and discovery.
+The following tutorials build from the basics tutorial to demonstrate code and pre-built tools that implement and benefit from Vanadium naming.
+  The Mount Table
+Wherein you use the basic tools of service discovery.
+  Namespaces
+Wherein you manipulate multiple mount tables to create a rich namespace.
+  The Suffix - Part I</description>
+    </item>
+    
+    <item>
+      <title>The Mount Table</title>
+      <link>https://v.io/tutorials/naming/mount-table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/naming/mount-table/</guid>
+      <description>Introduction This tutorial focusses on using a mount table with the fortune server and client programs you made in the basics tutorial, and just re-made with the prerequisites script above.
+Credentials To keep security simple initially, all processes here will use the same credentials. Further, credentials will be specified using this environment variable:
+export V23_CREDENTIALS=$V_TUT/cred/basics Vanadium programs consult this environment variable when the credentials aren&amp;rsquo;t specified by using the --v23.credentials flag, or by using a security agent.</description>
+    </item>
+    
+    <item>
+      <title>Namespaces</title>
+      <link>https://v.io/tutorials/naming/namespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/naming/namespace/</guid>
+      <description>Introduction As done in the mount table tutorial, this tutorial will use just one set of credentials for all processes:
+export V23_CREDENTIALS=$V_TUT/cred/basics This tutorial will use three distinct mount table servers, named HOME, METERS and UTILITY. These names are in uppercase to distinguish them from service names used in table entries, where we&amp;rsquo;ll stick with a lowercase convention.
+Start HOME first:
+PORT_MT_HOME=23000 # Pick an unused port. kill_tut_process TUT_PID_MT_HOME $V_BIN/mounttabled --v23.</description>
+    </item>
+    
+    <item>
+      <title>The Suffix - Part I</title>
+      <link>https://v.io/tutorials/naming/suffix-part1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/naming/suffix-part1/</guid>
+      <description>Introduction In an earlier tutorial, a fortune server was mounted in a table with the name fortuneAlpha.
+Since that server contained only one service, clients needed nothing more than that name, as seen in the mount table, to start using the service.
+If a server contains multiple services, a suffix is needed to select one. A mount table doesn&amp;rsquo;t know about suffixes directly. A server encapsulates that knowledge in its dispatcher.</description>
+    </item>
+    
+    <item>
+      <title>The Suffix - Part II</title>
+      <link>https://v.io/tutorials/naming/suffix-part2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/naming/suffix-part2/</guid>
+      <description>Introduction In the suffix Part I, you built a fortune server with multiple services. For simplicity, this server used the default authorizer and only allowed calls from the same principal.
+In Part II, you will learn how to implement a fine-grained access control policy for your services.
+Let&amp;rsquo;s add some requirements to our Part I example.
+Requirements Your company, Prophecies Inc, needs a server to support its team of prophetic consultants - Cassandra, Nostradamus, etc.</description>
+    </item>
+    
+    <item>
+      <title>Globber</title>
+      <link>https://v.io/tutorials/naming/globber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/naming/globber/</guid>
+      <description>Introduction In the suffix Part I and Part II tutorials, we introduced the concept of server namespace where multiple services on a single server can be accessed by name and can be discovered with the namespace glob command.
+There are two variants of the Globber interface defined in rpc/model.go: AllGlobber, and ChildrenGlobber. AllGlobber is the most flexible option, but also the most difficult to implement correctly. It is used by specialized applications like a mount table server.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://v.io/tutorials/management/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/management/overview/</guid>
+      <description>Management is about running Vanadium applications remotely on heterogeneous devices.
+The following tutorials build from the [basics tutorial] to demonstrate code and pre-built tools that implement and benefit from Vanadium application management.
+  The Device Manager
+Wherein you learn about running a server through the device manager.
+  </description>
+    </item>
+    
+    <item>
+      <title>The Device Manager</title>
+      <link>https://v.io/tutorials/management/device-manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/management/device-manager/</guid>
+      <description>Introduction In the basics tutorial, you ran the fortune server as a background process from the terminal.
+In this tutorial, you&amp;rsquo;ll learn how to use the device manager to run your server remotely (however, the device manager you&amp;rsquo;ll be running as part of the tutorial is running on the same computer to keep things simple).
+Credentials We&amp;rsquo;ll be using default credentials for all the commands and servers we start from the terminal.</description>
+    </item>
+    
+    <item>
+      <title>Internal Tutorial Checkup</title>
+      <link>https://v.io/tutorials/checkup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/checkup/</guid>
+      <description>A smoke test to see that VANADIUM_RELEASE is defined and provides access to crucial Vanadium file assets.
+This isn&amp;rsquo;t meant to be an exhaustive test, just a quick check. It&amp;rsquo;s used in tests, tutorial preparation, etc.
+function bad_vanadium() { echo &#39; Per https://vanadium.github.io/installation/, either export JIRI_ROOT={your installation directory} or do a fresh install.&#39;; exit 1; } [ -z &amp;quot;$VANADIUM_RELEASE&amp;quot; ] &amp;amp;&amp;amp; { echo &#39;The environment variable VANADIUM_RELEASE is not defined.&#39;; bad_vanadium; } [ -x &amp;quot;$VANADIUM_RELEASE/bin/principal&amp;quot; ] || { echo &#39;The file $VANADIUM_RELEASE/bin/principal does not exist or is not executable.</description>
+    </item>
+    
+    <item>
+      <title>Internal Tutorial Cleanup</title>
+      <link>https://v.io/tutorials/cleanup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/cleanup/</guid>
+      <description>Delete the tutorial workspace directory.
+Might be used in tests, tutorial preparation, etc.
+if [ -z &amp;quot;${V_TUT}&amp;quot; ]; then echo &amp;quot;V_TUT not defined, nothing to do.&amp;quot; else if [ -d &amp;quot;${V_TUT}&amp;quot; ]; then /bin/rm -rf $V_TUT echo &amp;quot;Removed $V_TUT&amp;quot; else echo &amp;quot;Not a directory: V_TUT=\&amp;quot;$V_TUT\&amp;quot;&amp;quot; fi fi </description>
+    </item>
+    
+    <item>
+      <title>Internal Tutorial Wipe Slate</title>
+      <link>https://v.io/tutorials/wipe-slate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/wipe-slate/</guid>
+      <description>Clear, but don&amp;rsquo;t delete, the tutorial workspace directory.
+Might be used in tests, tutorial preparation, etc.
+if [ -z &amp;quot;${V_TUT}&amp;quot; ]; then echo &amp;quot;V_TUT not defined, nothing to do.&amp;quot; else if [ -d &amp;quot;${V_TUT}&amp;quot; ]; then /bin/rm -rf $V_TUT/* echo &amp;quot;Removed contents of $V_TUT&amp;quot; else echo &amp;quot;Not a directory: V_TUT=\&amp;quot;$V_TUT\&amp;quot;&amp;quot; fi fi </description>
+    </item>
+    
+    <item>
+      <title>Tutorial Environment Setup</title>
+      <link>https://v.io/tutorials/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/setup/</guid>
+      <description>You don&amp;rsquo;t need to read this, unless you were sent here with a suggestion to start a second tutorial terminal, likely to keep the output from multiple processes easier to read.
+In addition to the $VANADIUM_RELEASE variable defined by installation, every terminal window used in a tutorial must run the environment definition script below.
+If you follow the prerequisite instructions at the beginning of a tutorial, you&amp;rsquo;ll implicitly run the script on this page, and you&amp;rsquo;ll run commands from earlier tutorials that create the files needed by your current tutorial.</description>
+    </item>
+    
+    <item>
+      <title>API Reference</title>
+      <link>https://v.io/api-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/api-reference/</guid>
+      <description>Vanadium core Go services  v23: Public API ref: Reference implementation of the public API lib: Vanadium-independent libraries  </description>
+    </item>
+    
+    <item>
+      <title>Authentication Protocol</title>
+      <link>https://v.io/designdocs/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/designdocs/authentication/</guid>
+      <description>When a network connection is established between two Vanadium processes, they authenticate each other, i.e., exchange blessings so that both ends can identify the specific principal at the other end. The remote blessing names are then used to authorize RPCs. This document describes:
+ the properties desired from the authentication protocol the current implementation that provides these properties the reasons behind various design choices in a question-and-answer format.  Principals &amp;amp; blessings A principal is defined by a unique (public, private) key pair (P, S) and a set of blessings in the form of certificate chains that bind a name to P.</description>
+    </item>
+    
+    <item>
+      <title>Coding Guidelines</title>
+      <link>https://v.io/community/coding-guidelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/community/coding-guidelines/</guid>
+      <description>Code organization Vanadium is spread across multiple git repositories. The [contributor installation] process arranges these repositories as follows (some repositories omitted, for brevity):
+ $JIRI_ROOT .jiri_root # Jiri utils and metadata bin # Contributor tool binaries scripts/jiri # Jiri command-line tool environment # Platform-dependent configuration manifest # Multi-repo configuration data release # Source code go/src/v.io/v23 # Interfaces go/src/v.io/x # Implementation devtools # Contributor tool source code lib # Developer libs ref # Reference implementation of v23 javascript # JS interfaces and implementation projects # Example apps playground # Write/build/run v23 code on the web browser # Vanadium namespace browser chat # Chat program third_party # Third-party code website # Source for this site Each repository has a README.</description>
+    </item>
+    
+    <item>
+      <title>Contributing</title>
+      <link>https://v.io/community/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/community/contributing/</guid>
+      <description>Reporting issues We use GitHub for tracking Vanadium issues: https://github.com/vanadium/issues/issues
+Contributor setup Vanadium installation Follow the installation instructions to set up a JIRI_ROOT directory and fetch all Vanadium repositories.
+The instructions below assume you&amp;rsquo;ve set the JIRI_ROOT environment variable and have added $JIRI_ROOT/.jiri_root/scripts to your PATH:
+# Edit to taste. export JIRI_ROOT=${HOME}/vanadium export PATH=$PATH:$JIRI_ROOT/.jiri_root/scripts  Recommended: Add the lines above to your ~/.bashrc or similar.
+Contributor license agreement (CLA) Before patches can be accepted, contributors must sign the Google Individual Contributor License Agreement (CLA), which can be done online.</description>
+    </item>
+    
+    <item>
+      <title>Example Apps</title>
+      <link>https://v.io/example-apps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/example-apps/</guid>
+      <description>Physical Lock  Repo: https://github.com/vanadium/physical-lock  Physical Lock defines the software for building a secure physical lock using the Vanadium stack, along with a commmand-line tool for interacting with the lock. The software runs on a Raspberry Pi and interacts with the locks&amp;rsquo;s switches and sensors using GPIO. It runs a Vanadium RPC service that allows clients to send lock and unlock requests.
+Key distinguishing aspects:
+ Decentralized: There is no single authority on all the locks, no cloud server that controls access to all locks from a particular manufacturer.</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://v.io/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/faq/</guid>
+      <description>Who should consider using this Vanadium pre-release? Anyone who&amp;rsquo;s interested in learning what the system can do, or is excited about the prospect of being an early adopter or contributor of what we hope will become a comprehensive framework for building distributed applications and multi-device UIs.
+Who should not consider using this Vanadium pre-release? Anyone who needs to build a production quality system or application over the next few months — although we believe our code is well tested, we expect to continue to make changes to the core APIs and services as we learn from our early adopters.</description>
+    </item>
+    
+    <item>
+      <title>Glossary</title>
+      <link>https://v.io/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/glossary/</guid>
+      <description>Access list An access list describes which blessing names should be granted access to a particular object or method.
+An access list has an In list of blessing patterns that grants access to all blessing names that are matched by one of the patterns, and an optional NotIn list that specifies exclusions from the In list.
+For example, an access list with the In list {alice:family} and NotIn list {alice:family:uncle} is matched by principals with blessing names alice:family, alice:family:friend, but NOT alice, alice:friend, alice:family:uncle, alice:family:uncle:spouse, and so on.</description>
+    </item>
+    
+    <item>
+      <title>Identity Service</title>
+      <link>https://v.io/designdocs/identity-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/designdocs/identity-service/</guid>
+      <description>The Vanadium Identity Service generates blessings. It uses an OAuth2 identity provider to get the email address of the user on whose behalf the request is made and then issues a blessing for that email address. Blessings issued by this service are of two kinds:
+ User-Blessing: A user-blessing authorizes the (blessed) principal to act on behalf of the user. The blessing is namespaced under the user&amp;rsquo;s email address and is of the form dev.</description>
+    </item>
+    
+    <item>
+      <title>Jiri</title>
+      <link>https://v.io/tools/jiri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tools/jiri/</guid>
+      <description>jiri is a command-line tool for managing multi-repository projects. jiri was originally designed to aid Vanadium development, but has since been extracted into a standalone project, and is now used by various other projects.
+jiri is available here: https://github.com/vanadium/go.jiri
+The &amp;ldquo;fetch repositories&amp;rdquo; step of Vanadium installation installs the jiri tool in $JIRI_ROOT/.jiri_root/scripts.
+Run jiri help to learn more about the tool. (Note, this command assumes your PATH contains $JIRI_ROOT/.jiri_root/scripts.)</description>
+    </item>
+    
+    <item>
+      <title>Mailing List</title>
+      <link>https://v.io/community/mailing-lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/community/mailing-lists/</guid>
+      <description> Vanadium Discuss mailing list - Mailing list for discussion of Vanadium-related topics (e.g. questions, changes, feature requests). We will also send announcements of new versions and sample apps.  </description>
+    </item>
+    
+    <item>
+      <title>Quick Installation</title>
+      <link>https://v.io/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/installation/</guid>
+      <description>Vanadium can be installed on Linux or OS X.
+To install Vanadium, download this script, then source it:
+source ~/Downloads/vanadium-install.sh  This script checks for prerequisites, then attempts to install Vanadium. It takes about five minutes to run.
+ If the script reports no errors, you&amp;rsquo;re ready to try the tutorials! If it complains, please follow the step-by-step instructions.  What does the script do? It runs all the steps from the step-by-step instructions.</description>
+    </item>
+    
+    <item>
+      <title>Quick Installation</title>
+      <link>https://v.io/tutorials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/</guid>
+      <description>Vanadium can be installed on Linux or OS X.
+To install Vanadium, download this script, then source it:
+source ~/Downloads/vanadium-install.sh {{# helpers.hidden}} Please source this script:
+source /dev/stdin &amp;lt;&amp;lt;&amp;lt; &amp;quot;$(curl -f -s https://v.io/sh/vanadium-install.sh)&amp;quot; {{/ helpers.hidden}}
+This script checks for prerequisites, then attempts to install Vanadium. It takes about five minutes to run.
+ If the script reports no errors, you&amp;rsquo;re ready to try the tutorials! If it complains, please follow the step-by-step instructions.</description>
+    </item>
+    
+    <item>
+      <title>Roadmap</title>
+      <link>https://v.io/community/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/community/roadmap/</guid>
+      <description>Syncbase API usability  We have recently conducted API usability tests and are working on a new high-level API to help developers get started quickly with Syncbase.
+ Website, docs &amp;amp; sample app improvements   My First App: Android &amp;amp; iOS todo tutorial (and sample app with new APIs) update syncslides to new API tutorial that doesn&amp;rsquo;t require syncbase cloud   Blobs  Blobs are already implemented in Go and sync across Syncbase instances, and there exists low-level RPC support, also in Go; however, there is not yet a high level API in Swift or Java to access this functionality on an iOS or Android device.</description>
+    </item>
+    
+    <item>
+      <title>Step-by-step Installation</title>
+      <link>https://v.io/installation/step-by-step/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/installation/step-by-step/</guid>
+      <description>This document provides step-by-step instructions for installing Vanadium.
+System requirements The instructions below assume you are using the Bash shell.
+set | grep BASH &amp;gt; /dev/null || echo &amp;quot;Vanadium installation requires Bash.&amp;quot; In addition, they assume the following software packages are installed and available in your PATH:
+ curl Go 1.5 or above Git 2.4 or above  On OS X, you&amp;rsquo;ll also need:
+ Homebrew package manager Full and up-to-date Xcode  OS-specific setup details For OS-specific setup details, consult these instructions:</description>
+    </item>
+    
+    <item>
+      <title>Terms of Service</title>
+      <link>https://v.io/tos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tos/</guid>
+      <description>The Vanadium v.io website (the &amp;ldquo;Website&amp;rdquo;) and Vanadium Cloud Services (the &amp;ldquo;Services&amp;rdquo;) are hosted by Google. By using and/or visiting the Website and/or Services, you consent to be bound by Google&amp;rsquo;s general Terms of Service, the Google APIs Terms of Service, and Google&amp;rsquo;s general Privacy Policy.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial FAQ</title>
+      <link>https://v.io/tutorials/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tutorials/faq/</guid>
+      <description>Do I need to know Go? No. The initial coding tutorials use short, unexotic blocks of Go that should be readable by anyone familiar with a language in the C family.
+For Go specific tutorials, see golang.org.
+Must the tutorials be done in order? No. Some tutorials assume familiarity with things covered in previous tutorials, and some literally depend on files created in previous tutorials but have instructions on how to get these without having to step through the tutorials that generate them.</description>
+    </item>
+    
+    <item>
+      <title>Vanadium Cloud Services</title>
+      <link>https://v.io/tools/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tools/services/</guid>
+      <description>While it&amp;rsquo;s possible to run all Vanadium infrastructure services on your own we host several of them to ease development overhead. The following services are available to use and are often the default values for most configurations. All services listed here are covered by the the terms of service.
+Mount table The Mount table is a service that allows other Vanadium applications to discover and address one another. To be discovered an application will mount itself at a &amp;ldquo;name&amp;rdquo; and other applications (clients) can then address the service.</description>
+    </item>
+    
+    <item>
+      <title>Vanadium Core</title>
+      <link>https://v.io/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/overview/</guid>
+      <description>Vanadium Core enables building secure distributed applications.
+TODO: explain the relationship with the non-code Vanadium and point to the old site.
+It provides:
+ Complete security model
+Vanadium&#39;s security model is based on public-key cryptography, that supports fine-grained permissions and delegation. The combination of traditional ACLs and &#34;blessings with caveats&#34; supports a broad set of practical requirements. Learn more about Security
+  Symmetrically authenticated and encrypted RPC
+Vanadium Core provides symmetrically authenticated and encrypted RPC, with support for bi-directional messaging, streaming and proxying, that works on a variety of network protocols, including TCP and Bluetooth.</description>
+    </item>
+    
+    <item>
+      <title>Vanadium Identity Service</title>
+      <link>https://v.io/tools/identity-service-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/tools/identity-service-faq/</guid>
+      <description>The Vanadium Identity Service is a cloud service that is a blessing root for blessing names that begin with dev.v.io. Applications can choose to recognize the authority of this service in order to broker authentication between different principals that the application communicates with.
+The web interface for this service is accessible at https://dev.v.io/auth and the design of this service (along with how to obtain a blessing from it) is described in this document.</description>
+    </item>
+    
+    <item>
+      <title>Vanadium Performance</title>
+      <link>https://v.io/performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/performance/</guid>
+      <description>Performance of the Vanadium APIs is measured with microbenchmarks. benchmarks.v.io records these results at various snapshots of the codebase and on multiple platforms. Since the total number of benchmarks served by benchmarks.v.io is somewhat overwhelming, this page lists out a small subset that can be considered representative of Vanadium.
+The numbers below are for using the Go API. Benchmarks for other languages (Java in particular) are not integrated into the flow of continuous measurement yet, but are intended to be.</description>
+    </item>
+    
+    <item>
+      <title>VDL Specification</title>
+      <link>https://v.io/designdocs/vdl-spec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/designdocs/vdl-spec/</guid>
+      <description>This is a reference manual for VDL, the Vanadium Definition Language. The intended audience is both end-users writing VDL files, as well as core developers implementing VDL.
+VDL is an interface definition language for describing Vanadium components. It is designed to enable interoperability between implementations executing in heterogeneous environments. E.g. it enables an Android application running on a phone to communicate with a backend written in Go running on a server.</description>
+    </item>
+    
+    <item>
+      <title>VOM Specification</title>
+      <link>https://v.io/designdocs/vom-spec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://v.io/designdocs/vom-spec/</guid>
+      <description>Vanadium Object Marshalling (VOM) is a data format capable of serializing all values representable in VDL. It is the underlying serialization format used by the Vanadium RPC system.
+VOM is a binary format that represents a stream of typed values. The sending side sequentially encodes values into a stream of bytes, and the receiving side decodes the stream of bytes back into the original sequence of values.
+The format is self-describing.</description>
+    </item>
+    
+  </channel>
+</rss>

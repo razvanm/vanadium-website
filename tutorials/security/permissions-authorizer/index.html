@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width,
+                  initial-scale=1,
+                  minimum-scale=1,
+                  maximum-scale=1,
+                  user-scalable=no,
+                  minimal-ui">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileColor" content="#00acc1">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="/bundle.css"/>
+</head>
+<body>
+
+<div class="w-full fixed top-0">
+  <div class="bg-[url('/images/background.svg')] bg-no-repeat [background-size:100%] py-[16px] px-[12px] flex flex-row">
+    <a href="/">
+      <img src="/images/v-icon-white.svg"/>
+    </a>
+
+    <div class="text-white pl-[20px] text-[20px] font-medium">
+      Vanadium Core
+    </div>
+
+    <div class="grow"></div>
+
+    <a href="https://github.com/" class="fill-white">
+      <svg viewBox="0 0 16 16" class="w-[32px]">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+      </svg>
+    </a>
+  </div>
+</div><div class="fixed top-[64px] left-0 w-[200px] z-10 h-[calc(100%-64px)] bg-gray-50">
+  <nav class="overflow-y-auto h-full py-4 pl-4 leading-[20px] text-[14px]">
+    <a href="/overview">Overview</a>
+    <a href="/installation">Installation</a>
+    <div>Tutorials</div>
+    <nav class="pl-3">
+      <a href="/tutorials/hello-world">Hello World</a>
+      <a href="/tutorials/basics">Client/Server Basics</a>
+
+      <div>Security</div>
+      <nav class="pl-3">
+        <a href="/tutorials/security">Overview</a>
+        <a href="/tutorials/security/principals-and-blessings">Principal and Blessings</a>
+        <a href="/tutorials/security/permissions-authorizer">Permissions Authorizer</a>
+        <a href="/tutorials/security/first-party-caveats">Caveats</a>
+        <a href="/tutorials/security/third-party-caveats">Third-party Caveats</a>
+        <a href="/tutorials/security/agent">The Agent</a>
+        <a href="/tutorials/security/custom-authorizer">Customer Authorizer</a>
+      </nav>
+
+      <div>Naming</div>
+      <nav class="pl-3">
+        <a href="/tutorials/naming">Overview</a>
+        <a href="/tutorials/naming/mount-table">The Mount Table</a>
+        <a href="/tutorials/naming/namespace">Namespaces</a>
+        <a href="/tutorials/naming/suffix-part1">The Suffix - Part I</a>
+        <a href="/tutorials/naming/suffix-part2">The Suffix - Part II</a>
+        <a href="/tutorials/naming/globber">Globber</a>
+      </nav>
+
+      <div>Java</div>
+      <nav class="pl-3">
+        <a href="/tutorials/java">Overview</a>
+        <a href="/tutorials/java/fortune">Fortune in Java</a>
+        <a href="/tutorials/java/android">Location Service in Android</a>
+      </nav>
+
+      <a href="/tutorials/faq">Tutorial FAQ</a>
+    </nav>
+
+    <div>Concepts</div>
+    <nav class="pl-3">
+      <a href="/concepts/rpc">RPC System</a>
+      <a href="/concepts/naming">Naming</a>
+      <a href="/concepts/security">Security</a>
+      <a href="/concepts/device-management">Device Management</a>
+    </nav>
+
+    <div>Design Docs</div>
+    <nav class="pl-3">
+      <a href="/designdocs/authentication">Authentication Protocol</a>
+      <a href="/designdocs/identity-service">Identity Service</a>
+      <a href="/designdocs/vdl-spec">VDL Specification</a>
+      <a href="/designdocs/vom-spec">VOM Specification</a>
+    </nav>
+
+    <a href="/api-reference">API Reference</a>
+    <a href="/glossary">Glossary</a>
+    <a href="/faq">FAQ</a>
+
+    <div>Community</div>
+    <nav class="pl-3">
+      <a href="/community/coding-guidelines">Coding Guidelines</a>
+      <a href="/community/contributing">Contributing</a>
+      <a href="/community/mailing-lists">Mailing List</a>
+      <a href="/community/roadmap">Roadmap</a>
+    </nav>
+  </nav>
+</div>
+
+  <div class="hidden xl:block fixed top-[64px] right-0 w-[200px] p-4 text-[14px] border-l-4 border-l-gray-100 h-[calc(100%-64px)]">
+    <div class="uppercase font-medium pb-3">Permissions Authorizer</div>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#permissions-policy">Permissions policy</a>
+      <ul>
+        <li><a href="#a-specific-permissions-map">A specific permissions map</a></li>
+        <li><a href="#impact-on-bob-and-carol">Impact on Bob and Carol</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
+  </ul>
+</nav>
+  </div>
+
+<div class="flex flex-col h-screen pt-[64px]">
+  <div class="ml-[200px] px-11 w-[800px]">
+    <h1 class="text-primary-color text-[48px]">Permissions Authorizer</h1>
+
+    
+    <p><strong>Wherein</strong> you meet a built-in authorizer that that lets Alice grant fine-grained access to Bob and Carol with simple lists of names.</p>
+    
+  <div class="my-8 -mx-4 px-4 border border-blue-grey-50/100 rounded">
+    <p>
+      <strong>Prerequisites</strong>:<br>
+      All tutorials require Vanadium <a href="/installation/">installation</a>,
+      and must run in a <a href="/tutorials/faq.html#why-bash-">bash shell</a>.
+    </p>
+
+    
+      <p>
+        Further, please
+        <a href="/sh/scenario-c-setup.sh"
+           download="scenario-c-setup.sh">
+           download this script
+        </a>
+        then <a href="/tutorials/faq.html#why-source-">source</a> it:
+      </p>
+
+      <pre><code>source ~/Downloads/scenario-c-setup.sh</code></pre>
+
+      <p>
+        This command wipes tutorial files and defines shell environment
+        variables. If you start a new terminal, and just want to re-establish
+        the environment, see instructions
+        <a href="/tutorials/setup.html">here</a>.
+      </p>
+    
+
+    
+      <p>
+        If you would like to generate files from this tutorial without the
+        copy/paste steps, download and source
+        <a href="/sh/tut-completer-permissions-authorizer.sh"
+            download="tut-completer-permissions-authorizer.sh">
+            this script
+        </a>.
+        Files will be created in the <code>$V_TUT</code>
+        <a href="/tutorials/setup.html">directory</a>.
+      </p>
+    
+  </div>
+
+<content>
+      <h1 id="permissions-policy">Permissions policy</h1>
+<p>In addition to the <a href="/2016/tutorials/security/principals-and-blessings.html#default-authorization-policy">default authorization policy</a>, Vanadium
+offers another built-in authorization policy based on the commonly used idea of
+a permissions map.  Such an authorizer allows a wide range of policies
+controllable via editing lists that are given to a server as flags - no need to
+modify code.</p>
+<p>{{# helpers.info }}</p>
+<p>Vanadium also supports the use of a completely custom policy - the
+procedure for building one is covered in the <a href="/2016/tutorials/security/custom-authorizer.html">custom authorizer
+tutorial</a>.</p>
+<p>{{/ helpers.info }}</p>
+<p>Permission maps define a list of blessings that should be given (or denied)
+access to an object. All methods on objects can have <em>tags</em> on them and the
+access list used for the method is selected based on that tag.  This is
+inspired by <a href="http://en.wikipedia.org/wiki/Role-based_access_control">Role Based Access Control</a>.</p>
+<p>To see how this works, assume Alice wants to let her family read and
+write to her service but confine her friends to read operations only,
+which don&rsquo;t change state.</p>
+<p>To do so Alice defines two new tags, <em>Reader</em> and <em>Writer</em>, and adds
+them to the service VDL:</p>
+<!-- @fortuneInterfaceWithTags @test @completer -->
+<pre tabindex="0"><code> cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/ifc/fortune.vdl
+package ifc
+
+type MyTag string
+const (
+  Reader = MyTag(&quot;R&quot;)
+  Writer = MyTag(&quot;W&quot;)
+)
+
+type Fortune interface {
+  // Returns a random fortune.
+  Get() (Fortune string | error) {Reader}
+  // Adds a fortune to the set used by Get().
+  Add(Fortune string) error {Writer}
+}
+EOF
+
+VDLROOT=$VANADIUM_RELEASE/src/v.io/v23/vdlroot \
+    VDLPATH=$V_TUT/src \
+    $V_BIN/vdl generate --lang go $V_TUT/src/fortune/ifc
+go build fortune/ifc
+</code></pre><p>To exploit this a <strong>new authorizer</strong> is needed - one
+that honors permissions provided at the server
+command line:</p>
+<!-- @permissionsAuthorizer @test @completer -->
+<pre tabindex="0"><code> cat - &lt;&lt;EOF &gt;$V_TUT/src/fortune/server/util/authorizer.go
+package util
+
+import (
+  &quot;bytes&quot;
+  &quot;flag&quot;
+  &quot;fortune/ifc&quot;
+  &quot;v.io/v23/security&quot;
+  &quot;v.io/v23/security/access&quot;
+  &quot;v.io/v23/vdl&quot;
+)
+
+var (
+	perms = flag.String(&quot;perms&quot;, &quot;&quot;,
+      &quot;JSON-encoded access.Permissions.&quot;)
+)
+
+func MakeAuthorizer() (authorizer security.Authorizer) {
+  aMap, _ := access.ReadPermissions(
+      bytes.NewBufferString(*perms))
+  typ := vdl.TypeOf(ifc.Reader)
+  authorizer, _ = access.PermissionsAuthorizer(aMap, typ)
+  return
+}
+EOF
+
+go install fortune/server
+</code></pre><h2 id="a-specific-permissions-map">A specific permissions map</h2>
+<p>Now restart the server with a <em>permissions map</em> that
+allows <strong>family</strong> to read and write and <strong>friends</strong> to read only:</p>
+<!-- @startServerWithPerms @test @sleep -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+$V_TUT/bin/server \
+    --v23.credentials $V_TUT/cred/alice \
+    --endpoint-file-name $V_TUT/server.txt \
+    --perms '{&quot;R&quot;: {&quot;In&quot;: [&quot;alice:family&quot;,
+                           &quot;alice:friend&quot;]},
+              &quot;W&quot;: {&quot;In&quot;: [&quot;alice:family&quot;]}}' &amp;
+TUT_PID_SERVER=$!
+</code></pre><p>This takes the form of a map.  The keys are the service method labels
+(<code>R</code> is an abbreviation for <code>Reader</code>, a label on <code>Get</code>), and the
+values are lists of blessing patterns.  Principals with blessings matching
+a pattern in the &lsquo;In&rsquo; list can make the call.  An optional list called
+<code>NotIn</code> specifies <em>exclusions</em> from the <code>In</code> list (e.g., you might let in <code>family</code>,
+but exclude <code>family:uncle</code>).</p>
+<p>Patterns are slash-separated strings that may optionally end in a <code>$</code>.  The
+pattern <code>alice:houseguest</code> will be matched by the names <code>alice:houseguest</code> and
+its delegates <code>alice:houseguest:bob</code>, <code>alice:houseguest:bob:spouse</code> etc., but
+not by the name <code>bob</code> or <code>alice:colleague</code> or prefixes of the pattern like
+<code>alice</code>.  On the other hand, the pattern <code>alice:houseguest:$</code> would be matched
+exactly by the name <code>alice:houseguest</code>.</p>
+<h2 id="impact-on-bob-and-carol">Impact on Bob and Carol</h2>
+<p>You can quickly confirm that Bob (already <a href="/2016/tutorials/security/principals-and-blessings.html#blessings">blessed as a
+<code>friend</code></a>) can read:</p>
+<!-- @bobCanRead @test -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/bob \
+    --server `cat $V_TUT/server.txt`
+</code></pre><p>But Bob cannot write (he&rsquo;s not family):</p>
+<!-- @bobCannotWrite -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/bob \
+    --server `cat $V_TUT/server.txt` \
+    --add 'Bob is awesome.'
+</code></pre><p>Introduce Carol:</p>
+<!-- @createCarol @test @completer -->
+<pre tabindex="0"><code>$V_BIN/principal create --with-passphrase=false --overwrite $V_TUT/cred/carol carol
+</code></pre><p>At this point no request from Carol will succeed because Carol is
+unknown to Alice.</p>
+<p>Suppose Carol is Alice&rsquo;s sister and Alice gives Carol the blessing
+<code>alice:family:sister</code>:</p>
+<!-- @aliceBlessCarolAsSister @test @completer -->
+<pre tabindex="0"><code>$V_BIN/principal bless \
+    --v23.credentials $V_TUT/cred/alice \
+    --for=24h $V_TUT/cred/carol family:sister | \
+        $V_BIN/principal set \
+            --v23.credentials $V_TUT/cred/carol \
+            forpeer - alice
+</code></pre><p>Now that Carol is seen as part of the family she&rsquo;ll be able to invoke
+both <code>Get</code> and <code>Add</code>:</p>
+<!-- @clientIsCarol @test -->
+<pre tabindex="0"><code>$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/carol \
+    --server `cat $V_TUT/server.txt`
+
+$V_TUT/bin/client \
+    --v23.credentials $V_TUT/cred/carol \
+    --server `cat $V_TUT/server.txt` \
+    --add 'Eat kale.'
+</code></pre><p><img src="/2016/images/tut/security04-alice-carol-succeed-bob-fails.svg" alt="Alice&rsquo;s permissions policy allows Carol to Get and Add data to the server, but Bob can only Get"></p>
+<p>We&rsquo;re done with the server now.</p>
+<!-- @killServer @test -->
+<pre tabindex="0"><code>kill_tut_process TUT_PID_SERVER
+</code></pre><h1 id="summary">Summary</h1>
+<ul>
+<li>
+<p>Vanadium provides a pre-built <em>Permissions authorizer</em>.</p>
+</li>
+<li>
+<p>Service methods defined in a VDL file can be tagged with <em>roles</em>,
+e.g. Reader and Writer.</p>
+</li>
+<li>
+<p>A server built with the Permissions authorizer accepts a flag mapping roles
+to lists of blessings.</p>
+</li>
+<li>
+<p>A client blessed to a role is able to call the corresponding methods.</p>
+</li>
+</ul>
+
+    </content>
+ </div>
+
+ <nav class="flex flex-wrap-reverse mt-6 ml-[200px] z-[1]">
+  
+    
+      <a href="/tutorials/security/principals-and-blessings/" class="p-8 flex justify-start items-center bg-cyan-800 grow">
+        <div class="flex items-center justify-center w-[48px] h-[48px]">
+          <i class="material-icons text-white">arrow_back</i>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="text-white/70 text-xs">Previous</div>
+          <div class="text-white">Principals and Blessings</div>
+        </div>
+      </a>
+    
+  
+
+  
+    
+      <a href="/tutorials/security/first-party-caveats/" class="p-8 flex justify-end items-center bg-primary-color grow">
+        <div class="flex flex-col items-end">
+          <div class="text-white/70 text-xs">Next</div>
+          <div class="text-white">Caveats</div>
+        </div>
+        <div class="flex items-center justify-center w-[48px] h-[48px]">
+          <i class="material-icons text-white">arrow_forward</i>
+        </div>
+      </a>
+    
+  
+</nav>
+
+  
+</div>
+
+</body>
+</html>
