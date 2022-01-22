@@ -72,13 +72,13 @@
   text-transform: none;
 }
 .build-android {
-  background-image: url(/2016/images/android-icon-green.svg);
+  background-image: url(/vanadium-website/2016/images/android-icon-green.svg);
 }
 .build-ios {
-  background-image: url(/2016/images/ios-icon.svg);
+  background-image: url(/vanadium-website/2016/images/ios-icon.svg);
 }
 .build-core {
-  background-image: url(/2016/images/go.png);
+  background-image: url(/vanadium-website/2016/images/go.png);
 }
 /* Copyright 2015 The Vanadium Authors. All rights reserved. */
 /* Use of this source code is governed by a BSD-style */
@@ -162,7 +162,7 @@ pre .hljs {
   box-shadow: none;
 }
 .home-layout {
-  background-image: url(/2016/images/background.svg);
+  background-image: url(/vanadium-website/2016/images/background.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #eceff1;
@@ -256,7 +256,7 @@ pre .hljs {
   margin-left: 32px;
 }
 .home-layout .icon-github {
-  background-image: url(/2016/images/github-grey.svg);
+  background-image: url(/vanadium-website/2016/images/github-grey.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -270,16 +270,16 @@ pre .hljs {
   background-size: 60px;
 }
 .intro-detail-offline {
-  background-image: url(/2016/images/offline.svg);
+  background-image: url(/vanadium-website/2016/images/offline.svg);
 }
 .intro-detail-security {
-  background-image: url(/2016/images/security.svg);
+  background-image: url(/vanadium-website/2016/images/security.svg);
 }
 .intro-detail-codebase {
-  background-image: url(/2016/images/codebase.svg);
+  background-image: url(/vanadium-website/2016/images/codebase.svg);
 }
 .intro-detail-discovery {
-  background-image: url(/2016/images/discovery.svg);
+  background-image: url(/vanadium-website/2016/images/discovery.svg);
 }
 .embed-container {
   position: relative;

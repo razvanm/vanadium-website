@@ -8,48 +8,48 @@
                                    maximum-scale=1,
                                    user-scalable=no,
                                    minimal-ui">
-  
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-  
+
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  
+
     <title>Internal Tutorial Cleanup - Vanadium</title>
-  
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic|Source+Code+Pro">
-  
-    <link rel="stylesheet" href="/2016/css/github.css">
-    <link rel="stylesheet" href="/2016/css/material.min.css">
+
+    <link rel="stylesheet" href="/vanadium-website/2016/css/github.css">
+    <link rel="stylesheet" href="/vanadium-website/2016/css/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  
-    <script src="/2016/js/react-0.14.3.min.js"></script>
-    <script src="/2016/js/react-dom-0.14.3.min.js"></script>
-  
-    <link rel="apple-touch-icon" sizes="57x57" href="/2016/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/2016/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/2016/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/2016/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/2016/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/2016/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/2016/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/2016/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/2016/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/2016/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/2016/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/2016/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="/2016/favicons/favicon-160x160.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/2016/favicons/favicon-192x192.png">
+
+    <script src="/vanadium-website/2016/js/react-0.14.3.min.js"></script>
+    <script src="/vanadium-website/2016/js/react-dom-0.14.3.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/vanadium-website/2016/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/vanadium-website/2016/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/vanadium-website/2016/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/vanadium-website/2016/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/vanadium-website/2016/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/vanadium-website/2016/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/vanadium-website/2016/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/vanadium-website/2016/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/vanadium-website/2016/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/vanadium-website/2016/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/vanadium-website/2016/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/vanadium-website/2016/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/vanadium-website/2016/favicons/favicon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/vanadium-website/2016/favicons/favicon-192x192.png">
     <meta name="msapplication-TileColor" content="#00acc1">
-    <meta name="msapplication-TileImage" content="/2016/favicons/mstile-144x144.png">
-  
-    <link rel="stylesheet" href="/2016/css/bundle.cyan.css">
-    <script src="/2016/js/bundle.js"></script>
+    <meta name="msapplication-TileImage" content="/vanadium-website/2016/favicons/mstile-144x144.png">
+
+    <link rel="stylesheet" href="/vanadium-website/2016/css/bundle.cyan.css">
+    <script src="/vanadium-website/2016/js/bundle.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
+
       ga('create', 'UA-59720824-6', 'auto');
       ga('send', 'pageview');
     </script>
@@ -58,112 +58,112 @@
     <header class="mdl-shadow--2dp">
       <div class="row">
         <div class="icon menu"><i class="material-icons">menu</i></div>
-        <div class="icon v-icon"><a href="/2016/"><img src="/2016/images/v-icon-white.svg"></a></div>
-        <div class="logo"><a href="/2016/core.html">Vanadium Core</a></div>
+        <div class="icon v-icon"><a href="/vanadium-website/2016/"><img src="/vanadium-website/2016/images/v-icon-white.svg"></a></div>
+        <div class="logo"><a href="/vanadium-website/2016/core.html">Vanadium Core</a></div>
         <div class="spacer"></div>
         <nav>
-          <a href="/2016/core.html">Overview</a>
-          <a href="/2016/installation/">Installation</a>
-          <a href="/2016/tutorials/hello-world.html">Tutorials</a>
+          <a href="/vanadium-website/2016/core.html">Overview</a>
+          <a href="/vanadium-website/2016/installation/">Installation</a>
+          <a href="/vanadium-website/2016/tutorials/hello-world.html">Tutorials</a>
         </nav>
       </div>
     </header>
     <div data-subsite="core" class="sidebar"></div>
     <div class="sidebar-data">
-      <a href="/2016/core.html">Overview</a>
-      <a href="/2016/installation/">Installation</a>
-    
+      <a href="/vanadium-website/2016/core.html">Overview</a>
+      <a href="/vanadium-website/2016/installation/">Installation</a>
+
       <a href="#" class="nav">Tutorials</a>
       <nav>
-        <a href="/2016/tutorials/hello-world.html">Hello World</a>
-        <a href="/2016/tutorials/basics.html">Client/Server Basics</a>
-    
+        <a href="/vanadium-website/2016/tutorials/hello-world.html">Hello World</a>
+        <a href="/vanadium-website/2016/tutorials/basics.html">Client/Server Basics</a>
+
         <a href="#" class="nav">Security</a>
         <nav>
-          <a href="/2016/tutorials/security/">Overview</a>
-          <a href="/2016/tutorials/security/principals-and-blessings.html">Principals and Blessings</a>
-      <a href="/2016/tutorials/security/permissions-authorizer.html">Permissions Authorizer</a>
-      <a href="/2016/tutorials/security/first-party-caveats.html">Caveats</a>
-      <a href="/2016/tutorials/security/third-party-caveats.html">Third-party Caveats</a>
-      <a href="/2016/tutorials/security/agent.html">The Agent</a>
-      <a href="/2016/tutorials/security/custom-authorizer.html">Custom Authorizer</a>
+          <a href="/vanadium-website/2016/tutorials/security/">Overview</a>
+          <a href="/vanadium-website/2016/tutorials/security/principals-and-blessings.html">Principals and Blessings</a>
+      <a href="/vanadium-website/2016/tutorials/security/permissions-authorizer.html">Permissions Authorizer</a>
+      <a href="/vanadium-website/2016/tutorials/security/first-party-caveats.html">Caveats</a>
+      <a href="/vanadium-website/2016/tutorials/security/third-party-caveats.html">Third-party Caveats</a>
+      <a href="/vanadium-website/2016/tutorials/security/agent.html">The Agent</a>
+      <a href="/vanadium-website/2016/tutorials/security/custom-authorizer.html">Custom Authorizer</a>
     </nav>
-    
+
         <a href="#" class="nav">Naming</a>
         <nav>
-          <a href="/2016/tutorials/naming/">Overview</a>
-          <a href="/2016/tutorials/naming/mount-table.html">The Mount Table</a>
-      <a href="/2016/tutorials/naming/namespace.html">Namespaces</a>
-      <a href="/2016/tutorials/naming/suffix-part1.html">The Suffix - Part I</a>
-      <a href="/2016/tutorials/naming/suffix-part2.html">The Suffix - Part II</a>
-      <a href="/2016/tutorials/naming/globber.html">Globber</a>
+          <a href="/vanadium-website/2016/tutorials/naming/">Overview</a>
+          <a href="/vanadium-website/2016/tutorials/naming/mount-table.html">The Mount Table</a>
+      <a href="/vanadium-website/2016/tutorials/naming/namespace.html">Namespaces</a>
+      <a href="/vanadium-website/2016/tutorials/naming/suffix-part1.html">The Suffix - Part I</a>
+      <a href="/vanadium-website/2016/tutorials/naming/suffix-part2.html">The Suffix - Part II</a>
+      <a href="/vanadium-website/2016/tutorials/naming/globber.html">Globber</a>
     </nav>
-    
+
         <a href="#" class="nav">Syncbase</a>
         <nav>
-          <a href="/2016/tutorials/syncbase/">Overview</a>
-          <a href="/2016/tutorials/syncbase/sync.html">Syncing</a>
-      <a href="/2016/tutorials/syncbase/localPersist.html">Local Persistence</a>
+          <a href="/vanadium-website/2016/tutorials/syncbase/">Overview</a>
+          <a href="/vanadium-website/2016/tutorials/syncbase/sync.html">Syncing</a>
+      <a href="/vanadium-website/2016/tutorials/syncbase/localPersist.html">Local Persistence</a>
     </nav>
-    
+
         <a href="#" class="nav">Java</a>
         <nav>
-          <a href="/2016/tutorials/java/">Overview</a>
-          <a href="/2016/tutorials/java/fortune.html">Fortune in Java</a>
-      <a href="/2016/tutorials/java/android.html">Location Service in Android</a>
+          <a href="/vanadium-website/2016/tutorials/java/">Overview</a>
+          <a href="/vanadium-website/2016/tutorials/java/fortune.html">Fortune in Java</a>
+      <a href="/vanadium-website/2016/tutorials/java/android.html">Location Service in Android</a>
     </nav>
-    
-        <a href="/2016/tutorials/faq.html">Tutorial FAQ</a>
+
+        <a href="/vanadium-website/2016/tutorials/faq.html">Tutorial FAQ</a>
       </nav>
-    
+
       <a href="#" class="nav">Concepts</a>
       <nav>
-        <a href="/2016/concepts/rpc.html">RPC System</a>
-    <a href="/2016/concepts/naming.html">Naming</a>
-    <a href="/2016/concepts/security.html">Security</a>
-    <a href="/2016/concepts/device-management.html">Device Management</a>
+        <a href="/vanadium-website/2016/concepts/rpc.html">RPC System</a>
+    <a href="/vanadium-website/2016/concepts/naming.html">Naming</a>
+    <a href="/vanadium-website/2016/concepts/security.html">Security</a>
+    <a href="/vanadium-website/2016/concepts/device-management.html">Device Management</a>
   </nav>
-    
-      <a href="/2016/example-apps.html">Example Apps</a>
-      <a href="/2016/api-reference.html">API Reference</a>
-    
+
+      <a href="/vanadium-website/2016/example-apps.html">Example Apps</a>
+      <a href="/vanadium-website/2016/api-reference.html">API Reference</a>
+
       <a href="#" class="nav">Community</a>
       <nav>
-        <a href="/2016/community/coding-guidelines.html">Coding Guidelines</a>
-    <a href="/2016/community/contributing.html">Contributing</a>
-    <a href="/2016/community/mailing-lists.html">Mailing List</a>
-    <a href="/2016/community/roadmap.html">Roadmap</a>
+        <a href="/vanadium-website/2016/community/coding-guidelines.html">Coding Guidelines</a>
+    <a href="/vanadium-website/2016/community/contributing.html">Contributing</a>
+    <a href="/vanadium-website/2016/community/mailing-lists.html">Mailing List</a>
+    <a href="/vanadium-website/2016/community/roadmap.html">Roadmap</a>
   </nav>
-    
+
       <a href="#" class="nav">Tools</a>
       <nav>
-        <a href="/2016/tools/identity-service-faq.html">Vanadium Identity Service</a>
-    <a href="/2016/tools/jiri.html">Jiri</a>
-    <a href="/2016/tools/namespace-browser.html">Namespace Browser</a>
-    <a href="/2016/tools/services.html">Vanadium Cloud Services</a>
+        <a href="/vanadium-website/2016/tools/identity-service-faq.html">Vanadium Identity Service</a>
+    <a href="/vanadium-website/2016/tools/jiri.html">Jiri</a>
+    <a href="/vanadium-website/2016/tools/namespace-browser.html">Namespace Browser</a>
+    <a href="/vanadium-website/2016/tools/services.html">Vanadium Cloud Services</a>
   </nav>
-    
+
       <a href="#" class="nav">Design Docs</a>
       <nav>
-        <a href="/2016/designdocs/authentication.html">Authentication Protocol</a>
-    <a href="/2016/designdocs/identity-service.html">Identity Service</a>
-    <a href="/2016/designdocs/vdl-spec.html">VDL Specification</a>
-    <a href="/2016/designdocs/vom-spec.html">VOM Specification</a>
+        <a href="/vanadium-website/2016/designdocs/authentication.html">Authentication Protocol</a>
+    <a href="/vanadium-website/2016/designdocs/identity-service.html">Identity Service</a>
+    <a href="/vanadium-website/2016/designdocs/vdl-spec.html">VDL Specification</a>
+    <a href="/vanadium-website/2016/designdocs/vom-spec.html">VOM Specification</a>
   </nav>
-    
-      <a href="/2016/glossary.html">Glossary</a>
-      <a href="/2016/faq.html">FAQ</a>
-      <a href="/2016/tos.html">Terms of Service</a>
+
+      <a href="/vanadium-website/2016/glossary.html">Glossary</a>
+      <a href="/vanadium-website/2016/faq.html">FAQ</a>
+      <a href="/vanadium-website/2016/tos.html">Terms of Service</a>
     </div>
     <main>
       <h1 class="title">
-        
+
         Internal Tutorial Cleanup
       </h1>
 
 
 
-      
+
       <p>Delete the tutorial workspace directory.</p>
 <p>Might be used in tests, tutorial preparation, etc.</p>
 <!-- @deleteTutdirContent @test @completer -->
@@ -180,7 +180,7 @@ fi
 </code></pre>
     </main>
     <nav class="previous-next">
-      <a href="/2016/tutorials/hello-world.html" class="next">
+      <a href="/vanadium-website/2016/tutorials/hello-world.html" class="next">
         <div class="text-wrapper">
           <small>Next</small>
           <div class="text">
