@@ -808,6 +808,22 @@ nav#TableOfContents a {
   background-image: url('/images/background.svg');
 }
 
+.bg-background-svg {
+  background-image: url('/vanadium-website/images/background.svg');
+}
+
+.bg-security-svg {
+  background-image: url('/vanadium-website/images/security.svg');
+}
+
+.bg-codebase-svg {
+  background-image: url('/vanadium-website/images/codebase.svg');
+}
+
+.bg-discovery-svg {
+  background-image: url('/vanadium-website/images/discovery.svg');
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }

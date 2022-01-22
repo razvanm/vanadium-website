@@ -9,7 +9,7 @@ the old site._
 
 It provides:
 
-<div class="my-7 pl-20 bg-no-repeat [background-size:60px] bg-[url('/images/security.svg')]">
+<div class="my-7 pl-20 bg-no-repeat [background-size:60px] bg-security-svg">
    <p>
       <strong>Complete security model</strong><br>
       Vanadium's security model is based on public-key cryptography, that supports
@@ -19,7 +19,7 @@ It provides:
 [Learn more about Security](/concepts/security)
    </p>
 </div>
-<div class="my-7 pl-20 bg-no-repeat [background-size:60px] bg-[url('/images/codebase.svg')]">
+<div class="my-7 pl-20 bg-no-repeat [background-size:60px] bg-codebase-svg">
    <p>
       <strong>Symmetrically authenticated and encrypted RPC</strong><br>
       Vanadium Core provides symmetrically authenticated and encrypted RPC, with
@@ -35,7 +35,7 @@ It provides:
 [Learn more about RPC System](/concepts/rpc)
    </p>
 </div>
-<div class="my-7 pl-20 bg-no-repeat [background-size:60px] bg-[url('/images/discovery.svg')]">
+<div class="my-7 pl-20 bg-no-repeat [background-size:60px] bg-discovery-svg">
    <p>
       <strong>Distributed naming and discovery</strong><br>
       Vanadium provides a global naming service that offers the convenience of

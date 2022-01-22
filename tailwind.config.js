@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        // The prefix for URLs from below needs to be kept in sync with the
+        // baseURL from config.toml for Hugo.
+        'background-svg': "url('/vanadium-website/images/background.svg')",
+        'codebase-svg': "url('/vanadium-website/images/codebase.svg')",
+        'discovery-svg': "url('/vanadium-website/images/discovery.svg')",
+        'security-svg': "url('/vanadium-website/images/security.svg')",
+      },
       colors: {
         'primary-color': '#0097A7', /* Cyan 700 */
         'secondary-color': '#FF6E40', /* Deep Orange A200 */
