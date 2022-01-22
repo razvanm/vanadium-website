@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Communities on Vanadium</title>
-    <link>https://v.io/community/</link>
+    <link>https://razvanm.github.io/vanadium-website/community/</link>
     <description>Recent content in Communities on Vanadium</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://v.io/community/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://razvanm.github.io/vanadium-website/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coding Guidelines</title>
-      <link>https://v.io/community/coding-guidelines/</link>
+      <link>https://razvanm.github.io/vanadium-website/community/coding-guidelines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/community/coding-guidelines/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/community/coding-guidelines/</guid>
       <description>Code organization Vanadium is spread across multiple git repositories. The [contributor installation] process arranges these repositories as follows (some repositories omitted, for brevity):
  $JIRI_ROOT .jiri_root # Jiri utils and metadata bin # Contributor tool binaries scripts/jiri # Jiri command-line tool environment # Platform-dependent configuration manifest # Multi-repo configuration data release # Source code go/src/v.io/v23 # Interfaces go/src/v.io/x # Implementation devtools # Contributor tool source code lib # Developer libs ref # Reference implementation of v23 javascript # JS interfaces and implementation projects # Example apps playground # Write/build/run v23 code on the web browser # Vanadium namespace browser chat # Chat program third_party # Third-party code website # Source for this site Each repository has a README.</description>
     </item>
     
     <item>
       <title>Contributing</title>
-      <link>https://v.io/community/contributing/</link>
+      <link>https://razvanm.github.io/vanadium-website/community/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/community/contributing/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/community/contributing/</guid>
       <description>Reporting issues We use GitHub for tracking Vanadium issues: https://github.com/vanadium/issues/issues
 Contributor setup Vanadium installation Follow the installation instructions to set up a JIRI_ROOT directory and fetch all Vanadium repositories.
 The instructions below assume you&amp;rsquo;ve set the JIRI_ROOT environment variable and have added $JIRI_ROOT/.jiri_root/scripts to your PATH:
@@ -31,19 +31,19 @@ Contributor license agreement (CLA) Before patches can be accepted, contributors
     
     <item>
       <title>Mailing List</title>
-      <link>https://v.io/community/mailing-lists/</link>
+      <link>https://razvanm.github.io/vanadium-website/community/mailing-lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/community/mailing-lists/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/community/mailing-lists/</guid>
       <description> Vanadium Discuss mailing list - Mailing list for discussion of Vanadium-related topics (e.g. questions, changes, feature requests). We will also send announcements of new versions and sample apps.  </description>
     </item>
     
     <item>
       <title>Roadmap</title>
-      <link>https://v.io/community/roadmap/</link>
+      <link>https://razvanm.github.io/vanadium-website/community/roadmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/community/roadmap/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/community/roadmap/</guid>
       <description>Syncbase API usability  We have recently conducted API usability tests and are working on a new high-level API to help developers get started quickly with Syncbase.
  Website, docs &amp;amp; sample app improvements   My First App: Android &amp;amp; iOS todo tutorial (and sample app with new APIs) update syncslides to new API tutorial that doesn&amp;rsquo;t require syncbase cloud   Blobs  Blobs are already implemented in Go and sync across Syncbase instances, and there exists low-level RPC support, also in Go; however, there is not yet a high level API in Swift or Java to access this functionality on an iOS or Android device.</description>
     </item>

@@ -2,134 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://v.io/tutorials/java/fortune/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/java/fortune/</loc>
   </url><url>
-    <loc>https://v.io/testing/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/testing/</loc>
   </url><url>
-    <loc>https://v.io/installation/linux/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/installation/linux/</loc>
   </url><url>
-    <loc>https://v.io/tools/namespace-browser/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tools/namespace-browser/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/java/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/java/</loc>
   </url><url>
-    <loc>https://v.io/concepts/rpc/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/concepts/rpc/</loc>
   </url><url>
-    <loc>https://v.io/installation/java/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/installation/java/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/java/android/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/java/android/</loc>
   </url><url>
-    <loc>https://v.io/concepts/naming/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/concepts/naming/</loc>
   </url><url>
-    <loc>https://v.io/installation/os-x/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/installation/os-x/</loc>
   </url><url>
-    <loc>https://v.io/installation/rpi/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/installation/rpi/</loc>
   </url><url>
-    <loc>https://v.io/concepts/security/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/concepts/security/</loc>
   </url><url>
-    <loc>https://v.io/concepts/device-management/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/concepts/device-management/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/hello-world/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/hello-world/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/basics/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/basics/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/security/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/security/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/security/principals-and-blessings/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/security/principals-and-blessings/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/security/permissions-authorizer/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/security/permissions-authorizer/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/security/first-party-caveats/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/security/first-party-caveats/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/security/third-party-caveats/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/security/third-party-caveats/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/security/agent/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/security/agent/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/security/custom-authorizer/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/security/custom-authorizer/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/naming/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/naming/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/naming/mount-table/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/naming/mount-table/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/naming/namespace/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/naming/namespace/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/naming/suffix-part1/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/naming/suffix-part1/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/naming/suffix-part2/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/naming/suffix-part2/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/naming/globber/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/naming/globber/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/management/overview/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/management/overview/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/management/device-manager/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/management/device-manager/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/checkup/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/checkup/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/cleanup/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/cleanup/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/wipe-slate/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/wipe-slate/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/setup/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/setup/</loc>
   </url><url>
-    <loc>https://v.io/api-reference/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/api-reference/</loc>
   </url><url>
-    <loc>https://v.io/designdocs/authentication/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/designdocs/authentication/</loc>
   </url><url>
-    <loc>https://v.io/categories/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/categories/</loc>
   </url><url>
-    <loc>https://v.io/community/coding-guidelines/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/community/coding-guidelines/</loc>
   </url><url>
-    <loc>https://v.io/community/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/community/</loc>
   </url><url>
-    <loc>https://v.io/concepts/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/concepts/</loc>
   </url><url>
-    <loc>https://v.io/community/contributing/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/community/contributing/</loc>
   </url><url>
-    <loc>https://v.io/designdocs/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/designdocs/</loc>
   </url><url>
-    <loc>https://v.io/example-apps/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/example-apps/</loc>
   </url><url>
-    <loc>https://v.io/faq/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/faq/</loc>
   </url><url>
-    <loc>https://v.io/glossary/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/glossary/</loc>
   </url><url>
-    <loc>https://v.io/designdocs/identity-service/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/designdocs/identity-service/</loc>
   </url><url>
-    <loc>https://v.io/installation/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/installation/</loc>
   </url><url>
-    <loc>https://v.io/tools/jiri/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tools/jiri/</loc>
   </url><url>
-    <loc>https://v.io/community/mailing-lists/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/community/mailing-lists/</loc>
   </url><url>
-    <loc>https://v.io/installation/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/installation/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/</loc>
   </url><url>
-    <loc>https://v.io/community/roadmap/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/community/roadmap/</loc>
   </url><url>
-    <loc>https://v.io/installation/step-by-step/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/installation/step-by-step/</loc>
   </url><url>
-    <loc>https://v.io/tags/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tags/</loc>
   </url><url>
-    <loc>https://v.io/tos/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tos/</loc>
   </url><url>
-    <loc>https://v.io/tools/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tools/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/faq/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/faq/</loc>
   </url><url>
-    <loc>https://v.io/tutorials/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tutorials/</loc>
   </url><url>
-    <loc>https://v.io/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/</loc>
   </url><url>
-    <loc>https://v.io/tools/services/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tools/services/</loc>
   </url><url>
-    <loc>https://v.io/overview/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/overview/</loc>
   </url><url>
-    <loc>https://v.io/tools/identity-service-faq/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/tools/identity-service-faq/</loc>
   </url><url>
-    <loc>https://v.io/performance/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/performance/</loc>
   </url><url>
-    <loc>https://v.io/designdocs/vdl-spec/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/designdocs/vdl-spec/</loc>
   </url><url>
-    <loc>https://v.io/designdocs/vom-spec/</loc>
+    <loc>https://razvanm.github.io/vanadium-website/designdocs/vom-spec/</loc>
   </url>
 </urlset>

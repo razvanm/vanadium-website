@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Installations on Vanadium</title>
-    <link>https://v.io/installation/</link>
+    <link>https://razvanm.github.io/vanadium-website/installation/</link>
     <description>Recent content in Installations on Vanadium</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://v.io/installation/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://razvanm.github.io/vanadium-website/installation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Prerequisites</title>
-      <link>https://v.io/installation/linux/</link>
+      <link>https://razvanm.github.io/vanadium-website/installation/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/installation/linux/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/installation/linux/</guid>
       <description>You need to install Git, curl, and Go.
 The following commands should work on a Debian-based Linux distribution. Other distributions might require use of yum instead of apt-get. Adapt as needed.
 This document assumes that you are using the Bash shell.
@@ -22,20 +22,20 @@ sudo apt-get install curl Go Vanadium is mostly implemented in Go.</description>
     
     <item>
       <title>Java Prerequisites</title>
-      <link>https://v.io/installation/java/</link>
+      <link>https://razvanm.github.io/vanadium-website/installation/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/installation/java/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/installation/java/</guid>
       <description>Basic prerequisites To work with Vanadium in Java, we recommend that you have:
  Java 7 or above Gradle  Getting the Vanadium libraries The Vanadium Java libraries are distributed using Maven.</description>
     </item>
     
     <item>
       <title>OS X Prerequisites</title>
-      <link>https://v.io/installation/os-x/</link>
+      <link>https://razvanm.github.io/vanadium-website/installation/os-x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/installation/os-x/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/installation/os-x/</guid>
       <description>You need to install Homebrew, OS X command line tools, Git, and Go.
 These instructions were tested on a fresh copy of OS X Mavericks, but they should work on most recent versions of OS X.
 This document assumes that you are using the default shell, which is Bash.
@@ -45,10 +45,10 @@ ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/instal
     
     <item>
       <title>Raspberry Pi</title>
-      <link>https://v.io/installation/rpi/</link>
+      <link>https://razvanm.github.io/vanadium-website/installation/rpi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/installation/rpi/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/installation/rpi/</guid>
       <description>Vanadium can be used to write software for RaspberryPis. This page details how to set things up so you can build and run Vanadium Go binaries on them.
 Prerequisites You need a RaspberryPi with an installed operating system. See installation instructions at raspberrypi.org. Advanced or adventurous users may want to install Raspian directly.
 Building on a RaspberryPi You could use the RaspberryPi as your complete development environment - write code, compile it and run it all on the Pi.</description>
@@ -56,10 +56,10 @@ Building on a RaspberryPi You could use the RaspberryPi as your complete develop
     
     <item>
       <title>Quick Installation</title>
-      <link>https://v.io/installation/</link>
+      <link>https://razvanm.github.io/vanadium-website/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/installation/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/installation/</guid>
       <description>Vanadium can be installed on Linux or OS X.
 To install Vanadium, download this script, then source it:
 source ~/Downloads/vanadium-install.sh  This script checks for prerequisites, then attempts to install Vanadium. It takes about five minutes to run.
@@ -68,10 +68,10 @@ source ~/Downloads/vanadium-install.sh  This script checks for prerequisites, th
     
     <item>
       <title>Step-by-step Installation</title>
-      <link>https://v.io/installation/step-by-step/</link>
+      <link>https://razvanm.github.io/vanadium-website/installation/step-by-step/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/installation/step-by-step/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/installation/step-by-step/</guid>
       <description>This document provides step-by-step instructions for installing Vanadium.
 System requirements The instructions below assume you are using the Bash shell.
 set | grep BASH &amp;gt; /dev/null || echo &amp;quot;Vanadium installation requires Bash.&amp;quot; In addition, they assume the following software packages are installed and available in your PATH:

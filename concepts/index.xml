@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Concepts on Vanadium</title>
-    <link>https://v.io/concepts/</link>
+    <link>https://razvanm.github.io/vanadium-website/concepts/</link>
     <description>Recent content in Concepts on Vanadium</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://v.io/concepts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://razvanm.github.io/vanadium-website/concepts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RPC System</title>
-      <link>https://v.io/concepts/rpc/</link>
+      <link>https://razvanm.github.io/vanadium-website/concepts/rpc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/concepts/rpc/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/concepts/rpc/</guid>
       <description>The Vanadium remote procedure call (RPC) system enables communication between processes by presenting an API based on local function calls. Function calls are a familiar model to developers, and the API hides low-level details like the underlying network transport and data serialization protocols.
 Basics There are two participants in RPC-based communication. The caller of an RPC is known as the client and the receiver that implements the RPC is known as the server.</description>
     </item>
     
     <item>
       <title>Naming</title>
-      <link>https://v.io/concepts/naming/</link>
+      <link>https://razvanm.github.io/vanadium-website/concepts/naming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/concepts/naming/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/concepts/naming/</guid>
       <description>The Vanadium naming system enables discovery of devices, regardless of their physical locations - with or without an internet connection.
 Object names Vanadium names, usually abbreviated to &amp;ldquo;names&amp;rdquo; refer to objects.
 Objects implement RPC methods. In other words, methods are invoked on object names. The basic primitive is thus:
@@ -30,10 +30,10 @@ name.method(args) -&amp;gt; results  For example, if the name /host:8080/a/y/foo
     
     <item>
       <title>Security</title>
-      <link>https://v.io/concepts/security/</link>
+      <link>https://razvanm.github.io/vanadium-website/concepts/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/concepts/security/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/concepts/security/</guid>
       <description>The Vanadium security model defines mechanisms for identification, authentication, and authorization. The model supports fully decentralized, fine-grained, and auditable delegation of authority.
 For example, Alice could choose to delegate access to Bob only under the following conditions:
  the operation is Read, and the current time is between 6PM and 8PM, and Bob is in Alice&amp;rsquo;s &amp;ldquo;friends&amp;rdquo; group, and Bob is in close physical proximity of Alice  Such delegations do not have to go through the cloud or any centralized service, can be accomplished by a single interaction between Alice and Bob, and encode an audit trail of the principals involved in the delegation.</description>
@@ -41,10 +41,10 @@ For example, Alice could choose to delegate access to Bob only under the followi
     
     <item>
       <title>Device Management</title>
-      <link>https://v.io/concepts/device-management/</link>
+      <link>https://razvanm.github.io/vanadium-website/concepts/device-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://v.io/concepts/device-management/</guid>
+      <guid>https://razvanm.github.io/vanadium-website/concepts/device-management/</guid>
       <description>Vanadium targets a broad range of compute devices and environments. Vanadium&amp;rsquo;s device management system securely integrates physical devices and software applications available in the system.
 Devices and applications A device abstracts a system running Vanadium software, although the device need not be exclusively for Vanadium apps - for example, the system could be running natively installed applications alongside Vanadium applications. Typically, a device is a physical computing device, but a device could also be a virtual machine or a browser environment.</description>
     </item>
