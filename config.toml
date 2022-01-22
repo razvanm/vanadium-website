@@ -4,6 +4,11 @@ title = 'Vanadium'
 theme = 'vanadium'
 canonifyURLs = true
 
+# We disable some kinds to make it possible to serve certain pages instead of
+# the index pages.
+disableKinds = ['section', 'taxonomy']
+ignoreErrors = ['error-disable-taxonomy']
+
 [markup.goldmark.renderer]
 unsafe = true
 
