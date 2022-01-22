@@ -1,7 +1,8 @@
-baseURL = 'https://v.io/'
+baseURL = 'https://razvanm.github.io/vanadium-website/'
 languageCode = 'en-us'
 title = 'Vanadium'
 theme = 'vanadium'
+canonifyURLs = true
 
 [markup.goldmark.renderer]
 unsafe = true
